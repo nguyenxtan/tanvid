@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import shutil
 import stat
+import signal
 import subprocess
 import sys
 import tempfile
@@ -58,6 +59,11 @@ def validate_probe(payload: dict, size_bytes: int) -> dict:
                 videos.append(track)
             else:
                 track.update(channels=positive(stream['channels']), sample_rate=positive(stream['sample_rate']))
+                if stream.get('duration') not in (None, 'N/A'):
+                    track_duration = float(stream['duration'])
+                    if not math.isfinite(track_duration) or track_duration <= 0:
+                        raise ValueError('Invalid audio stream duration')
+                    track['duration_seconds'] = track_duration
                 audios.append(track)
         if not videos:
             raise ValueError('At least one real video track is required')
@@ -90,7 +96,7 @@ class MediaService:
             result = subprocess.run([
                 self.ffprobe, '-v', 'error', '-protocol_whitelist', 'file',
                 '-format_whitelist', 'mov,matroska,webm,avi',
-                '-show_entries', 'format=duration,size,format_name:stream=index,codec_type,codec_name,width,height,channels,sample_rate:stream_disposition=attached_pic',
+                '-show_entries', 'format=duration,size,format_name:stream=index,codec_type,codec_name,width,height,channels,sample_rate,duration:stream_disposition=attached_pic',
                 '-of', 'json', '-i', str(path),
             ], capture_output=True, text=True, errors='replace', timeout=self.timeout_seconds)
         except subprocess.TimeoutExpired as exc:
@@ -167,6 +173,10 @@ class MediaService:
                 if stage is not None and stage.exists():
                     shutil.rmtree(stage)
 
+    def extract_audio(self, source: Path, audio_track: int = 0, preserve_original: bool = False) -> dict:
+        from backend.audio import AudioService
+        return AudioService(self).extract(source, audio_track, preserve_original)
+
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -174,6 +184,10 @@ def main() -> int:
     for name in ('probe', 'import'):
         commands.add_parser(name).add_argument('source', type=Path)
     commands.add_parser('storage').add_argument('--incoming-bytes', type=int, default=0)
+    extraction = commands.add_parser('extract-audio')
+    extraction.add_argument('source', type=Path)
+    extraction.add_argument('--audio-track', type=int, default=0)
+    extraction.add_argument('--preserve-original', action='store_true')
     args = parser.parse_args()
     try:
         workspace = Workspace(WorkspaceConfig.from_env())
@@ -182,6 +196,16 @@ def main() -> int:
             result = service.inspect(args.source)
         elif args.command == 'import':
             result = service.import_video(args.source)
+        elif args.command == 'extract-audio':
+            # Signal handlers are CLI-only; library callers own cancellation.
+            previous = signal.getsignal(signal.SIGTERM)
+            def interrupted(signum, frame):
+                raise KeyboardInterrupt
+            signal.signal(signal.SIGTERM, interrupted)
+            try:
+                result = service.extract_audio(args.source, args.audio_track, args.preserve_original)
+            finally:
+                signal.signal(signal.SIGTERM, previous)
         else:
             result = workspace.status(args.incoming_bytes)
         print(json.dumps(result, indent=2, allow_nan=False))
@@ -189,6 +213,9 @@ def main() -> int:
     except (MediaError, StorageError, ValueError) as exc:
         print(json.dumps({'error': getattr(exc, 'code', 'storage_error'), 'message': str(exc)}), file=sys.stderr)
         return 1
+    except KeyboardInterrupt:
+        print(json.dumps({'error': 'interrupted', 'message': 'Audio extraction interrupted; staged output discarded'}), file=sys.stderr)
+        return 130
 
 
 if __name__ == '__main__':

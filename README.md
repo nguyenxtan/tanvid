@@ -1,6 +1,6 @@
 # DramaFlow
 
-Independent local backend and media foundation for DramaFlow (DF-003).
+Independent local backend, media and audio foundation for DramaFlow (DF-004).
 
 The upstream reference is a separate, unchanged sibling checkout at
 `../hongguo-drama`. See [upstream sources](docs/UPSTREAM_SOURCES.md) for provenance.
@@ -87,3 +87,49 @@ Atomic publication is not a power-loss durability guarantee: files/directories
 are not fsynced. Lock acquisition waits without a timeout.
 
 See [DF-003 verification](docs/DF-003_MEDIA.md) for actual media and storage results.
+
+## Audio extraction
+
+```sh
+./scripts/create_audio_sample.sh
+./scripts/media.sh extract-audio data/samples/authorized-180s.mp4 --preserve-original
+./scripts/media.sh extract-audio data/samples/authorized-180s.mp4 --audio-track 0
+```
+
+`AudioService(media_service).extract(path, audio_track=0, preserve_original=False)`
+and `MediaService.extract_audio(...)` provide the same reusable interface.
+Audio track numbers are zero-based audio ordinals, not global stream indices.
+Inputs can be original videos or copies imported by the media service.
+
+- Speech output: `speech.wav`, PCM signed 16-bit little-endian, mono, 16 kHz.
+- Optional `original.mka`: **all** original audio tracks copied without
+  re-encoding, preserving codec, sample rate and channels for future mixing.
+  Container timestamps may shift for codec priming; no mixing is implemented.
+- Outputs and checksummed `metadata.json` live under
+  `workspace/audio/<source-hash-and-profile-key>/`. Sources are unchanged.
+- Existing outputs are reused after source/output SHA-256, FFprobe and complete
+  PCM frame validation. Preserved audio is also fully decoded for integrity.
+  Adding `--preserve-original` later retains valid speech without re-extracting it.
+- Preflight reserves bounded WAV bytes, source size + 1 MiB for preservation,
+  and 64 KiB for the manifest. The existing 60 GB quota and 1 GiB disk headroom
+  apply; a child file-size limit prevents an output from exceeding reservation.
+  Classic WAV outputs requiring 4 GiB or more are rejected. Conservative
+  reservations can refuse work even when the final compressed output might fit.
+- Durations must agree within max(0.25 seconds, 0.1%); audio stream duration is
+  used where available, otherwise container duration. Unknown/inconsistent
+  timelines may fail validation rather than publishing incomplete audio.
+- Missing audio, corrupt files, missing tools and timeouts return JSON errors
+  with nonzero CLI exit codes. Each FFmpeg operation defaults to a 600-second
+  timeout, configurable on `AudioService`. CLI Ctrl-C/SIGTERM kills/reaps the
+  active FFmpeg process group and removes incomplete staging (exit 130).
+  Library callers control their own signal handlers; Python cancellation
+  exceptions trigger the same process cleanup.
+
+Publication occurs only after validation. A failed replacement restores the
+previous output; if rollback also fails, a `replaced-*` backup is retained in
+`.staging` for manual recovery. SIGKILL cannot run cleanup and can leave a child
+finishing a size-bounded output in unpublished staging. See the tracked
+[limitations](docs/LIMITATIONS.md) and [DF-004 results](docs/DF-004_AUDIO.md).
+Cleanup I/O failures warn and retain files without hiding the extraction result.
+A damaged optional original is not pruned when only speech is requested;
+request `--preserve-original` to repair it. Its bytes remain counted toward quota.
