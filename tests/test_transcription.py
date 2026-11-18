@@ -126,7 +126,7 @@ class TranscriptionCacheTests(unittest.TestCase):
         pipeline=patch('backend.transcription.AudioService.extract',return_value=self.audio)
         pipeline.start();self.addCleanup(pipeline.stop)
 
-    def worker(self,audio,model,output,log):
+    def worker(self,audio,model,output,log,options=None):
         output.write_text(json.dumps(self.raw))
 
     def test_validated_reuse_and_checksum_repair(self):

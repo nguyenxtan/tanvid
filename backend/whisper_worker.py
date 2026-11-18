@@ -14,13 +14,19 @@ def main():
     import mlx_whisper
     import numpy as np
     from mlx_whisper.transcribe import ModelHolder
-    from backend.transcription import OPTIONS
+
+    # Effective decoding options prepared and validated by the parent service.
+    options = json.loads(Path(sys.argv[4]).read_text())
+    if isinstance(options.get('temperature'), list):
+        options['temperature'] = tuple(options['temperature'])
 
     if platform.system() != 'Darwin' or platform.machine() != 'arm64' or not mx.metal.is_available():
         raise RuntimeError('Native Apple Silicon with Metal is required')
     mx.set_default_device(mx.gpu)
     # Bound MLX allocator to 8 GiB on the target 16 GiB host.
     mx.set_memory_limit(8 * 1024**3)
+    # Fixed seed: only temperature-fallback sampling (temperature > 0) is random.
+    mx.random.seed(0)
     with wave.open(sys.argv[1], 'rb') as wav:
         if (wav.getnchannels(), wav.getsampwidth(), wav.getframerate()) != (1, 2, 16000):
             raise ValueError('Expected validated PCM16 mono 16kHz WAV')
@@ -30,7 +36,11 @@ def main():
     ModelHolder.get_model(sys.argv[2], mx.float16)
     mx.synchronize()
     loaded = time.perf_counter()
-    result = mlx_whisper.transcribe(data, path_or_hf_repo=sys.argv[2], verbose=None, **OPTIONS)
+    if options.get('clip_timestamps') == []:
+        # Energy gate found no audio above its floor: nothing to decode, never decode everything.
+        result = {'segments': []}
+    else:
+        result = mlx_whisper.transcribe(data, path_or_hf_repo=sys.argv[2], verbose=None, **options)
     mx.synchronize()
     finished = time.perf_counter()
     metrics = {'model_load_seconds': loaded - started, 'inference_seconds': finished - loaded,

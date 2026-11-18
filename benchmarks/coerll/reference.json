@@ -1,0 +1,124 @@
+{
+  "sample": "coerll-chinese-dialogues-ep20-dialogue70",
+  "title": "Chinese Dialogues, Episode #20, Dialogue #70 (family scene, three speakers)",
+  "author": "Wen-Hua Teng",
+  "publisher": "COERLL, The University of Texas at Austin",
+  "source_url": "https://coerll.utexas.edu/coerll/oer/chinese-dialogues-podcast/",
+  "folder_url": "https://drive.google.com/drive/folders/1NBFhcdv83ltni8fwhU7iLHpEmFzxCFbO",
+  "license": "CC-BY (publisher resource page; version not stated on the resource; site badge links CC BY 4.0)",
+  "files": {
+    "chinese-dialogues-ep20.mp3": {
+      "id": "1YqeiRJKchLceHSYiKd34h59Kec3KY9ry",
+      "size_bytes": 1307804,
+      "sha256": "6dd9918ade3f97d01e2eb7a98ef73396ff8c668b1c6612a2f280bcc0320d4ab0",
+      "url": "https://drive.google.com/uc?export=download&id=1YqeiRJKchLceHSYiKd34h59Kec3KY9ry"
+    },
+    "chinese-dialogues-ep20.pdf": {
+      "id": "1-jcslfLah9o9JTtlmVEQGmNcUGfFGyjP",
+      "size_bytes": 283860,
+      "sha256": "8911f208e4656f33cc72b94c2d19f46488c0c9c6e3aa551925647332959801e4",
+      "url": "https://drive.google.com/uc?export=download&id=1-jcslfLah9o9JTtlmVEQGmNcUGfFGyjP"
+    }
+  },
+  "dialogue": 70,
+  "speakers": [
+    "中",
+    "妈",
+    "爸"
+  ],
+  "source_duration_seconds": 130.56,
+  "start_seconds": 5.95,
+  "end_seconds": 130.56,
+  "duration_seconds": 124.61,
+  "turns": [
+    {
+      "speaker": "妈",
+      "text": "小中，爸爸回家了没有？"
+    },
+    {
+      "speaker": "中",
+      "text": "他已经回来了。"
+    },
+    {
+      "speaker": "妈",
+      "text": "他在做什么？"
+    },
+    {
+      "speaker": "中",
+      "text": "他在客厅看电视。"
+    },
+    {
+      "speaker": "妈",
+      "text": "我也有工作，为什么回家以后他在看电视可是我在做饭？"
+    },
+    {
+      "speaker": "中",
+      "text": "爸爸，妈妈有一点不高兴，你快去帮她做饭。"
+    },
+    {
+      "speaker": "爸",
+      "text": "我好累，今天开了两个会。你可不可以去帮她？"
+    },
+    {
+      "speaker": "中",
+      "text": "不行。我今天功课好多。"
+    },
+    {
+      "speaker": "爸",
+      "text": "那你现在为什么在听音乐，没有在做功课？"
+    },
+    {
+      "speaker": "中",
+      "text": "我没有在听音乐，我在听中文课的录音。"
+    },
+    {
+      "speaker": "爸",
+      "text": "是吗？你可以一边上课一边录音吗？"
+    },
+    {
+      "speaker": "中",
+      "text": "对。中文语法好难，所以老师在教语法的时候，大家都一边听，一边录音。"
+    },
+    {
+      "speaker": "爸",
+      "text": "你的电脑可以录音吗？"
+    },
+    {
+      "speaker": "中",
+      "text": "可以，可是录得不好。"
+    },
+    {
+      "speaker": "爸",
+      "text": "下个月我给你买一个新电脑。"
+    },
+    {
+      "speaker": "中",
+      "text": "真的吗？太好了！爸爸，我们可不可以吃了饭就去看电脑？"
+    },
+    {
+      "speaker": "爸",
+      "text": "好啊！可是我下个月才可以给你买，因为我那时候才有钱。"
+    },
+    {
+      "speaker": "中",
+      "text": "好！我现在的电脑还可以。"
+    },
+    {
+      "speaker": "爸",
+      "text": "去问你妈妈，吃了饭想不想跟我们一起去看电脑。我们看了电脑以后，我请你们两个去吃冰淇淋。"
+    },
+    {
+      "speaker": "妈",
+      "text": "你们两个在说什么？来吃饭。"
+    },
+    {
+      "speaker": "爸",
+      "text": "好，我们去看妈妈今天给我们做了什么菜！吃饭的时候，你可以告诉我们学中文有没有意思。"
+    }
+  ],
+  "text": "小中，爸爸回家了没有？他已经回来了。他在做什么？他在客厅看电视。我也有工作，为什么回家以后他在看电视可是我在做饭？爸爸，妈妈有一点不高兴，你快去帮她做饭。我好累，今天开了两个会。你可不可以去帮她？不行。我今天功课好多。那你现在为什么在听音乐，没有在做功课？我没有在听音乐，我在听中文课的录音。是吗？你可以一边上课一边录音吗？对。中文语法好难，所以老师在教语法的时候，大家都一边听，一边录音。你的电脑可以录音吗？可以，可是录得不好。下个月我给你买一个新电脑。真的吗？太好了！爸爸，我们可不可以吃了饭就去看电脑？好啊！可是我下个月才可以给你买，因为我那时候才有钱。好！我现在的电脑还可以。去问你妈妈，吃了饭想不想跟我们一起去看电脑。我们看了电脑以后，我请你们两个去吃冰淇淋。你们两个在说什么？来吃饭。好，我们去看妈妈今天给我们做了什么菜！吃饭的时候，你可以告诉我们学中文有没有意思。",
+  "reference_origin": "Publisher human-written transcript PDF (Simplified section), no ASR-generated ground truth",
+  "adaptation": "Removed the spoken English episode/dialogue title (0-5.95 s, cut in measured silence); remainder of the episode unedited; black video wrapper only; speaker labels removed from scored text; wrapped PDF lines joined",
+  "video_sha256": "304c170476ba15d9dd868e329d740e63b93fb927290042e7615e7aa383b0948e",
+  "audio_sha256": "34cc06002b02dfd0fbafc646db98aa908872b08428ff3a23c05bbafbd77db40b"
+}

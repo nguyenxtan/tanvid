@@ -138,12 +138,14 @@ request `--preserve-original` to repair it. Its bytes remain counted toward quot
 
 ```sh
 ./scripts/setup.sh
+./scripts/media.sh transcribe path/to/authorized-video.mp4            # medium FP16, df005 profile
 ./scripts/media.sh transcribe path/to/authorized-video.mp4 --model small
-./scripts/media.sh transcribe path/to/authorized-video.mp4 --model medium
+./scripts/media.sh transcribe path/to/authorized-video.mp4 --profile energy_gate
 ```
 
-Use `MediaService.transcribe(path, model='small', audio_track=0, force=False)`
-or `TranscriptionService(media_service).transcribe(...)`. Native macOS ARM64
+Use `MediaService.transcribe(path, model='medium', audio_track=0, force=False, profile='df005')`
+or `TranscriptionService(media_service).transcribe(...)`. **Medium FP16 is the
+provisional default** (DF-006); small remains the faster fallback. Native macOS ARM64
 with Metal GPU is required; models run locally through MLX Whisper, without
 translation or paid inference APIs. PyTorch is a transitive package dependency
 of the released MLX Whisper distribution; inference here uses MLX/Metal.
@@ -157,14 +159,21 @@ No unmanaged Hugging Face weights cache or automatic remote model loading
 is part of the service. Python packages live separately in `.venv`.
 
 The existing audio extraction/validation pipeline produces PCM16 mono 16kHz.
-Results contain `segments` with `start_ms`, `end_ms`, `original_text`, and
-`confidence` fields (`avg_logprob`, `no_speech_prob`, `compression_ratio`,
+Results contain `segments` with `id`, `raw_index`, `start_ms`, `end_ms`,
+`original_text`, `review` (`needs_review`/`unflagged` with heuristic reasons
+and evidence) and `confidence` fields (`avg_logprob`, `no_speech_prob`, `compression_ratio`,
 or `null` when unavailable). These are model diagnostics, not calibrated
 probabilities that the transcript is correct. Text is Chinese transcription;
-there are no speaker labels or translated text.
+there are no speaker labels or translated text. Raw model segments are kept
+verbatim in `raw_inference`; review flags never change text, are heuristics
+(not proof of hallucination), and `unflagged` does not mean verified.
+`review.possible_missed_speech` lists measured non-silent audio with no segment.
+Profiles: `df005` (default), `energy_gate`, `energy_gate_coarse`,
+`temperature_fallback`, `silence_skip`; the energy gate is silence detection,
+not a trained VAD. See [DF-006 results](docs/DF-006_REVIEW.md).
 
 Validated results reuse an identity containing audio SHA-256, pinned model,
-package versions and decoding settings. A checksummed JSON envelope and
+package versions, decoding profile/settings, silence-gate and review versions. A checksummed JSON envelope and
 segment schema are rechecked before reuse. `--force` runs fresh inference.
 Incomplete inference is never published; CLI Ctrl-C/SIGTERM kills/reaps the
 worker and cleans staging. Rerun after interruption to restart safely. Existing
@@ -194,3 +203,16 @@ The harness checks the reference audio hash, uses identical audio/options,
 forces fresh processes, alternates model order and records measured resources
 and CER. See [benchmark attribution and license](benchmarks/ATTRIBUTION.md).
 Measured recommendation and limitations: [DF-005 benchmark](docs/DF-005_BENCHMARK.md).
+
+DF-006 adds a CC-BY COERLL scripted family-dialogue sample with a publisher
+transcript reference and a profile comparison harness:
+
+```sh
+.venv/bin/python scripts/prepare_coerll.py
+.venv/bin/python scripts/benchmark_settings.py \
+  data/workspace/benchmarks/coerll/coerll-ep20-dialogue70.mkv \
+  data/workspace/benchmarks/coerll/reference.json --name coerll --runs 2
+```
+
+Results, flags and limitations: [DF-006](docs/DF-006_REVIEW.md);
+attribution: [COERLL](benchmarks/coerll/ATTRIBUTION.md).

@@ -177,9 +177,10 @@ class MediaService:
         from backend.audio import AudioService
         return AudioService(self).extract(source, audio_track, preserve_original)
 
-    def transcribe(self, source: Path, model: str = 'small', audio_track: int = 0, force: bool = False) -> dict:
+    def transcribe(self, source: Path, model: str = 'medium', audio_track: int = 0, force: bool = False,
+                   profile: str = 'df005') -> dict:
         from backend.transcription import TranscriptionService
-        return TranscriptionService(self).transcribe(source, model, audio_track, force)
+        return TranscriptionService(self).transcribe(source, model, audio_track, force, profile)
 
 
 def main() -> int:
@@ -194,7 +195,9 @@ def main() -> int:
     extraction.add_argument('--preserve-original', action='store_true')
     transcription = commands.add_parser('transcribe')
     transcription.add_argument('source', type=Path)
-    transcription.add_argument('--model', choices=('small', 'medium'), default='small')
+    transcription.add_argument('--model', choices=('small', 'medium'), default='medium')
+    transcription.add_argument('--profile', choices=('df005', 'energy_gate', 'energy_gate_coarse', 'temperature_fallback', 'silence_skip'),
+                               default='df005', help='Decoding profile; see docs/DF-006_REVIEW.md')
     transcription.add_argument('--audio-track', type=int, default=0)
     transcription.add_argument('--force', action='store_true', help='Run fresh inference instead of using a valid result')
     args = parser.parse_args()
@@ -213,7 +216,7 @@ def main() -> int:
             signal.signal(signal.SIGTERM, interrupted)
             try:
                 if args.command == 'transcribe':
-                    result = service.transcribe(args.source, args.model, args.audio_track, args.force)
+                    result = service.transcribe(args.source, args.model, args.audio_track, args.force, args.profile)
                 else:
                     result = service.extract_audio(args.source, args.audio_track, args.preserve_original)
             finally:

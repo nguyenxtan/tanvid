@@ -15,6 +15,10 @@ DF-003 accepted non-blocking follow-ups, tracked for future PO-approved work:
 | LIM-009 | SIGKILL of a CLI parent or default SIGTERM of a library caller can leave a live MLX worker until inference completes, consuming GPU memory; CLI graceful cancellation does reap it. | Add a parent-death watchdog or equivalent worker supervision. |
 | LIM-010 | Model HTTP reads have a 60-second socket timeout and size bounds, but no overall download deadline. A slow connection can hold the workspace lock. | Add an overall bounded download deadline. |
 | LIM-011 | Model files are revalidated before returning a cached transcript; missing models can be downloaded despite an already-valid result. | Allow result-only cache reuse before model preparation with the same pinned identity. |
+| LIM-012 | The energy gate is loudness-based silence detection, not a trained VAD. Quiet far-field speech falls below it (all 4 AliMeeting `text_over_detected_silence` flags were real speech) and music/effects count as sound. | Evaluate a pinned trained VAD on drama audio with music, within quota. |
+| LIM-013 | Review flags cannot detect plausible wrong words (e.g. homophones); several thresholds were adjusted after seeing DF-006 outputs, so flag precision/recall is unmeasured. | Measure flags against a separate human-reviewed set. |
+| LIM-014 | Whisper can skip a whole 30 s window (observed after a spoken English title). It is only reported via `possible_missed_speech`, not prevented, and that check depends on the energy gate. | Evaluate prevention (e.g. targeted re-decoding of uncovered spans) in a later phase. |
+| LIM-015 | Results now store raw segments (tokens) under the unchanged 4 MiB result limit; DF-005 (schema 2) cached transcripts are not reused and remain counted. | Size limits by duration; add safe cache pruning. |
 
 Media metadata validation is not full video-frame decode validation. Only the
 documented local container families are supported. No processing-codec
@@ -39,3 +43,8 @@ recovery. Downloads restart rather than resume unpublished models. One public
 disfluencies, number formatting and script variation affect strict CER. Peak
 process RSS and MLX allocator peaks are separate, overlapping memory views.
 See `DF-005_BENCHMARK.md` for full benchmark limitations and measured results.
+
+DF-006: the energy gate, review flags and missed-speech check are heuristics
+(LIM-012–LIM-014). Only two short public samples were benchmarked; COERLL is
+clean scripted educational role-play, not real drama with music. See
+`DF-006_REVIEW.md` for measured results and disclosed post-hoc adjustments.

@@ -58,3 +58,39 @@ def select_excerpt(intervals, minimum=120, maximum=180):
     return {'start_seconds': 0, 'end_seconds': end, 'duration_seconds': end,
             'speakers': sorted({s['speaker'] for s in selected}), 'overlap_seconds': overlap,
             'segments': selected, 'text': ''.join(s['text'] for s in selected)}
+
+
+def parse_publisher_dialogue(pages, dialogue_number):
+    """Publisher Simplified-Chinese turns of one COERLL Chinese Dialogues scene.
+
+    `pages` is text extracted from the publisher PDF. Only the simplified section
+    is read; speaker labels (e.g. ``妈：``) are kept separately from spoken text.
+    Wrapped lines are joined. No characters are added, corrected or converted.
+    """
+    text = '\n'.join(pages)
+    start = text.find('(Simplified Characters)')
+    end = text.find('(Traditional Characters)')
+    if start < 0 or end < start:
+        raise ValueError('Simplified section not found')
+    section = text[start:end]
+    heading = re.search(r'^Dialogues? #%d\s*$' % dialogue_number, section, re.M)
+    if not heading:
+        raise ValueError('Dialogue not found')
+    after = section[heading.end():]
+    following = re.search(r'^Dialogues? #\d+\s*$', after, re.M)
+    lines = after[:following.start()] if following else after
+    turns = []
+    for line in lines.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith('Chinese Podcast Episode'):
+            continue
+        match = re.match(r'^(\S{1,6})：(.*)$', stripped)
+        if match:
+            turns.append({'speaker': match[1], 'text': match[2].strip()})
+        elif turns and line[:1].isspace():
+            turns[-1]['text'] += stripped  # Wrapped continuation of the same turn.
+        else:
+            raise ValueError('Unrecognized transcript line: ' + stripped)
+    if not turns or any(not t['text'] for t in turns):
+        raise ValueError('No publisher dialogue turns parsed')
+    return turns
