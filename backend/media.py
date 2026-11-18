@@ -177,6 +177,10 @@ class MediaService:
         from backend.audio import AudioService
         return AudioService(self).extract(source, audio_track, preserve_original)
 
+    def transcribe(self, source: Path, model: str = 'small', audio_track: int = 0, force: bool = False) -> dict:
+        from backend.transcription import TranscriptionService
+        return TranscriptionService(self).transcribe(source, model, audio_track, force)
+
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -188,6 +192,11 @@ def main() -> int:
     extraction.add_argument('source', type=Path)
     extraction.add_argument('--audio-track', type=int, default=0)
     extraction.add_argument('--preserve-original', action='store_true')
+    transcription = commands.add_parser('transcribe')
+    transcription.add_argument('source', type=Path)
+    transcription.add_argument('--model', choices=('small', 'medium'), default='small')
+    transcription.add_argument('--audio-track', type=int, default=0)
+    transcription.add_argument('--force', action='store_true', help='Run fresh inference instead of using a valid result')
     args = parser.parse_args()
     try:
         workspace = Workspace(WorkspaceConfig.from_env())
@@ -196,14 +205,17 @@ def main() -> int:
             result = service.inspect(args.source)
         elif args.command == 'import':
             result = service.import_video(args.source)
-        elif args.command == 'extract-audio':
+        elif args.command in ('extract-audio', 'transcribe'):
             # Signal handlers are CLI-only; library callers own cancellation.
             previous = signal.getsignal(signal.SIGTERM)
             def interrupted(signum, frame):
                 raise KeyboardInterrupt
             signal.signal(signal.SIGTERM, interrupted)
             try:
-                result = service.extract_audio(args.source, args.audio_track, args.preserve_original)
+                if args.command == 'transcribe':
+                    result = service.transcribe(args.source, args.model, args.audio_track, args.force)
+                else:
+                    result = service.extract_audio(args.source, args.audio_track, args.preserve_original)
             finally:
                 signal.signal(signal.SIGTERM, previous)
         else:
@@ -214,7 +226,7 @@ def main() -> int:
         print(json.dumps({'error': getattr(exc, 'code', 'storage_error'), 'message': str(exc)}), file=sys.stderr)
         return 1
     except KeyboardInterrupt:
-        print(json.dumps({'error': 'interrupted', 'message': 'Audio extraction interrupted; staged output discarded'}), file=sys.stderr)
+        print(json.dumps({'error': 'interrupted', 'message': 'Media processing interrupted; incomplete result not published'}), file=sys.stderr)
         return 130
 
 

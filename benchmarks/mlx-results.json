@@ -1,0 +1,2323 @@
+{
+  "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+  "reference_sha256": "2ac2eb2b32c3cd8492c6b81eb5723e14f35984f59e932aaa396bd386f3c31498",
+  "sample_duration_seconds": 156.54,
+  "measurements": [
+    {
+      "identity": {
+        "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+        "model": {
+          "repo": "mlx-community/whisper-small-mlx",
+          "revision": "45f3915923c7a79a5a5b5a7d909d39aeb0e5630e",
+          "license": "MIT",
+          "files": [
+            {
+              "name": "config.json",
+              "size_bytes": 266,
+              "sha256": "e8f58e638208af66d5d5d67801259dc7a12d199e971967a9f9d33a8e3635668e"
+            },
+            {
+              "name": "weights.npz",
+              "size_bytes": 481307592,
+              "sha256": "55b6674c9b339702d486e2b1573839a66f8ec8f821ed2886993ef717a86b09f5"
+            }
+          ]
+        },
+        "options": {
+          "language": "zh",
+          "task": "transcribe",
+          "temperature": 0.0,
+          "condition_on_previous_text": false,
+          "word_timestamps": false,
+          "fp16": true,
+          "initial_prompt": "以下是普通话简体中文转写。"
+        },
+        "mlx_whisper_version": "0.4.3",
+        "mlx_version": "0.32.4",
+        "schema": 1
+      },
+      "language": "zh",
+      "duration_ms": 156540,
+      "segments": [
+        {
+          "start_ms": 0,
+          "end_ms": 13000,
+          "original_text": "今天就能够先出一款这个手机产品啊 今天一下这个编号会。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 13000,
+          "end_ms": 19000,
+          "original_text": "首先咱们试了一下这个产品的目标人群 客户群那一块。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 19000,
+          "end_ms": 21000,
+          "original_text": "首先咱们大家有一个看啊。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 21000,
+          "end_ms": 25000,
+          "original_text": "你也尝一下啊。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 25000,
+          "end_ms": 29000,
+          "original_text": "我觉得咱们这个明天不要人群可以不用定能那么确定。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 29000,
+          "end_ms": 33000,
+          "original_text": "然后基本上就是让它什么也省费的人群",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 33000,
+          "end_ms": 34000,
+          "original_text": "然后都可以",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 34000,
+          "end_ms": 36000,
+          "original_text": "这样的咱们的面上比较过往",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 36000,
+          "end_ms": 40000,
+          "original_text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 40000,
+          "end_ms": 45000,
+          "original_text": "所以我觉得其实不用界定于这个老年人或者这个修认之间",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 45000,
+          "end_ms": 46000,
+          "original_text": "就是夸子大一点就好",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 46000,
+          "end_ms": 47000,
+          "original_text": "对",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 47000,
+          "end_ms": 49000,
+          "original_text": "这样我觉得放台更寡一些",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 49000,
+          "end_ms": 51000,
+          "original_text": "有什么样的人群都可以选择吗",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 51000,
+          "end_ms": 52000,
+          "original_text": "好",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 52000,
+          "end_ms": 55000,
+          "original_text": "我觉得是瑶瑶有真正性的",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 55000,
+          "end_ms": 58000,
+          "original_text": "我觉得咱们的设计外观还是很时尚",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 58000,
+          "end_ms": 64000,
+          "original_text": "还是需要去设定一下比较适合的年龄过",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 64000,
+          "end_ms": 66000,
+          "original_text": "你们说因为这些都彩色了呀",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 66000,
+          "end_ms": 68000,
+          "original_text": "有蓝色的黄色",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 68000,
+          "end_ms": 70000,
+          "original_text": "年老的人都不可能制作",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 70000,
+          "end_ms": 72000,
+          "original_text": "你可以说是有功能",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 72000,
+          "end_ms": 74000,
+          "original_text": "而且你现在设计的产品",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 74000,
+          "end_ms": 76000,
+          "original_text": "主要推出的是它有照相的功能",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 76000,
+          "end_ms": 78000,
+          "original_text": "功能的话是很",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 78000,
+          "end_ms": 80000,
+          "original_text": "很很好的",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 80000,
+          "end_ms": 82000,
+          "original_text": "所以还是适合年轻的人群",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 82000,
+          "end_ms": 86000,
+          "original_text": "我感觉可以根据年龄和这种",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 86000,
+          "end_ms": 89400,
+          "original_text": "和这种不同的人士坐下去分",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 89880,
+          "end_ms": 92600,
+          "original_text": "我感觉我们可以说真的就是",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 93400,
+          "end_ms": 97360,
+          "original_text": "18到45岁的中青年人群嘛",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 97560,
+          "end_ms": 99280,
+          "original_text": "我看他确定是手机就在",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 99520,
+          "end_ms": 100800,
+          "original_text": "从特点来说",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 100800,
+          "end_ms": 103400,
+          "original_text": "可能就是说年段他都大一点",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 103400,
+          "end_ms": 107360,
+          "original_text": "但是我觉得现在老年人也都很时尚",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 107360,
+          "end_ms": 108720,
+          "original_text": "他现在老年人出局",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 108720,
+          "end_ms": 111200,
+          "original_text": "然后他基本上把自己装好了",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 111200,
+          "end_ms": 112560,
+          "original_text": "然后都是大粉大红",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 112560,
+          "end_ms": 113800,
+          "original_text": "然后他喜欢那种",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 113800,
+          "end_ms": 114400,
+          "original_text": "那种特别厉害",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 114400,
+          "end_ms": 116400,
+          "original_text": "有年輕的男人,年輕滿滿",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 116400,
+          "end_ms": 120400,
+          "original_text": "但是現在的版本的話,它是不是老年人的",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 120400,
+          "end_ms": 128400,
+          "original_text": "你有一些功能,像老年人的話,它需要很多的大肆體,或者是一些網絡上的東西",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 128400,
+          "end_ms": 129400,
+          "original_text": "老年人更不重要",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 129400,
+          "end_ms": 133400,
+          "original_text": "它多不了,它的規格也是不一樣的",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 133400,
+          "end_ms": 139400,
+          "original_text": "對,有些手機裏面的很多這個字的東西都是可以再去設的",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 139400,
+          "end_ms": 145400,
+          "original_text": "而且我觉得现在老年人也不是所有的老年人都是那种演一演",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 145400,
+          "end_ms": 147400,
+          "original_text": "发过什么什么的情况",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 147400,
+          "end_ms": 148400,
+          "original_text": "所以我觉得吧",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 148400,
+          "end_ms": 151400,
+          "original_text": "就是不用买这个界限弄得那么分明",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 151400,
+          "end_ms": 152400,
+          "original_text": "然后基本上能适应它",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 152400,
+          "end_ms": 156400,
+          "original_text": "然后能去使用它的老年人都还可以",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        }
+      ],
+      "text": "今天就能够先出一款这个手机产品啊 今天一下这个编号会。首先咱们试了一下这个产品的目标人群 客户群那一块。首先咱们大家有一个看啊。你也尝一下啊。我觉得咱们这个明天不要人群可以不用定能那么确定。然后基本上就是让它什么也省费的人群然后都可以这样的咱们的面上比较过往因为咱们这个手机现在基本上外观设计的比较时尚所以我觉得其实不用界定于这个老年人或者这个修认之间就是夸子大一点就好对这样我觉得放台更寡一些有什么样的人群都可以选择吗好我觉得是瑶瑶有真正性的我觉得咱们的设计外观还是很时尚还是需要去设定一下比较适合的年龄过你们说因为这些都彩色了呀有蓝色的黄色年老的人都不可能制作你可以说是有功能而且你现在设计的产品主要推出的是它有照相的功能功能的话是很很很好的所以还是适合年轻的人群我感觉可以根据年龄和这种和这种不同的人士坐下去分我感觉我们可以说真的就是18到45岁的中青年人群嘛我看他确定是手机就在从特点来说可能就是说年段他都大一点但是我觉得现在老年人也都很时尚他现在老年人出局然后他基本上把自己装好了然后都是大粉大红然后他喜欢那种那种特别厉害有年輕的男人,年輕滿滿但是現在的版本的話,它是不是老年人的你有一些功能,像老年人的話,它需要很多的大肆體,或者是一些網絡上的東西老年人更不重要它多不了,它的規格也是不一樣的對,有些手機裏面的很多這個字的東西都是可以再去設的而且我觉得现在老年人也不是所有的老年人都是那种演一演发过什么什么的情况所以我觉得吧就是不用买这个界限弄得那么分明然后基本上能适应它然后能去使用它的老年人都还可以",
+      "metrics": {
+        "model_load_seconds": 0.1404926250106655,
+        "inference_seconds": 7.39858441601973,
+        "peak_rss_bytes": 946864128,
+        "mlx_peak_bytes": 1233392546,
+        "device": "Device(gpu, 0)",
+        "architecture": "arm64",
+        "real_time_factor": 0.0472632197267135,
+        "model_bytes": 481307858
+      },
+      "reused": false,
+      "elapsed_seconds": 9.15105487499386,
+      "score": {
+        "cer": 0.39855072463768115,
+        "edits": 330,
+        "reference_characters": 828,
+        "hypothesis_characters": 643,
+        "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+      },
+      "run": 1
+    },
+    {
+      "identity": {
+        "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+        "model": {
+          "repo": "mlx-community/whisper-medium-mlx",
+          "revision": "7fc08c4eac4c316526498f147dfdee6f6303f975",
+          "license": "MIT",
+          "files": [
+            {
+              "name": "config.json",
+              "size_bytes": 268,
+              "sha256": "3ff0b3f17a5a3a614327ffd835a3c8f6c78f39cbd39e84dbff4b0ae267c4d2e4"
+            },
+            {
+              "name": "weights.npz",
+              "size_bytes": 1524924912,
+              "sha256": "10b597c2bcb1bcc38b2d3d24cd4f0885f461a7cd70e8444d6ad5a763ece549ea"
+            }
+          ]
+        },
+        "options": {
+          "language": "zh",
+          "task": "transcribe",
+          "temperature": 0.0,
+          "condition_on_previous_text": false,
+          "word_timestamps": false,
+          "fp16": true,
+          "initial_prompt": "以下是普通话简体中文转写。"
+        },
+        "mlx_whisper_version": "0.4.3",
+        "mlx_version": "0.32.4",
+        "schema": 1
+      },
+      "language": "zh",
+      "duration_ms": 156540,
+      "segments": [
+        {
+          "start_ms": 0,
+          "end_ms": 13000,
+          "original_text": "今天是我们公司新出的一款手机,进行编考会。",
+          "confidence": {
+            "avg_logprob": -0.4353626361791638,
+            "no_speech_prob": 0.4660603404045105,
+            "compression_ratio": 1.1006711409395973
+          }
+        },
+        {
+          "start_ms": 13000,
+          "end_ms": 19000,
+          "original_text": "首先,让我们确认一下产品的目标,人群,客户群这一块。",
+          "confidence": {
+            "avg_logprob": -0.4353626361791638,
+            "no_speech_prob": 0.4660603404045105,
+            "compression_ratio": 1.1006711409395973
+          }
+        },
+        {
+          "start_ms": 19000,
+          "end_ms": 25000,
+          "original_text": "首先,谈谈大家的看法。",
+          "confidence": {
+            "avg_logprob": -0.4353626361791638,
+            "no_speech_prob": 0.4660603404045105,
+            "compression_ratio": 1.1006711409395973
+          }
+        },
+        {
+          "start_ms": 25000,
+          "end_ms": 29440,
+          "original_text": "我觉得咱们这个这个目标人群可以不用定的那么确定",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 29440,
+          "end_ms": 34080,
+          "original_text": "然后基本上就是让他什么样什么类的人群然后都可以",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 34080,
+          "end_ms": 35800,
+          "original_text": "这样子咱们的面比较果然",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 36680,
+          "end_ms": 40400,
+          "original_text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 40400,
+          "end_ms": 45160,
+          "original_text": "所以我觉得其实不用介定于这个老年人或者年轻人之间",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 45160,
+          "end_ms": 46280,
+          "original_text": "就是宽度大一点是吧",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 46280,
+          "end_ms": 48920,
+          "original_text": "嗯对这样我觉得范围更广一些",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 48920,
+          "end_ms": 50800,
+          "original_text": "就什么样的人群都可以选择呢",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 51440,
+          "end_ms": 51840,
+          "original_text": "好",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 51840,
+          "end_ms": 54840,
+          "original_text": "我觉得是要有争就性的",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 54840,
+          "end_ms": 57840,
+          "original_text": "我觉得咱们的设计外观还是很时尚",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 57840,
+          "end_ms": 63840,
+          "original_text": "还是需要去设定一下比较适合的年龄段",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 63840,
+          "end_ms": 66840,
+          "original_text": "有彩色的呀",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 66840,
+          "end_ms": 67840,
+          "original_text": "有蓝色的黄色",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 67840,
+          "end_ms": 69840,
+          "original_text": "以前老年人他不可能用这种",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 69840,
+          "end_ms": 70840,
+          "original_text": "也可以说是有用的",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 70840,
+          "end_ms": 74840,
+          "original_text": "对 而且你现在设计的全品主要推出的是",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 74840,
+          "end_ms": 76840,
+          "original_text": "它有照相的功能",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 76840,
+          "end_ms": 79840,
+          "original_text": "功能的话是很很很好的",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 79840,
+          "end_ms": 82920,
+          "original_text": "所以还是适合年轻的人群",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 83840,
+          "end_ms": 89380,
+          "original_text": "我感觉可以根据年龄和不同的人士做一下区分",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 90420,
+          "end_ms": 97300,
+          "original_text": "我感觉我们可以主要针对18到45岁的中青年人群",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 97680,
+          "end_ms": 100800,
+          "original_text": "我觉得确定这个手机在城市的特点来说",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 100800,
+          "end_ms": 103420,
+          "original_text": "可能就是说年段怕多大一点",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 103420,
+          "end_ms": 107380,
+          "original_text": "但是我觉得现在老年人也都很时尚",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 107380,
+          "end_ms": 108780,
+          "original_text": "现在老年人出去",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 108780,
+          "end_ms": 111220,
+          "original_text": "然后他基本上那个把自己装装的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 111220,
+          "end_ms": 112580,
+          "original_text": "然后都是大粉大红",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 112580,
+          "end_ms": 114300,
+          "original_text": "然后他很喜欢那种特别的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 114300,
+          "end_ms": 115580,
+          "original_text": "有年轻的年轻男",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 115580,
+          "end_ms": 116780,
+          "original_text": "就是年轻嘛是吧",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 116780,
+          "end_ms": 119540,
+          "original_text": "但是现在的这个版本的话",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 119540,
+          "end_ms": 120980,
+          "original_text": "它是不适合老年人的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 120980,
+          "end_ms": 122020,
+          "original_text": "也有一些功能",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 122020,
+          "end_ms": 122980,
+          "original_text": "像老年人的话",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 122980,
+          "end_ms": 125180,
+          "original_text": "他需要很多的大字体",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 125180,
+          "end_ms": 128460,
+          "original_text": "或者是一些网络上的东西",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 128460,
+          "end_ms": 129100,
+          "original_text": "老年人更不适合",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 129100,
+          "end_ms": 129820,
+          "original_text": "操作不了",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 129820,
+          "end_ms": 130660,
+          "original_text": "他操作不了",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 130660,
+          "end_ms": 130900,
+          "original_text": "对",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 130900,
+          "end_ms": 133900,
+          "original_text": "他的那个规格还是不一样的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 133900,
+          "end_ms": 135060,
+          "original_text": "对有有有",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 135060,
+          "end_ms": 139780,
+          "original_text": "手机里边很多字的东西都是可以再去设的",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 139780,
+          "end_ms": 147500,
+          "original_text": "而且我觉得现在老年人也不是所有的老年人都是那种演发或者什么的情况",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 147500,
+          "end_ms": 148700,
+          "original_text": "所以我觉得吧",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 148700,
+          "end_ms": 151540,
+          "original_text": "就是不用把这个界限弄得那么分明",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 151540,
+          "end_ms": 152980,
+          "original_text": "然后基本上能适应它",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 152980,
+          "end_ms": 156260,
+          "original_text": "然后能去使用它的老年人都还可以",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        }
+      ],
+      "text": "今天是我们公司新出的一款手机,进行编考会。首先,让我们确认一下产品的目标,人群,客户群这一块。首先,谈谈大家的看法。我觉得咱们这个这个目标人群可以不用定的那么确定然后基本上就是让他什么样什么类的人群然后都可以这样子咱们的面比较果然因为咱们这个手机现在基本上外观设计的比较时尚所以我觉得其实不用介定于这个老年人或者年轻人之间就是宽度大一点是吧嗯对这样我觉得范围更广一些就什么样的人群都可以选择呢好我觉得是要有争就性的我觉得咱们的设计外观还是很时尚还是需要去设定一下比较适合的年龄段有彩色的呀有蓝色的黄色以前老年人他不可能用这种也可以说是有用的对 而且你现在设计的全品主要推出的是它有照相的功能功能的话是很很很好的所以还是适合年轻的人群我感觉可以根据年龄和不同的人士做一下区分我感觉我们可以主要针对18到45岁的中青年人群我觉得确定这个手机在城市的特点来说可能就是说年段怕多大一点但是我觉得现在老年人也都很时尚现在老年人出去然后他基本上那个把自己装装的然后都是大粉大红然后他很喜欢那种特别的有年轻的年轻男就是年轻嘛是吧但是现在的这个版本的话它是不适合老年人的也有一些功能像老年人的话他需要很多的大字体或者是一些网络上的东西老年人更不适合操作不了他操作不了对他的那个规格还是不一样的对有有有手机里边很多字的东西都是可以再去设的而且我觉得现在老年人也不是所有的老年人都是那种演发或者什么的情况所以我觉得吧就是不用把这个界限弄得那么分明然后基本上能适应它然后能去使用它的老年人都还可以",
+      "metrics": {
+        "model_load_seconds": 0.5849629170261323,
+        "inference_seconds": 13.322593167016748,
+        "peak_rss_bytes": 943620096,
+        "mlx_peak_bytes": 2215927254,
+        "device": "Device(gpu, 0)",
+        "architecture": "arm64",
+        "real_time_factor": 0.08510663834813306,
+        "model_bytes": 1524925180
+      },
+      "reused": false,
+      "elapsed_seconds": 15.793191291973926,
+      "score": {
+        "cer": 0.3248792270531401,
+        "edits": 269,
+        "reference_characters": 828,
+        "hypothesis_characters": 628,
+        "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+      },
+      "run": 1
+    },
+    {
+      "identity": {
+        "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+        "model": {
+          "repo": "mlx-community/whisper-medium-mlx",
+          "revision": "7fc08c4eac4c316526498f147dfdee6f6303f975",
+          "license": "MIT",
+          "files": [
+            {
+              "name": "config.json",
+              "size_bytes": 268,
+              "sha256": "3ff0b3f17a5a3a614327ffd835a3c8f6c78f39cbd39e84dbff4b0ae267c4d2e4"
+            },
+            {
+              "name": "weights.npz",
+              "size_bytes": 1524924912,
+              "sha256": "10b597c2bcb1bcc38b2d3d24cd4f0885f461a7cd70e8444d6ad5a763ece549ea"
+            }
+          ]
+        },
+        "options": {
+          "language": "zh",
+          "task": "transcribe",
+          "temperature": 0.0,
+          "condition_on_previous_text": false,
+          "word_timestamps": false,
+          "fp16": true,
+          "initial_prompt": "以下是普通话简体中文转写。"
+        },
+        "mlx_whisper_version": "0.4.3",
+        "mlx_version": "0.32.4",
+        "schema": 1
+      },
+      "language": "zh",
+      "duration_ms": 156540,
+      "segments": [
+        {
+          "start_ms": 0,
+          "end_ms": 13000,
+          "original_text": "今天是我们公司新出的一款手机,进行编考会。",
+          "confidence": {
+            "avg_logprob": -0.4353626361791638,
+            "no_speech_prob": 0.4660603404045105,
+            "compression_ratio": 1.1006711409395973
+          }
+        },
+        {
+          "start_ms": 13000,
+          "end_ms": 19000,
+          "original_text": "首先,让我们确认一下产品的目标,人群,客户群这一块。",
+          "confidence": {
+            "avg_logprob": -0.4353626361791638,
+            "no_speech_prob": 0.4660603404045105,
+            "compression_ratio": 1.1006711409395973
+          }
+        },
+        {
+          "start_ms": 19000,
+          "end_ms": 25000,
+          "original_text": "首先,谈谈大家的看法。",
+          "confidence": {
+            "avg_logprob": -0.4353626361791638,
+            "no_speech_prob": 0.4660603404045105,
+            "compression_ratio": 1.1006711409395973
+          }
+        },
+        {
+          "start_ms": 25000,
+          "end_ms": 29440,
+          "original_text": "我觉得咱们这个这个目标人群可以不用定的那么确定",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 29440,
+          "end_ms": 34080,
+          "original_text": "然后基本上就是让他什么样什么类的人群然后都可以",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 34080,
+          "end_ms": 35800,
+          "original_text": "这样子咱们的面比较果然",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 36680,
+          "end_ms": 40400,
+          "original_text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 40400,
+          "end_ms": 45160,
+          "original_text": "所以我觉得其实不用介定于这个老年人或者年轻人之间",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 45160,
+          "end_ms": 46280,
+          "original_text": "就是宽度大一点是吧",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 46280,
+          "end_ms": 48920,
+          "original_text": "嗯对这样我觉得范围更广一些",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 48920,
+          "end_ms": 50800,
+          "original_text": "就什么样的人群都可以选择呢",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 51440,
+          "end_ms": 51840,
+          "original_text": "好",
+          "confidence": {
+            "avg_logprob": -0.2764357460869683,
+            "no_speech_prob": 0.3281482756137848,
+            "compression_ratio": 1.5330882352941178
+          }
+        },
+        {
+          "start_ms": 51840,
+          "end_ms": 54840,
+          "original_text": "我觉得是要有争就性的",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 54840,
+          "end_ms": 57840,
+          "original_text": "我觉得咱们的设计外观还是很时尚",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 57840,
+          "end_ms": 63840,
+          "original_text": "还是需要去设定一下比较适合的年龄段",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 63840,
+          "end_ms": 66840,
+          "original_text": "有彩色的呀",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 66840,
+          "end_ms": 67840,
+          "original_text": "有蓝色的黄色",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 67840,
+          "end_ms": 69840,
+          "original_text": "以前老年人他不可能用这种",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 69840,
+          "end_ms": 70840,
+          "original_text": "也可以说是有用的",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 70840,
+          "end_ms": 74840,
+          "original_text": "对 而且你现在设计的全品主要推出的是",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 74840,
+          "end_ms": 76840,
+          "original_text": "它有照相的功能",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 76840,
+          "end_ms": 79840,
+          "original_text": "功能的话是很很很好的",
+          "confidence": {
+            "avg_logprob": -0.2097717795785018,
+            "no_speech_prob": 0.6463755965232849,
+            "compression_ratio": 1.3472803347280335
+          }
+        },
+        {
+          "start_ms": 79840,
+          "end_ms": 82920,
+          "original_text": "所以还是适合年轻的人群",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 83840,
+          "end_ms": 89380,
+          "original_text": "我感觉可以根据年龄和不同的人士做一下区分",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 90420,
+          "end_ms": 97300,
+          "original_text": "我感觉我们可以主要针对18到45岁的中青年人群",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 97680,
+          "end_ms": 100800,
+          "original_text": "我觉得确定这个手机在城市的特点来说",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 100800,
+          "end_ms": 103420,
+          "original_text": "可能就是说年段怕多大一点",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 103420,
+          "end_ms": 107380,
+          "original_text": "但是我觉得现在老年人也都很时尚",
+          "confidence": {
+            "avg_logprob": -0.42640158709357767,
+            "no_speech_prob": 0.44705140590667725,
+            "compression_ratio": 1.2767857142857142
+          }
+        },
+        {
+          "start_ms": 107380,
+          "end_ms": 108780,
+          "original_text": "现在老年人出去",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 108780,
+          "end_ms": 111220,
+          "original_text": "然后他基本上那个把自己装装的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 111220,
+          "end_ms": 112580,
+          "original_text": "然后都是大粉大红",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 112580,
+          "end_ms": 114300,
+          "original_text": "然后他很喜欢那种特别的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 114300,
+          "end_ms": 115580,
+          "original_text": "有年轻的年轻男",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 115580,
+          "end_ms": 116780,
+          "original_text": "就是年轻嘛是吧",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 116780,
+          "end_ms": 119540,
+          "original_text": "但是现在的这个版本的话",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 119540,
+          "end_ms": 120980,
+          "original_text": "它是不适合老年人的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 120980,
+          "end_ms": 122020,
+          "original_text": "也有一些功能",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 122020,
+          "end_ms": 122980,
+          "original_text": "像老年人的话",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 122980,
+          "end_ms": 125180,
+          "original_text": "他需要很多的大字体",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 125180,
+          "end_ms": 128460,
+          "original_text": "或者是一些网络上的东西",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 128460,
+          "end_ms": 129100,
+          "original_text": "老年人更不适合",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 129100,
+          "end_ms": 129820,
+          "original_text": "操作不了",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 129820,
+          "end_ms": 130660,
+          "original_text": "他操作不了",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 130660,
+          "end_ms": 130900,
+          "original_text": "对",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 130900,
+          "end_ms": 133900,
+          "original_text": "他的那个规格还是不一样的",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 133900,
+          "end_ms": 135060,
+          "original_text": "对有有有",
+          "confidence": {
+            "avg_logprob": -0.3381868222864663,
+            "no_speech_prob": 0.32010534405708313,
+            "compression_ratio": 1.5163636363636364
+          }
+        },
+        {
+          "start_ms": 135060,
+          "end_ms": 139780,
+          "original_text": "手机里边很多字的东西都是可以再去设的",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 139780,
+          "end_ms": 147500,
+          "original_text": "而且我觉得现在老年人也不是所有的老年人都是那种演发或者什么的情况",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 147500,
+          "end_ms": 148700,
+          "original_text": "所以我觉得吧",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 148700,
+          "end_ms": 151540,
+          "original_text": "就是不用把这个界限弄得那么分明",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 151540,
+          "end_ms": 152980,
+          "original_text": "然后基本上能适应它",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        },
+        {
+          "start_ms": 152980,
+          "end_ms": 156260,
+          "original_text": "然后能去使用它的老年人都还可以",
+          "confidence": {
+            "avg_logprob": -0.3844893255899119,
+            "no_speech_prob": 0.737428605556488,
+            "compression_ratio": 1.3194444444444444
+          }
+        }
+      ],
+      "text": "今天是我们公司新出的一款手机,进行编考会。首先,让我们确认一下产品的目标,人群,客户群这一块。首先,谈谈大家的看法。我觉得咱们这个这个目标人群可以不用定的那么确定然后基本上就是让他什么样什么类的人群然后都可以这样子咱们的面比较果然因为咱们这个手机现在基本上外观设计的比较时尚所以我觉得其实不用介定于这个老年人或者年轻人之间就是宽度大一点是吧嗯对这样我觉得范围更广一些就什么样的人群都可以选择呢好我觉得是要有争就性的我觉得咱们的设计外观还是很时尚还是需要去设定一下比较适合的年龄段有彩色的呀有蓝色的黄色以前老年人他不可能用这种也可以说是有用的对 而且你现在设计的全品主要推出的是它有照相的功能功能的话是很很很好的所以还是适合年轻的人群我感觉可以根据年龄和不同的人士做一下区分我感觉我们可以主要针对18到45岁的中青年人群我觉得确定这个手机在城市的特点来说可能就是说年段怕多大一点但是我觉得现在老年人也都很时尚现在老年人出去然后他基本上那个把自己装装的然后都是大粉大红然后他很喜欢那种特别的有年轻的年轻男就是年轻嘛是吧但是现在的这个版本的话它是不适合老年人的也有一些功能像老年人的话他需要很多的大字体或者是一些网络上的东西老年人更不适合操作不了他操作不了对他的那个规格还是不一样的对有有有手机里边很多字的东西都是可以再去设的而且我觉得现在老年人也不是所有的老年人都是那种演发或者什么的情况所以我觉得吧就是不用把这个界限弄得那么分明然后基本上能适应它然后能去使用它的老年人都还可以",
+      "metrics": {
+        "model_load_seconds": 0.3040198750095442,
+        "inference_seconds": 13.176134957990143,
+        "peak_rss_bytes": 2050408448,
+        "mlx_peak_bytes": 2215927254,
+        "device": "Device(gpu, 0)",
+        "architecture": "arm64",
+        "real_time_factor": 0.08417104227667142,
+        "model_bytes": 1524925180
+      },
+      "reused": false,
+      "elapsed_seconds": 15.389204625040293,
+      "score": {
+        "cer": 0.3248792270531401,
+        "edits": 269,
+        "reference_characters": 828,
+        "hypothesis_characters": 628,
+        "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+      },
+      "run": 2
+    },
+    {
+      "identity": {
+        "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+        "model": {
+          "repo": "mlx-community/whisper-small-mlx",
+          "revision": "45f3915923c7a79a5a5b5a7d909d39aeb0e5630e",
+          "license": "MIT",
+          "files": [
+            {
+              "name": "config.json",
+              "size_bytes": 266,
+              "sha256": "e8f58e638208af66d5d5d67801259dc7a12d199e971967a9f9d33a8e3635668e"
+            },
+            {
+              "name": "weights.npz",
+              "size_bytes": 481307592,
+              "sha256": "55b6674c9b339702d486e2b1573839a66f8ec8f821ed2886993ef717a86b09f5"
+            }
+          ]
+        },
+        "options": {
+          "language": "zh",
+          "task": "transcribe",
+          "temperature": 0.0,
+          "condition_on_previous_text": false,
+          "word_timestamps": false,
+          "fp16": true,
+          "initial_prompt": "以下是普通话简体中文转写。"
+        },
+        "mlx_whisper_version": "0.4.3",
+        "mlx_version": "0.32.4",
+        "schema": 1
+      },
+      "language": "zh",
+      "duration_ms": 156540,
+      "segments": [
+        {
+          "start_ms": 0,
+          "end_ms": 13000,
+          "original_text": "今天就能够先出一款这个手机产品啊 今天一下这个编号会。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 13000,
+          "end_ms": 19000,
+          "original_text": "首先咱们试了一下这个产品的目标人群 客户群那一块。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 19000,
+          "end_ms": 21000,
+          "original_text": "首先咱们大家有一个看啊。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 21000,
+          "end_ms": 25000,
+          "original_text": "你也尝一下啊。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 25000,
+          "end_ms": 29000,
+          "original_text": "我觉得咱们这个明天不要人群可以不用定能那么确定。",
+          "confidence": {
+            "avg_logprob": -0.53454045416082,
+            "no_speech_prob": 0.39063966274261475,
+            "compression_ratio": 1.3774509803921569
+          }
+        },
+        {
+          "start_ms": 29000,
+          "end_ms": 33000,
+          "original_text": "然后基本上就是让它什么也省费的人群",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 33000,
+          "end_ms": 34000,
+          "original_text": "然后都可以",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 34000,
+          "end_ms": 36000,
+          "original_text": "这样的咱们的面上比较过往",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 36000,
+          "end_ms": 40000,
+          "original_text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 40000,
+          "end_ms": 45000,
+          "original_text": "所以我觉得其实不用界定于这个老年人或者这个修认之间",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 45000,
+          "end_ms": 46000,
+          "original_text": "就是夸子大一点就好",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 46000,
+          "end_ms": 47000,
+          "original_text": "对",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 47000,
+          "end_ms": 49000,
+          "original_text": "这样我觉得放台更寡一些",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 49000,
+          "end_ms": 51000,
+          "original_text": "有什么样的人群都可以选择吗",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 51000,
+          "end_ms": 52000,
+          "original_text": "好",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 52000,
+          "end_ms": 55000,
+          "original_text": "我觉得是瑶瑶有真正性的",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 55000,
+          "end_ms": 58000,
+          "original_text": "我觉得咱们的设计外观还是很时尚",
+          "confidence": {
+            "avg_logprob": -0.31395393420176904,
+            "no_speech_prob": 0.887014627456665,
+            "compression_ratio": 1.4895104895104896
+          }
+        },
+        {
+          "start_ms": 58000,
+          "end_ms": 64000,
+          "original_text": "还是需要去设定一下比较适合的年龄过",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 64000,
+          "end_ms": 66000,
+          "original_text": "你们说因为这些都彩色了呀",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 66000,
+          "end_ms": 68000,
+          "original_text": "有蓝色的黄色",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 68000,
+          "end_ms": 70000,
+          "original_text": "年老的人都不可能制作",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 70000,
+          "end_ms": 72000,
+          "original_text": "你可以说是有功能",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 72000,
+          "end_ms": 74000,
+          "original_text": "而且你现在设计的产品",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 74000,
+          "end_ms": 76000,
+          "original_text": "主要推出的是它有照相的功能",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 76000,
+          "end_ms": 78000,
+          "original_text": "功能的话是很",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 78000,
+          "end_ms": 80000,
+          "original_text": "很很好的",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 80000,
+          "end_ms": 82000,
+          "original_text": "所以还是适合年轻的人群",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 82000,
+          "end_ms": 86000,
+          "original_text": "我感觉可以根据年龄和这种",
+          "confidence": {
+            "avg_logprob": -0.3145477294921875,
+            "no_speech_prob": 0.5158060193061829,
+            "compression_ratio": 1.3568464730290457
+          }
+        },
+        {
+          "start_ms": 86000,
+          "end_ms": 89400,
+          "original_text": "和这种不同的人士坐下去分",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 89880,
+          "end_ms": 92600,
+          "original_text": "我感觉我们可以说真的就是",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 93400,
+          "end_ms": 97360,
+          "original_text": "18到45岁的中青年人群嘛",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 97560,
+          "end_ms": 99280,
+          "original_text": "我看他确定是手机就在",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 99520,
+          "end_ms": 100800,
+          "original_text": "从特点来说",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 100800,
+          "end_ms": 103400,
+          "original_text": "可能就是说年段他都大一点",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 103400,
+          "end_ms": 107360,
+          "original_text": "但是我觉得现在老年人也都很时尚",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 107360,
+          "end_ms": 108720,
+          "original_text": "他现在老年人出局",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 108720,
+          "end_ms": 111200,
+          "original_text": "然后他基本上把自己装好了",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 111200,
+          "end_ms": 112560,
+          "original_text": "然后都是大粉大红",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 112560,
+          "end_ms": 113800,
+          "original_text": "然后他喜欢那种",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 113800,
+          "end_ms": 114400,
+          "original_text": "那种特别厉害",
+          "confidence": {
+            "avg_logprob": -0.5504192973292151,
+            "no_speech_prob": 0.48967552185058594,
+            "compression_ratio": 1.3233082706766917
+          }
+        },
+        {
+          "start_ms": 114400,
+          "end_ms": 116400,
+          "original_text": "有年輕的男人,年輕滿滿",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 116400,
+          "end_ms": 120400,
+          "original_text": "但是現在的版本的話,它是不是老年人的",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 120400,
+          "end_ms": 128400,
+          "original_text": "你有一些功能,像老年人的話,它需要很多的大肆體,或者是一些網絡上的東西",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 128400,
+          "end_ms": 129400,
+          "original_text": "老年人更不重要",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 129400,
+          "end_ms": 133400,
+          "original_text": "它多不了,它的規格也是不一樣的",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 133400,
+          "end_ms": 139400,
+          "original_text": "對,有些手機裏面的很多這個字的東西都是可以再去設的",
+          "confidence": {
+            "avg_logprob": -0.4444729840313947,
+            "no_speech_prob": 0.6705988645553589,
+            "compression_ratio": 1.3574468085106384
+          }
+        },
+        {
+          "start_ms": 139400,
+          "end_ms": 145400,
+          "original_text": "而且我觉得现在老年人也不是所有的老年人都是那种演一演",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 145400,
+          "end_ms": 147400,
+          "original_text": "发过什么什么的情况",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 147400,
+          "end_ms": 148400,
+          "original_text": "所以我觉得吧",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 148400,
+          "end_ms": 151400,
+          "original_text": "就是不用买这个界限弄得那么分明",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 151400,
+          "end_ms": 152400,
+          "original_text": "然后基本上能适应它",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        },
+        {
+          "start_ms": 152400,
+          "end_ms": 156400,
+          "original_text": "然后能去使用它的老年人都还可以",
+          "confidence": {
+            "avg_logprob": -0.34599871248812286,
+            "no_speech_prob": 0.7708966135978699,
+            "compression_ratio": 1.3114754098360655
+          }
+        }
+      ],
+      "text": "今天就能够先出一款这个手机产品啊 今天一下这个编号会。首先咱们试了一下这个产品的目标人群 客户群那一块。首先咱们大家有一个看啊。你也尝一下啊。我觉得咱们这个明天不要人群可以不用定能那么确定。然后基本上就是让它什么也省费的人群然后都可以这样的咱们的面上比较过往因为咱们这个手机现在基本上外观设计的比较时尚所以我觉得其实不用界定于这个老年人或者这个修认之间就是夸子大一点就好对这样我觉得放台更寡一些有什么样的人群都可以选择吗好我觉得是瑶瑶有真正性的我觉得咱们的设计外观还是很时尚还是需要去设定一下比较适合的年龄过你们说因为这些都彩色了呀有蓝色的黄色年老的人都不可能制作你可以说是有功能而且你现在设计的产品主要推出的是它有照相的功能功能的话是很很很好的所以还是适合年轻的人群我感觉可以根据年龄和这种和这种不同的人士坐下去分我感觉我们可以说真的就是18到45岁的中青年人群嘛我看他确定是手机就在从特点来说可能就是说年段他都大一点但是我觉得现在老年人也都很时尚他现在老年人出局然后他基本上把自己装好了然后都是大粉大红然后他喜欢那种那种特别厉害有年輕的男人,年輕滿滿但是現在的版本的話,它是不是老年人的你有一些功能,像老年人的話,它需要很多的大肆體,或者是一些網絡上的東西老年人更不重要它多不了,它的規格也是不一樣的對,有些手機裏面的很多這個字的東西都是可以再去設的而且我觉得现在老年人也不是所有的老年人都是那种演一演发过什么什么的情况所以我觉得吧就是不用买这个界限弄得那么分明然后基本上能适应它然后能去使用它的老年人都还可以",
+      "metrics": {
+        "model_load_seconds": 0.11388062499463558,
+        "inference_seconds": 5.0429793749935925,
+        "peak_rss_bytes": 936738816,
+        "mlx_peak_bytes": 1277588358,
+        "device": "Device(gpu, 0)",
+        "architecture": "arm64",
+        "real_time_factor": 0.032215276446873595,
+        "model_bytes": 481307858
+      },
+      "reused": false,
+      "elapsed_seconds": 6.555721166019794,
+      "score": {
+        "cer": 0.39855072463768115,
+        "edits": 330,
+        "reference_characters": 828,
+        "hypothesis_characters": 643,
+        "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+      },
+      "run": 2
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # DramaFlow
 
-Independent local backend, media and audio foundation for DramaFlow (DF-004).
+Independent local backend, media, audio and Mandarin transcription foundation.
 
 The upstream reference is a separate, unchanged sibling checkout at
 `../hongguo-drama`. See [upstream sources](docs/UPSTREAM_SOURCES.md) for provenance.
@@ -35,7 +35,7 @@ repository root. Runtime data, virtual environments, and caches are ignored.
 The initial schema contains only a schema-version table. Startup fails visibly
 if the database cannot be initialized; readiness probes never recreate a missing DB.
 
-No AI models, upstream code integration, frontend, or paid APIs are included.
+No upstream code integration, frontend, or paid APIs are included.
 See [DF-002 verification](docs/DF-002_ENVIRONMENT.md) for environment and results.
 
 ## Local video import
@@ -133,3 +133,64 @@ finishing a size-bounded output in unpublished staging. See the tracked
 Cleanup I/O failures warn and retain files without hiding the extraction result.
 A damaged optional original is not pruned when only speech is requested;
 request `--preserve-original` to repair it. Its bytes remain counted toward quota.
+
+## Native Mandarin transcription
+
+```sh
+./scripts/setup.sh
+./scripts/media.sh transcribe path/to/authorized-video.mp4 --model small
+./scripts/media.sh transcribe path/to/authorized-video.mp4 --model medium
+```
+
+Use `MediaService.transcribe(path, model='small', audio_track=0, force=False)`
+or `TranscriptionService(media_service).transcribe(...)`. Native macOS ARM64
+with Metal GPU is required; models run locally through MLX Whisper, without
+translation or paid inference APIs. PyTorch is a transitive package dependency
+of the released MLX Whisper distribution; inference here uses MLX/Metal.
+
+The first call downloads pinned multilingual FP16 model files listed in
+`models.lock.json`; English-only models are not used. Weights/configuration
+are verified by byte size and SHA-256, kept as regular files under
+`workspace/models`, and counted against the shared 60 GB quota. Inference
+loads only these local models with Hugging Face offline mode enabled.
+No unmanaged Hugging Face weights cache or automatic remote model loading
+is part of the service. Python packages live separately in `.venv`.
+
+The existing audio extraction/validation pipeline produces PCM16 mono 16kHz.
+Results contain `segments` with `start_ms`, `end_ms`, `original_text`, and
+`confidence` fields (`avg_logprob`, `no_speech_prob`, `compression_ratio`,
+or `null` when unavailable). These are model diagnostics, not calibrated
+probabilities that the transcript is correct. Text is Chinese transcription;
+there are no speaker labels or translated text.
+
+Validated results reuse an identity containing audio SHA-256, pinned model,
+package versions and decoding settings. A checksummed JSON envelope and
+segment schema are rechecked before reuse. `--force` runs fresh inference.
+Incomplete inference is never published; CLI Ctrl-C/SIGTERM kills/reaps the
+worker and cleans staging. Rerun after interruption to restart safely. Existing
+valid results survive a failed forced rerun. Hard-kill/power-loss limitations
+remain tracked in `docs/LIMITATIONS.md`.
+
+Inference reserves 16 MiB for bounded result/log files, uses an 8 GiB MLX
+allocator limit on the 16 GiB target, and defaults to a 30-minute worker timeout.
+The 8 GiB limit is not a bound on total process RSS. Each call uses a fresh
+worker so model memory is released at exit. Empty/zero-length segments are
+dropped; segment ends are clipped to audio length and wholly out-of-range tail
+segments are dropped. `segment_adjustments` reports these counts. Negative,
+backward and non-finite timestamps are rejected. Exact audio duration is retained
+alongside rounded millisecond timestamps for RTF validation.
+
+Reproduce the frozen public benchmark after placing the official archive under
+`data/workspace/benchmarks/Eval_Ali.tar.gz` with storage preflight:
+
+```sh
+.venv/bin/python scripts/prepare_alimeeting.py
+.venv/bin/python scripts/benchmark_whisper.py \
+  data/workspace/benchmarks/alimeeting/mandarin-dialogue.mkv \
+  data/workspace/benchmarks/alimeeting/reference.json --runs 2
+```
+
+The harness checks the reference audio hash, uses identical audio/options,
+forces fresh processes, alternates model order and records measured resources
+and CER. See [benchmark attribution and license](benchmarks/ATTRIBUTION.md).
+Measured recommendation and limitations: [DF-005 benchmark](docs/DF-005_BENCHMARK.md).

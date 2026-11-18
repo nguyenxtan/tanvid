@@ -12,6 +12,9 @@ DF-003 accepted non-blocking follow-ups, tracked for future PO-approved work:
 | LIM-006 | Advisory locking does not control arbitrary external workspace writers; repository-root workspace encounters virtualenv symlinks. | Keep dedicated local workspace; consider stronger isolation if scope expands. |
 | LIM-007 | DF-003 growth-during-copy, cross-process locks, CLI exit codes were manually reviewed, not all independently automated. | Expand focused regression coverage when touching these behaviors. |
 | LIM-008 | A corrupt optional original audio cache remains on disk/in its manifest when preservation is not requested; valid speech is reused with `original: null`. It remains counted and is revalidated on subsequent calls. | Repair with `--preserve-original`; add explicit safe cache pruning/reconciliation later. |
+| LIM-009 | SIGKILL of a CLI parent or default SIGTERM of a library caller can leave a live MLX worker until inference completes, consuming GPU memory; CLI graceful cancellation does reap it. | Add a parent-death watchdog or equivalent worker supervision. |
+| LIM-010 | Model HTTP reads have a 60-second socket timeout and size bounds, but no overall download deadline. A slow connection can hold the workspace lock. | Add an overall bounded download deadline. |
+| LIM-011 | Model files are revalidated before returning a cached transcript; missing models can be downloaded despite an already-valid result. | Allow result-only cache reuse before model preparation with the same pinned identity. |
 
 Media metadata validation is not full video-frame decode validation. Only the
 documented local container families are supported. No processing-codec
@@ -28,3 +31,11 @@ Cleanup I/O failures emit a warning and retain affected files rather than maskin
 the extraction result. CLI cancellation uses exit 130 for both SIGINT and SIGTERM.
 Reservations intentionally favor capacity safety over accepting every file that
 might ultimately fit; the launcher inherits the trusted local Python environment.
+
+DF-005: model and transcription staging shares LIM-001/LIM-002; graceful worker
+interruption is handled, hard-kill leftovers are counted and require manual
+recovery. Downloads restart rather than resume unpublished models. One public
+156.54-second meeting excerpt is not a drama-wide accuracy benchmark; overlap,
+disfluencies, number formatting and script variation affect strict CER. Peak
+process RSS and MLX allocator peaks are separate, overlapping memory views.
+See `DF-005_BENCHMARK.md` for full benchmark limitations and measured results.

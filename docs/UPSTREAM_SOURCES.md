@@ -22,3 +22,18 @@ The upstream checkout is retained unchanged as a reference. No upstream code
 has been copied into DramaFlow. Upstream also includes component-specific
 licensing information in `THIRD-PARTY-NOTICES.md` and component license files;
 those remain in the reference checkout.
+
+## DF-005 MLX Whisper and benchmark sources
+
+- MLX Whisper: <https://github.com/ml-explore/mlx-examples/tree/main/whisper>,
+  installed package `mlx-whisper==0.4.3`; MLX/Metal 0.32.4. Example code is MIT.
+- Model conversions: `mlx-community/whisper-small-mlx` and
+  `mlx-community/whisper-medium-mlx` on Hugging Face, immutable revisions and
+  SHA-256/byte sizes in `../models.lock.json`. Original OpenAI Whisper code and
+  weights are MIT: <https://github.com/openai/whisper#license>.
+- AliMeeting official Eval archive: <https://www.openslr.org/119/>, CC BY-SA 4.0.
+  Attribution, modifications, permissions and verification are in
+  `../benchmarks/ATTRIBUTION.md` and `DF-005_BENCHMARK.md`. Original publisher
+  annotations are used as the independent reference, not ASR hypotheses.
+
+These additions do not modify or integrate the hongguo-drama checkout.
