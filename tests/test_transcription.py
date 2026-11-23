@@ -11,11 +11,26 @@ from unittest.mock import patch
 
 from backend.media import MediaError, MediaService
 from backend.workspace import Workspace, WorkspaceConfig, StorageError
-from backend.transcription import normalize_segments, character_error_rate, TranscriptionService, canonical
+from backend.transcription import normalize_segments, character_error_rate, TranscriptionService, canonical, decode_options
 from backend.models import ModelStore
 
 
 class SegmentTests(unittest.TestCase):
+    def test_cli_lists_bounded_opening(self):
+        result = subprocess.run([sys.executable, '-m', 'backend.media', 'transcribe', '--help'],
+                                check=True, capture_output=True, text=True)
+        self.assertIn('bounded_opening', result.stdout)
+
+    def test_bounded_opening_decodes_contiguous_intervals(self):
+        baseline = decode_options('df005', None, None, 45000)
+        for duration_ms, expected in ((9000, [0]), (10000, [0]), (10005, [0]),
+                                      (10010, [0, 10, 10]),
+                                      (17000, [0, 10, 10]),
+                                      (45000, [0, 10, 10, 20, 20, 30, 30])):
+            with self.subTest(duration_ms=duration_ms):
+                self.assertEqual(decode_options('bounded_opening', None, None, duration_ms),
+                                 dict(baseline, clip_timestamps=expected))
+
     def test_segments_preserve_chinese_and_confidence(self):
         raw = [{'start': 0.12, 'end': 1.25, 'text': ' 你好，中国。', 'avg_logprob': -0.2,
                 'no_speech_prob': 0.01, 'compression_ratio': 1.1}]
@@ -139,6 +154,16 @@ class TranscriptionCacheTests(unittest.TestCase):
         path=Path(first['result_path']);path.write_text('corrupt')
         with patch.object(self.service,'_worker',side_effect=self.worker):
             self.assertFalse(self.service.transcribe(self.wav,model='test')['reused'])
+
+    def test_bounded_opening_has_its_own_validated_cache(self):
+        with patch.object(self.service, '_worker', side_effect=self.worker):
+            baseline = self.service.transcribe(self.wav, model='test')
+            bounded = self.service.transcribe(self.wav, model='test', profile='bounded_opening')
+        self.assertNotEqual(baseline['result_path'], bounded['result_path'])
+        self.assertEqual(bounded['raw_inference']['decode_options']['clip_timestamps'], [0])
+        with patch.object(self.service, '_worker', side_effect=AssertionError('Expected a cache hit')):
+            cached = self.service.transcribe(self.wav, model='test', profile='bounded_opening')
+        self.assertTrue(cached['reused'])
 
     def test_inconsistent_cached_text_is_rejected(self):
         with patch.object(self.service,'_worker',side_effect=self.worker):

@@ -1,0 +1,5309 @@
+{
+ "name": "df007-final-meeting",
+ "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+ "reference_sha256": "2ac2eb2b32c3cd8492c6b81eb5723e14f35984f59e932aaa396bd386f3c31498",
+ "sample_duration_seconds": 156.54,
+ "model": "medium",
+ "profiles": {
+  "df005": "DF-005 baseline: greedy temperature 0, no previous-text conditioning",
+  "bounded_opening": "Decode the first 30 seconds in three contiguous 10-second intervals"
+ },
+ "measurements": [
+  {
+   "duration_ms": 156540,
+   "duration_seconds": 156.54,
+   "excluded_raw_segments": [],
+   "identity": {
+    "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+    "decode_gate": null,
+    "mlx_version": "0.32.4",
+    "mlx_whisper_version": "0.4.3",
+    "model": {
+     "files": [
+      {
+       "name": "config.json",
+       "sha256": "3ff0b3f17a5a3a614327ffd835a3c8f6c78f39cbd39e84dbff4b0ae267c4d2e4",
+       "size_bytes": 268
+      },
+      {
+       "name": "weights.npz",
+       "sha256": "10b597c2bcb1bcc38b2d3d24cd4f0885f461a7cd70e8444d6ad5a763ece549ea",
+       "size_bytes": 1524924912
+      }
+     ],
+     "license": "MIT",
+     "repo": "mlx-community/whisper-medium-mlx",
+     "revision": "7fc08c4eac4c316526498f147dfdee6f6303f975"
+    },
+    "options": {
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "profile": "df005",
+    "review_version": 1,
+    "schema": 3,
+    "silence_gate": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    }
+   },
+   "language": "zh",
+   "metrics": {
+    "architecture": "arm64",
+    "device": "Device(gpu, 0)",
+    "inference_seconds": 13.181560917000752,
+    "mlx_peak_bytes": 2215927254,
+    "model_bytes": 1524925180,
+    "model_load_seconds": 0.30037949996767566,
+    "peak_rss_bytes": 2050605056,
+    "real_time_factor": 0.08420570408202857
+   },
+   "raw_inference": {
+    "decode_options": {
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "segments": [
+     {
+      "avg_logprob": -0.4353626361791638,
+      "compression_ratio": 1.1006711409395973,
+      "end": 13.0,
+      "id": 0,
+      "no_speech_prob": 0.4660603404045105,
+      "seek": 0,
+      "start": 0.0,
+      "temperature": 0.0,
+      "text": "今天是我们公司新出的一款手机,进行编考会。",
+      "tokens": [
+       50364,
+       12074,
+       1541,
+       15003,
+       13545,
+       32981,
+       12560,
+       7781,
+       1546,
+       2257,
+       48798,
+       11389,
+       37960,
+       11,
+       36700,
+       8082,
+       38109,
+       244,
+       26504,
+       12949,
+       1543,
+       51014
+      ]
+     },
+     {
+      "avg_logprob": -0.4353626361791638,
+      "compression_ratio": 1.1006711409395973,
+      "end": 19.0,
+      "id": 1,
+      "no_speech_prob": 0.4660603404045105,
+      "seek": 0,
+      "start": 13.0,
+      "temperature": 0.0,
+      "text": "首先,让我们确认一下产品的目标,人群,客户群这一块。",
+      "tokens": [
+       51014,
+       36490,
+       11,
+       33650,
+       15003,
+       38114,
+       106,
+       7422,
+       97,
+       8861,
+       1369,
+       100,
+       30246,
+       1546,
+       11386,
+       162,
+       3921,
+       11,
+       4035,
+       7248,
+       97,
+       11,
+       32316,
+       1486,
+       115,
+       7248,
+       97,
+       5562,
+       2257,
+       47734,
+       1543,
+       51314
+      ]
+     },
+     {
+      "avg_logprob": -0.4353626361791638,
+      "compression_ratio": 1.1006711409395973,
+      "end": 25.0,
+      "id": 2,
+      "no_speech_prob": 0.4660603404045105,
+      "seek": 0,
+      "start": 19.0,
+      "temperature": 0.0,
+      "text": "首先,谈谈大家的看法。",
+      "tokens": [
+       51314,
+       36490,
+       11,
+       8897,
+       230,
+       8897,
+       230,
+       6868,
+       1546,
+       4200,
+       11148,
+       1543,
+       51614
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 29.44,
+      "id": 3,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 25.0,
+      "temperature": 0.0,
+      "text": "我觉得咱们这个这个目标人群可以不用定的那么确定",
+      "tokens": [
+       50364,
+       45681,
+       8975,
+       109,
+       9497,
+       15368,
+       15368,
+       11386,
+       162,
+       3921,
+       4035,
+       7248,
+       97,
+       6723,
+       24384,
+       12088,
+       1546,
+       35693,
+       38114,
+       106,
+       12088,
+       50586
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 34.08,
+      "id": 4,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 29.44,
+      "temperature": 0.0,
+      "text": "然后基本上就是让他什么样什么类的人群然后都可以",
+      "tokens": [
+       50586,
+       26636,
+       37946,
+       5708,
+       5620,
+       33650,
+       5000,
+       10440,
+       14496,
+       10440,
+       22113,
+       119,
+       29979,
+       7248,
+       97,
+       26636,
+       7182,
+       6723,
+       50818
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 35.8,
+      "id": 5,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 34.08,
+      "temperature": 0.0,
+      "text": "这样子咱们的面比较果然",
+      "tokens": [
+       50818,
+       21209,
+       7626,
+       8975,
+       109,
+       9497,
+       1546,
+       8833,
+       11706,
+       9830,
+       225,
+       9319,
+       5823,
+       50904
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 40.4,
+      "id": 6,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 36.68,
+      "temperature": 0.0,
+      "text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+      "tokens": [
+       50948,
+       34627,
+       8975,
+       109,
+       9497,
+       15368,
+       11389,
+       37960,
+       25040,
+       37946,
+       5708,
+       12022,
+       42350,
+       7422,
+       122,
+       7422,
+       94,
+       1546,
+       11706,
+       9830,
+       225,
+       15729,
+       1530,
+       248,
+       51134
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 45.16,
+      "id": 7,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 40.4,
+      "temperature": 0.0,
+      "text": "所以我觉得其实不用介定于这个老年人或者年轻人之间",
+      "tokens": [
+       51134,
+       7239,
+       45681,
+       41646,
+       24384,
+       30312,
+       12088,
+       37732,
+       15368,
+       10439,
+       5157,
+       4035,
+       31148,
+       5157,
+       17819,
+       119,
+       4035,
+       9574,
+       31685,
+       51372
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 46.28,
+      "id": 8,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 45.16,
+      "temperature": 0.0,
+      "text": "就是宽度大一点是吧",
+      "tokens": [
+       51372,
+       5620,
+       2415,
+       121,
+       13127,
+       3582,
+       49042,
+       1541,
+       6062,
+       51428
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 48.92,
+      "id": 9,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 46.28,
+      "temperature": 0.0,
+      "text": "嗯对这样我觉得范围更广一些",
+      "tokens": [
+       51428,
+       21206,
+       8713,
+       21209,
+       45681,
+       27395,
+       225,
+       3919,
+       112,
+       19002,
+       3509,
+       123,
+       38515,
+       51560
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 50.8,
+      "id": 10,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 48.92,
+      "temperature": 0.0,
+      "text": "就什么样的人群都可以选择呢",
+      "tokens": [
+       51560,
+       3111,
+       10440,
+       14496,
+       29979,
+       7248,
+       97,
+       7182,
+       6723,
+       2215,
+       231,
+       6852,
+       102,
+       6240,
+       51654
+      ]
+     },
+     {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "end": 51.84,
+      "id": 11,
+      "no_speech_prob": 0.3281482756137848,
+      "seek": 2500,
+      "start": 51.44,
+      "temperature": 0.0,
+      "text": "好",
+      "tokens": [
+       51686,
+       2131,
+       51706
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 54.84,
+      "id": 12,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 51.84,
+      "temperature": 0.0,
+      "text": "我觉得是要有争就性的",
+      "tokens": [
+       50364,
+       45681,
+       1541,
+       4275,
+       2412,
+       1369,
+       231,
+       3111,
+       21686,
+       1546,
+       50514
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 57.84,
+      "id": 13,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 54.84,
+      "temperature": 0.0,
+      "text": "我觉得咱们的设计外观还是很时尚",
+      "tokens": [
+       50514,
+       45681,
+       8975,
+       109,
+       9497,
+       1546,
+       7422,
+       122,
+       7422,
+       94,
+       12022,
+       42350,
+       45726,
+       4563,
+       15729,
+       1530,
+       248,
+       50664
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 63.84,
+      "id": 14,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 57.84,
+      "temperature": 0.0,
+      "text": "还是需要去设定一下比较适合的年龄段",
+      "tokens": [
+       50664,
+       45726,
+       35748,
+       6734,
+       7422,
+       122,
+       12088,
+       8861,
+       11706,
+       9830,
+       225,
+       2215,
+       224,
+       14245,
+       1546,
+       5157,
+       28907,
+       226,
+       28427,
+       50964
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 66.84,
+      "id": 15,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 63.84,
+      "temperature": 0.0,
+      "text": "有彩色的呀",
+      "tokens": [
+       50964,
+       2412,
+       7391,
+       102,
+       17673,
+       1546,
+       15348,
+       51114
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 67.84,
+      "id": 16,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 66.84,
+      "temperature": 0.0,
+      "text": "有蓝色的黄色",
+      "tokens": [
+       51114,
+       2412,
+       164,
+       26152,
+       17673,
+       1546,
+       6173,
+       226,
+       17673,
+       51164
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 69.84,
+      "id": 17,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 67.84,
+      "temperature": 0.0,
+      "text": "以前老年人他不可能用这种",
+      "tokens": [
+       51164,
+       44996,
+       10439,
+       5157,
+       4035,
+       5000,
+       1960,
+       16657,
+       9254,
+       5562,
+       39810,
+       51264
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 70.84,
+      "id": 18,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 69.84,
+      "temperature": 0.0,
+      "text": "也可以说是有用的",
+      "tokens": [
+       51264,
+       47935,
+       8090,
+       1541,
+       2412,
+       9254,
+       1546,
+       51314
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 74.84,
+      "id": 19,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 70.84,
+      "temperature": 0.0,
+      "text": "对 而且你现在设计的全品主要推出的是",
+      "tokens": [
+       51314,
+       8713,
+       220,
+       22942,
+       2166,
+       25040,
+       7422,
+       122,
+       7422,
+       94,
+       1546,
+       11319,
+       30246,
+       13557,
+       4275,
+       33597,
+       7781,
+       24620,
+       51514
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 76.84,
+      "id": 20,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 74.84,
+      "temperature": 0.0,
+      "text": "它有照相的功能",
+      "tokens": [
+       51514,
+       11284,
+       2412,
+       32150,
+       15106,
+       1546,
+       32311,
+       8225,
+       51614
+      ]
+     },
+     {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "end": 79.84,
+      "id": 21,
+      "no_speech_prob": 0.6463755965232849,
+      "seek": 5184,
+      "start": 76.84,
+      "temperature": 0.0,
+      "text": "功能的话是很很很好的",
+      "tokens": [
+       51614,
+       32311,
+       8225,
+       44575,
+       1541,
+       4563,
+       4563,
+       4563,
+       20715,
+       51764
+      ]
+     },
+     {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "end": 82.92,
+      "id": 22,
+      "no_speech_prob": 0.44705140590667725,
+      "seek": 7984,
+      "start": 79.84,
+      "temperature": 0.0,
+      "text": "所以还是适合年轻的人群",
+      "tokens": [
+       50364,
+       7239,
+       45726,
+       2215,
+       224,
+       14245,
+       5157,
+       17819,
+       119,
+       29979,
+       7248,
+       97,
+       50518
+      ]
+     },
+     {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "end": 89.38000000000001,
+      "id": 23,
+      "no_speech_prob": 0.44705140590667725,
+      "seek": 7984,
+      "start": 83.84,
+      "temperature": 0.0,
+      "text": "我感觉可以根据年龄和不同的人士做一下区分",
+      "tokens": [
+       50564,
+       1654,
+       9709,
+       24447,
+       6723,
+       31337,
+       26075,
+       106,
+       5157,
+       28907,
+       226,
+       12565,
+       47123,
+       29979,
+       30337,
+       10907,
+       8861,
+       9937,
+       118,
+       6627,
+       50841
+      ]
+     },
+     {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "end": 97.30000000000001,
+      "id": 24,
+      "no_speech_prob": 0.44705140590667725,
+      "seek": 7984,
+      "start": 90.42,
+      "temperature": 0.0,
+      "text": "我感觉我们可以主要针对18到45岁的中青年人群",
+      "tokens": [
+       50893,
+       1654,
+       9709,
+       24447,
+       15003,
+       6723,
+       13557,
+       4275,
+       25153,
+       230,
+       8713,
+       6494,
+       4511,
+       8465,
+       23182,
+       223,
+       1546,
+       5975,
+       37462,
+       5157,
+       4035,
+       7248,
+       97,
+       51237
+      ]
+     },
+     {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "end": 100.80000000000001,
+      "id": 25,
+      "no_speech_prob": 0.44705140590667725,
+      "seek": 7984,
+      "start": 97.68,
+      "temperature": 0.0,
+      "text": "我觉得确定这个手机在城市的特点来说",
+      "tokens": [
+       51256,
+       45681,
+       38114,
+       106,
+       12088,
+       15368,
+       11389,
+       37960,
+       3581,
+       45277,
+       27261,
+       1546,
+       17682,
+       12579,
+       6912,
+       8090,
+       51412
+      ]
+     },
+     {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "end": 103.42,
+      "id": 26,
+      "no_speech_prob": 0.44705140590667725,
+      "seek": 7984,
+      "start": 100.80000000000001,
+      "temperature": 0.0,
+      "text": "可能就是说年段怕多大一点",
+      "tokens": [
+       51412,
+       16657,
+       5620,
+       8090,
+       5157,
+       28427,
+       21164,
+       6392,
+       3582,
+       49042,
+       51543
+      ]
+     },
+     {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "end": 107.38,
+      "id": 27,
+      "no_speech_prob": 0.44705140590667725,
+      "seek": 7984,
+      "start": 103.42,
+      "temperature": 0.0,
+      "text": "但是我觉得现在老年人也都很时尚",
+      "tokens": [
+       51543,
+       11189,
+       45681,
+       25040,
+       10439,
+       5157,
+       4035,
+       6404,
+       7182,
+       4563,
+       15729,
+       1530,
+       248,
+       51741
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 108.78,
+      "id": 28,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 107.38,
+      "temperature": 0.0,
+      "text": "现在老年人出去",
+      "tokens": [
+       50364,
+       25040,
+       10439,
+       5157,
+       4035,
+       48973,
+       50434
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 111.22,
+      "id": 29,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 108.78,
+      "temperature": 0.0,
+      "text": "然后他基本上那个把自己装装的",
+      "tokens": [
+       50434,
+       26636,
+       5000,
+       37946,
+       5708,
+       43083,
+       16075,
+       17645,
+       8083,
+       227,
+       8083,
+       227,
+       1546,
+       50556
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 112.58,
+      "id": 30,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 111.22,
+      "temperature": 0.0,
+      "text": "然后都是大粉大红",
+      "tokens": [
+       50556,
+       26636,
+       22796,
+       3582,
+       32993,
+       3582,
+       16853,
+       95,
+       50624
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 114.3,
+      "id": 31,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 112.58,
+      "temperature": 0.0,
+      "text": "然后他很喜欢那种特别的",
+      "tokens": [
+       50624,
+       26636,
+       5000,
+       4563,
+       41606,
+       4184,
+       39810,
+       17682,
+       18453,
+       1546,
+       50710
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 115.58,
+      "id": 32,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 114.3,
+      "temperature": 0.0,
+      "text": "有年轻的年轻男",
+      "tokens": [
+       50710,
+       2412,
+       5157,
+       17819,
+       119,
+       1546,
+       5157,
+       17819,
+       119,
+       25243,
+       50774
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 116.78,
+      "id": 33,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 115.58,
+      "temperature": 0.0,
+      "text": "就是年轻嘛是吧",
+      "tokens": [
+       50774,
+       5620,
+       5157,
+       17819,
+       119,
+       20722,
+       1541,
+       6062,
+       50834
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 119.53999999999999,
+      "id": 34,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 116.78,
+      "temperature": 0.0,
+      "text": "但是现在的这个版本的话",
+      "tokens": [
+       50834,
+       11189,
+       25040,
+       1546,
+       15368,
+       42096,
+       8802,
+       44575,
+       50972
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 120.97999999999999,
+      "id": 35,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 119.53999999999999,
+      "temperature": 0.0,
+      "text": "它是不适合老年人的",
+      "tokens": [
+       50972,
+       11284,
+       1541,
+       1960,
+       2215,
+       224,
+       14245,
+       10439,
+       5157,
+       4035,
+       1546,
+       51044
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 122.02,
+      "id": 36,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 120.97999999999999,
+      "temperature": 0.0,
+      "text": "也有一些功能",
+      "tokens": [
+       51044,
+       6404,
+       32241,
+       13824,
+       32311,
+       8225,
+       51096
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 122.97999999999999,
+      "id": 37,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 122.02,
+      "temperature": 0.0,
+      "text": "像老年人的话",
+      "tokens": [
+       51096,
+       12760,
+       10439,
+       5157,
+       4035,
+       44575,
+       51144
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 125.17999999999999,
+      "id": 38,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 122.97999999999999,
+      "temperature": 0.0,
+      "text": "他需要很多的大字体",
+      "tokens": [
+       51144,
+       5000,
+       35748,
+       20778,
+       1546,
+       3582,
+       22381,
+       29485,
+       51254
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 128.46,
+      "id": 39,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 125.17999999999999,
+      "temperature": 0.0,
+      "text": "或者是一些网络上的东西",
+      "tokens": [
+       51254,
+       31148,
+       1541,
+       38515,
+       16469,
+       239,
+       10115,
+       250,
+       5708,
+       1546,
+       38409,
+       16220,
+       51418
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 129.1,
+      "id": 40,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 128.46,
+      "temperature": 0.0,
+      "text": "老年人更不适合",
+      "tokens": [
+       51418,
+       10439,
+       5157,
+       4035,
+       19002,
+       1960,
+       2215,
+       224,
+       14245,
+       51450
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 129.82,
+      "id": 41,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 129.1,
+      "temperature": 0.0,
+      "text": "操作不了",
+      "tokens": [
+       51450,
+       13167,
+       235,
+       11914,
+       47225,
+       51486
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 130.66,
+      "id": 42,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 129.82,
+      "temperature": 0.0,
+      "text": "他操作不了",
+      "tokens": [
+       51486,
+       5000,
+       13167,
+       235,
+       11914,
+       47225,
+       51528
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 130.9,
+      "id": 43,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 130.66,
+      "temperature": 0.0,
+      "text": "对",
+      "tokens": [
+       51528,
+       8713,
+       51540
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 133.9,
+      "id": 44,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 130.9,
+      "temperature": 0.0,
+      "text": "他的那个规格还是不一样的",
+      "tokens": [
+       51540,
+       31309,
+       43083,
+       6758,
+       226,
+       30921,
+       45726,
+       1960,
+       2257,
+       14496,
+       1546,
+       51690
+      ]
+     },
+     {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "end": 135.06,
+      "id": 45,
+      "no_speech_prob": 0.32010534405708313,
+      "seek": 10738,
+      "start": 133.9,
+      "temperature": 0.0,
+      "text": "对有有有",
+      "tokens": [
+       51690,
+       8713,
+       2412,
+       2412,
+       2412,
+       51748
+      ]
+     },
+     {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "end": 139.78,
+      "id": 46,
+      "no_speech_prob": 0.737428605556488,
+      "seek": 13506,
+      "start": 135.06,
+      "temperature": 0.0,
+      "text": "手机里边很多字的东西都是可以再去设的",
+      "tokens": [
+       50364,
+       11389,
+       37960,
+       15759,
+       40503,
+       20778,
+       22381,
+       1546,
+       38409,
+       16220,
+       22796,
+       6723,
+       8623,
+       6734,
+       7422,
+       122,
+       1546,
+       50600
+      ]
+     },
+     {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "end": 147.5,
+      "id": 47,
+      "no_speech_prob": 0.737428605556488,
+      "seek": 13506,
+      "start": 139.78,
+      "temperature": 0.0,
+      "text": "而且我觉得现在老年人也不是所有的老年人都是那种演发或者什么的情况",
+      "tokens": [
+       50600,
+       22942,
+       45681,
+       25040,
+       10439,
+       5157,
+       4035,
+       6404,
+       7296,
+       39300,
+       1546,
+       10439,
+       5157,
+       4035,
+       22796,
+       4184,
+       39810,
+       31382,
+       28926,
+       31148,
+       10440,
+       1546,
+       46514,
+       50986
+      ]
+     },
+     {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "end": 148.7,
+      "id": 48,
+      "no_speech_prob": 0.737428605556488,
+      "seek": 13506,
+      "start": 147.5,
+      "temperature": 0.0,
+      "text": "所以我觉得吧",
+      "tokens": [
+       50986,
+       7239,
+       45681,
+       6062,
+       51046
+      ]
+     },
+     {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "end": 151.54,
+      "id": 49,
+      "no_speech_prob": 0.737428605556488,
+      "seek": 13506,
+      "start": 148.7,
+      "temperature": 0.0,
+      "text": "就是不用把这个界限弄得那么分明",
+      "tokens": [
+       51046,
+       5620,
+       24384,
+       16075,
+       15368,
+       21185,
+       43446,
+       5702,
+       226,
+       5916,
+       35693,
+       6627,
+       11100,
+       51188
+      ]
+     },
+     {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "end": 152.98000000000002,
+      "id": 50,
+      "no_speech_prob": 0.737428605556488,
+      "seek": 13506,
+      "start": 151.54,
+      "temperature": 0.0,
+      "text": "然后基本上能适应它",
+      "tokens": [
+       51188,
+       26636,
+       37946,
+       5708,
+       8225,
+       2215,
+       224,
+       44297,
+       11284,
+       51260
+      ]
+     },
+     {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "end": 156.26,
+      "id": 51,
+      "no_speech_prob": 0.737428605556488,
+      "seek": 13506,
+      "start": 152.98000000000002,
+      "temperature": 0.0,
+      "text": "然后能去使用它的老年人都还可以",
+      "tokens": [
+       51260,
+       26636,
+       8225,
+       6734,
+       22982,
+       9254,
+       45224,
+       10439,
+       5157,
+       4035,
+       7182,
+       14852,
+       6723,
+       51424
+      ]
+     }
+    ]
+   },
+   "review": {
+    "category_counts": {
+     "suspected_hallucination": 5
+    },
+    "disclaimer": "Review flags are heuristics that request human review. A flag is not proof of an error or hallucination; an unflagged segment is not verified correct. Original text and timestamps are unchanged.",
+    "excluded_raw_segments": 0,
+    "needs_review": 4,
+    "possible_missed_speech": [],
+    "possible_missed_speech_ms": 0,
+    "reason_counts": {
+     "likely_non_speech": 1,
+     "text_over_detected_silence": 4
+    },
+    "segments": 52,
+    "thresholds": {
+     "high_compression_ratio": 2.4,
+     "high_no_speech_prob": 0.6,
+     "low_avg_logprob": -1.0,
+     "max_chars_per_second": 12.0,
+     "min_chars_per_second": 1.0,
+     "min_non_silent_fraction": 0.1,
+     "missed_speech_min_ms": 2000,
+     "prompt_echo_min_chars": 4,
+     "repeat_min_occurrences": 4,
+     "repeat_unit_max_chars": 8,
+     "slow_min_duration_ms": 4000
+    },
+    "unflagged": 48,
+    "version": 1
+   },
+   "segment_adjustments": {
+    "clipped_end": 0,
+    "dropped_empty": 0,
+    "dropped_outside_audio": 0,
+    "dropped_zero_length": 0
+   },
+   "segments": [
+    {
+     "confidence": {
+      "avg_logprob": -0.4353626361791638,
+      "compression_ratio": 1.1006711409395973,
+      "no_speech_prob": 0.4660603404045105
+     },
+     "end_ms": 13000,
+     "id": "seg-0000-7b5ee74932",
+     "original_text": "今天是我们公司新出的一款手机,进行编考会。",
+     "raw_index": 0,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 0
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.4353626361791638,
+      "compression_ratio": 1.1006711409395973,
+      "no_speech_prob": 0.4660603404045105
+     },
+     "end_ms": 19000,
+     "id": "seg-0001-657551a47e",
+     "original_text": "首先,让我们确认一下产品的目标,人群,客户群这一块。",
+     "raw_index": 1,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 13000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.4353626361791638,
+      "compression_ratio": 1.1006711409395973,
+      "no_speech_prob": 0.4660603404045105
+     },
+     "end_ms": 25000,
+     "id": "seg-0002-be026312a1",
+     "original_text": "首先,谈谈大家的看法。",
+     "raw_index": 2,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 19000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 29440,
+     "id": "seg-0003-5f0c302282",
+     "original_text": "我觉得咱们这个这个目标人群可以不用定的那么确定",
+     "raw_index": 3,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 25000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 34080,
+     "id": "seg-0004-47a3216467",
+     "original_text": "然后基本上就是让他什么样什么类的人群然后都可以",
+     "raw_index": 4,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 29440
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 35800,
+     "id": "seg-0005-b89a74720f",
+     "original_text": "这样子咱们的面比较果然",
+     "raw_index": 5,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 34080
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 40400,
+     "id": "seg-0006-e89facff74",
+     "original_text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+     "raw_index": 6,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 36680
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 45160,
+     "id": "seg-0007-4e92667707",
+     "original_text": "所以我觉得其实不用介定于这个老年人或者年轻人之间",
+     "raw_index": 7,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 40400
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 46280,
+     "id": "seg-0008-0985d22c4b",
+     "original_text": "就是宽度大一点是吧",
+     "raw_index": 8,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 45160
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 48920,
+     "id": "seg-0009-2ad4db57c6",
+     "original_text": "嗯对这样我觉得范围更广一些",
+     "raw_index": 9,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.0
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 46280
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 50800,
+     "id": "seg-0010-5cf8eef2fc",
+     "original_text": "就什么样的人群都可以选择呢",
+     "raw_index": 10,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 48920
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2764357460869683,
+      "compression_ratio": 1.5330882352941178,
+      "no_speech_prob": 0.3281482756137848
+     },
+     "end_ms": 51840,
+     "id": "seg-0011-3b0aa7a38d",
+     "original_text": "好",
+     "raw_index": 11,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.0
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 51440
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 54840,
+     "id": "seg-0012-18af1ff43d",
+     "original_text": "我觉得是要有争就性的",
+     "raw_index": 12,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 51840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 57840,
+     "id": "seg-0013-c060378039",
+     "original_text": "我觉得咱们的设计外观还是很时尚",
+     "raw_index": 13,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.0
+        },
+        "heuristic": true
+       },
+       {
+        "category": "suspected_hallucination",
+        "code": "likely_non_speech",
+        "detail": "High window no-speech probability with low log-probability or measured silence",
+        "evidence": {
+         "avg_logprob": -0.2097717795785018,
+         "no_speech_prob": 0.6463755965232849
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 54840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 63840,
+     "id": "seg-0014-28f0e5198c",
+     "original_text": "还是需要去设定一下比较适合的年龄段",
+     "raw_index": 14,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 57840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 66840,
+     "id": "seg-0015-c24a04dce8",
+     "original_text": "有彩色的呀",
+     "raw_index": 15,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 63840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 67840,
+     "id": "seg-0016-bcda77131a",
+     "original_text": "有蓝色的黄色",
+     "raw_index": 16,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 66840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 69840,
+     "id": "seg-0017-7d19dd1a44",
+     "original_text": "以前老年人他不可能用这种",
+     "raw_index": 17,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 67840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 70840,
+     "id": "seg-0018-df03760075",
+     "original_text": "也可以说是有用的",
+     "raw_index": 18,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 69840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 74840,
+     "id": "seg-0019-9ba851a11e",
+     "original_text": "对 而且你现在设计的全品主要推出的是",
+     "raw_index": 19,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 70840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 76840,
+     "id": "seg-0020-0ab7bc805a",
+     "original_text": "它有照相的功能",
+     "raw_index": 20,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 74840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2097717795785018,
+      "compression_ratio": 1.3472803347280335,
+      "no_speech_prob": 0.6463755965232849
+     },
+     "end_ms": 79840,
+     "id": "seg-0021-149b0c7c2c",
+     "original_text": "功能的话是很很很好的",
+     "raw_index": 21,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 76840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "no_speech_prob": 0.44705140590667725
+     },
+     "end_ms": 82920,
+     "id": "seg-0022-80c8e92c5e",
+     "original_text": "所以还是适合年轻的人群",
+     "raw_index": 22,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 79840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "no_speech_prob": 0.44705140590667725
+     },
+     "end_ms": 89380,
+     "id": "seg-0023-7772c8dd48",
+     "original_text": "我感觉可以根据年龄和不同的人士做一下区分",
+     "raw_index": 23,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 83840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "no_speech_prob": 0.44705140590667725
+     },
+     "end_ms": 97300,
+     "id": "seg-0024-10d37b4886",
+     "original_text": "我感觉我们可以主要针对18到45岁的中青年人群",
+     "raw_index": 24,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 90420
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "no_speech_prob": 0.44705140590667725
+     },
+     "end_ms": 100800,
+     "id": "seg-0025-f1a753b3d9",
+     "original_text": "我觉得确定这个手机在城市的特点来说",
+     "raw_index": 25,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 97680
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "no_speech_prob": 0.44705140590667725
+     },
+     "end_ms": 103420,
+     "id": "seg-0026-810809d8ca",
+     "original_text": "可能就是说年段怕多大一点",
+     "raw_index": 26,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 100800
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.42640158709357767,
+      "compression_ratio": 1.2767857142857142,
+      "no_speech_prob": 0.44705140590667725
+     },
+     "end_ms": 107380,
+     "id": "seg-0027-2edfaf8372",
+     "original_text": "但是我觉得现在老年人也都很时尚",
+     "raw_index": 27,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 103420
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 108780,
+     "id": "seg-0028-6c25013cc5",
+     "original_text": "现在老年人出去",
+     "raw_index": 28,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 107380
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 111220,
+     "id": "seg-0029-83117b3d01",
+     "original_text": "然后他基本上那个把自己装装的",
+     "raw_index": 29,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 108780
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 112580,
+     "id": "seg-0030-271ea6698c",
+     "original_text": "然后都是大粉大红",
+     "raw_index": 30,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 111220
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 114300,
+     "id": "seg-0031-8042222dc9",
+     "original_text": "然后他很喜欢那种特别的",
+     "raw_index": 31,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 112580
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 115580,
+     "id": "seg-0032-93ac888c10",
+     "original_text": "有年轻的年轻男",
+     "raw_index": 32,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 114300
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 116780,
+     "id": "seg-0033-6333edb375",
+     "original_text": "就是年轻嘛是吧",
+     "raw_index": 33,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 115580
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 119540,
+     "id": "seg-0034-d07caf4878",
+     "original_text": "但是现在的这个版本的话",
+     "raw_index": 34,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 116780
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 120980,
+     "id": "seg-0035-59e09e9dc0",
+     "original_text": "它是不适合老年人的",
+     "raw_index": 35,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.0625
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 119540
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 122020,
+     "id": "seg-0036-fd9864a20c",
+     "original_text": "也有一些功能",
+     "raw_index": 36,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 120980
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 122980,
+     "id": "seg-0037-701ff7d6f8",
+     "original_text": "像老年人的话",
+     "raw_index": 37,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 122020
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 125180,
+     "id": "seg-0038-9855407087",
+     "original_text": "他需要很多的大字体",
+     "raw_index": 38,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 122980
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 128460,
+     "id": "seg-0039-4c773c0530",
+     "original_text": "或者是一些网络上的东西",
+     "raw_index": 39,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 125180
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 129100,
+     "id": "seg-0040-470423184e",
+     "original_text": "老年人更不适合",
+     "raw_index": 40,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 128460
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 129820,
+     "id": "seg-0041-c9634b43cb",
+     "original_text": "操作不了",
+     "raw_index": 41,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 129100
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 130660,
+     "id": "seg-0042-52b4762815",
+     "original_text": "他操作不了",
+     "raw_index": 42,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 129820
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 130900,
+     "id": "seg-0043-0108c7735b",
+     "original_text": "对",
+     "raw_index": 43,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 130660
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 133900,
+     "id": "seg-0044-b3d1a76b49",
+     "original_text": "他的那个规格还是不一样的",
+     "raw_index": 44,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 130900
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3381868222864663,
+      "compression_ratio": 1.5163636363636364,
+      "no_speech_prob": 0.32010534405708313
+     },
+     "end_ms": 135060,
+     "id": "seg-0045-eaa90d8685",
+     "original_text": "对有有有",
+     "raw_index": 45,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 133900
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "no_speech_prob": 0.737428605556488
+     },
+     "end_ms": 139780,
+     "id": "seg-0046-c0a9d77c43",
+     "original_text": "手机里边很多字的东西都是可以再去设的",
+     "raw_index": 46,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 135060
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "no_speech_prob": 0.737428605556488
+     },
+     "end_ms": 147500,
+     "id": "seg-0047-16307d9e47",
+     "original_text": "而且我觉得现在老年人也不是所有的老年人都是那种演发或者什么的情况",
+     "raw_index": 47,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 139780
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "no_speech_prob": 0.737428605556488
+     },
+     "end_ms": 148700,
+     "id": "seg-0048-e0bba55816",
+     "original_text": "所以我觉得吧",
+     "raw_index": 48,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 147500
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "no_speech_prob": 0.737428605556488
+     },
+     "end_ms": 151540,
+     "id": "seg-0049-dd337ccc55",
+     "original_text": "就是不用把这个界限弄得那么分明",
+     "raw_index": 49,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 148700
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "no_speech_prob": 0.737428605556488
+     },
+     "end_ms": 152980,
+     "id": "seg-0050-6c9db51b5b",
+     "original_text": "然后基本上能适应它",
+     "raw_index": 50,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 151540
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3844893255899119,
+      "compression_ratio": 1.3194444444444444,
+      "no_speech_prob": 0.737428605556488
+     },
+     "end_ms": 156260,
+     "id": "seg-0051-b6cb481508",
+     "original_text": "然后能去使用它的老年人都还可以",
+     "raw_index": 51,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 152980
+    }
+   ],
+   "silence": {
+    "inconclusive": false,
+    "non_silent_ms": 122360,
+    "params": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    },
+    "regions_ms": [
+     [
+      0,
+      5350
+     ],
+     [
+      7040,
+      10210
+     ],
+     [
+      12110,
+      12910
+     ],
+     [
+      13160,
+      16420
+     ],
+     [
+      16850,
+      18220
+     ],
+     [
+      18620,
+      20620
+     ],
+     [
+      21050,
+      22630
+     ],
+     [
+      23510,
+      24460
+     ],
+     [
+      25220,
+      27790
+     ],
+     [
+      28100,
+      29260
+     ],
+     [
+      29450,
+      31060
+     ],
+     [
+      31280,
+      35260
+     ],
+     [
+      36500,
+      38380
+     ],
+     [
+      38570,
+      39520
+     ],
+     [
+      41990,
+      43390
+     ],
+     [
+      45230,
+      46090
+     ],
+     [
+      49100,
+      50170
+     ],
+     [
+      52070,
+      53620
+     ],
+     [
+      58130,
+      58780
+     ],
+     [
+      59750,
+      61480
+     ],
+     [
+      61700,
+      63370
+     ],
+     [
+      63560,
+      69070
+     ],
+     [
+      69650,
+      73600
+     ],
+     [
+      73700,
+      76270
+     ],
+     [
+      76520,
+      78130
+     ],
+     [
+      78800,
+      81820
+     ],
+     [
+      83600,
+      89500
+     ],
+     [
+      89780,
+      95830
+     ],
+     [
+      95960,
+      106840
+     ],
+     [
+      107180,
+      119440
+     ],
+     [
+      120890,
+      136450
+     ],
+     [
+      137360,
+      139030
+     ],
+     [
+      139190,
+      141160
+     ],
+     [
+      141410,
+      145030
+     ],
+     [
+      146390,
+      147040
+     ],
+     [
+      147500,
+      155080
+     ]
+    ],
+    "silent_ratio": 0.218347,
+    "threshold_dbfs": -44.661
+   },
+   "text": "今天是我们公司新出的一款手机,进行编考会。首先,让我们确认一下产品的目标,人群,客户群这一块。首先,谈谈大家的看法。我觉得咱们这个这个目标人群可以不用定的那么确定然后基本上就是让他什么样什么类的人群然后都可以这样子咱们的面比较果然因为咱们这个手机现在基本上外观设计的比较时尚所以我觉得其实不用介定于这个老年人或者年轻人之间就是宽度大一点是吧嗯对这样我觉得范围更广一些就什么样的人群都可以选择呢好我觉得是要有争就性的我觉得咱们的设计外观还是很时尚还是需要去设定一下比较适合的年龄段有彩色的呀有蓝色的黄色以前老年人他不可能用这种也可以说是有用的对 而且你现在设计的全品主要推出的是它有照相的功能功能的话是很很很好的所以还是适合年轻的人群我感觉可以根据年龄和不同的人士做一下区分我感觉我们可以主要针对18到45岁的中青年人群我觉得确定这个手机在城市的特点来说可能就是说年段怕多大一点但是我觉得现在老年人也都很时尚现在老年人出去然后他基本上那个把自己装装的然后都是大粉大红然后他很喜欢那种特别的有年轻的年轻男就是年轻嘛是吧但是现在的这个版本的话它是不适合老年人的也有一些功能像老年人的话他需要很多的大字体或者是一些网络上的东西老年人更不适合操作不了他操作不了对他的那个规格还是不一样的对有有有手机里边很多字的东西都是可以再去设的而且我觉得现在老年人也不是所有的老年人都是那种演发或者什么的情况所以我觉得吧就是不用把这个界限弄得那么分明然后基本上能适应它然后能去使用它的老年人都还可以",
+   "reused": false,
+   "elapsed_seconds": 15.173551374988165,
+   "score": {
+    "cer": 0.3248792270531401,
+    "edits": 269,
+    "reference_characters": 828,
+    "hypothesis_characters": 628,
+    "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+   },
+   "run": 1
+  },
+  {
+   "duration_ms": 156540,
+   "duration_seconds": 156.54,
+   "excluded_raw_segments": [],
+   "identity": {
+    "audio_sha256": "e48b7dd16cd21f9823977a7ee17ecca895c6718aa7dc47887b815de5d68bf796",
+    "decode_gate": null,
+    "mlx_version": "0.32.4",
+    "mlx_whisper_version": "0.4.3",
+    "model": {
+     "files": [
+      {
+       "name": "config.json",
+       "sha256": "3ff0b3f17a5a3a614327ffd835a3c8f6c78f39cbd39e84dbff4b0ae267c4d2e4",
+       "size_bytes": 268
+      },
+      {
+       "name": "weights.npz",
+       "sha256": "10b597c2bcb1bcc38b2d3d24cd4f0885f461a7cd70e8444d6ad5a763ece549ea",
+       "size_bytes": 1524924912
+      }
+     ],
+     "license": "MIT",
+     "repo": "mlx-community/whisper-medium-mlx",
+     "revision": "7fc08c4eac4c316526498f147dfdee6f6303f975"
+    },
+    "options": {
+     "clip_timestamps": [
+      0,
+      10,
+      10,
+      20,
+      20,
+      30,
+      30
+     ],
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "profile": "bounded_opening",
+    "review_version": 1,
+    "schema": 3,
+    "silence_gate": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    }
+   },
+   "language": "zh",
+   "metrics": {
+    "architecture": "arm64",
+    "device": "Device(gpu, 0)",
+    "inference_seconds": 16.795751874975394,
+    "mlx_peak_bytes": 2216893914,
+    "model_bytes": 1524925180,
+    "model_load_seconds": 0.29612616600934416,
+    "peak_rss_bytes": 2029535232,
+    "real_time_factor": 0.10729367493915545
+   },
+   "raw_inference": {
+    "decode_options": {
+     "clip_timestamps": [
+      0,
+      10,
+      10,
+      20,
+      20,
+      30,
+      30
+     ],
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "segments": [
+     {
+      "avg_logprob": -0.105824220445421,
+      "compression_ratio": 25.85,
+      "end": 10.0,
+      "id": 0,
+      "no_speech_prob": 0.5910133719444275,
+      "seek": 0,
+      "start": 0.0,
+      "temperature": 0.0,
+      "text": " 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 ",
+      "tokens": [
+       50364,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220,
+       19550,
+       16866,
+       220
+      ]
+     },
+     {
+      "avg_logprob": -0.49339078602037933,
+      "compression_ratio": 0.8854166666666666,
+      "end": 13.0,
+      "id": 1,
+      "no_speech_prob": 0.8284969925880432,
+      "seek": 1000,
+      "start": 10.0,
+      "temperature": 0.0,
+      "text": "今天一家研討會",
+      "tokens": [
+       50364,
+       12074,
+       2257,
+       5155,
+       23230,
+       242,
+       5396,
+       236,
+       6236,
+       50514
+      ]
+     },
+     {
+      "avg_logprob": -0.49339078602037933,
+      "compression_ratio": 0.8854166666666666,
+      "end": 16.0,
+      "id": 2,
+      "no_speech_prob": 0.8284969925880432,
+      "seek": 1000,
+      "start": 13.0,
+      "temperature": 0.0,
+      "text": "首先咱們確認一下產品的目標",
+      "tokens": [
+       50514,
+       36490,
+       8975,
+       109,
+       4623,
+       24293,
+       22041,
+       8861,
+       33299,
+       30246,
+       1546,
+       11386,
+       46299,
+       50664
+      ]
+     },
+     {
+      "avg_logprob": -0.49339078602037933,
+      "compression_ratio": 0.8854166666666666,
+      "end": 19.0,
+      "id": 3,
+      "no_speech_prob": 0.8284969925880432,
+      "seek": 1000,
+      "start": 16.0,
+      "temperature": 0.0,
+      "text": "人群 客戶群這一塊",
+      "tokens": [
+       50664,
+       4035,
+       7248,
+       97,
+       220,
+       32316,
+       1486,
+       114,
+       7248,
+       97,
+       32260,
+       26268,
+       50814
+      ]
+     },
+     {
+      "avg_logprob": -0.680446445941925,
+      "compression_ratio": 0.9230769230769231,
+      "end": 25.0,
+      "id": 4,
+      "no_speech_prob": 0.6977986097335815,
+      "seek": 2000,
+      "start": 20.0,
+      "temperature": 0.0,
+      "text": "你也试一下",
+      "tokens": [
+       50364,
+       2166,
+       6404,
+       5233,
+       243,
+       8861,
+       50614
+      ]
+     },
+     {
+      "avg_logprob": -0.680446445941925,
+      "compression_ratio": 0.9230769230769231,
+      "end": 29.48,
+      "id": 5,
+      "no_speech_prob": 0.6977986097335815,
+      "seek": 2000,
+      "start": 25.0,
+      "temperature": 0.0,
+      "text": "我觉得咱这个这个标准群可以不用定的那么确定",
+      "tokens": [
+       50614,
+       45681,
+       8975,
+       109,
+       15368,
+       15368,
+       162,
+       3921,
+       6336,
+       228,
+       7248,
+       97,
+       6723,
+       24384,
+       12088,
+       1546,
+       35693,
+       38114,
+       106,
+       12088,
+       50838
+      ]
+     },
+     {
+      "avg_logprob": -0.680446445941925,
+      "compression_ratio": 0.9230769230769231,
+      "end": 29.84,
+      "id": 6,
+      "no_speech_prob": 0.6977986097335815,
+      "seek": 2000,
+      "start": 29.48,
+      "temperature": 0.0,
+      "text": "然后",
+      "tokens": [
+       50838,
+       26636,
+       50856
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 35.6,
+      "id": 7,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 30.0,
+      "temperature": 0.0,
+      "text": "基本上就是让他什么样什么类的人群然后都可以这样子咱们的面比较广",
+      "tokens": [
+       50364,
+       37946,
+       5708,
+       5620,
+       33650,
+       5000,
+       10440,
+       14496,
+       10440,
+       22113,
+       119,
+       29979,
+       7248,
+       97,
+       26636,
+       7182,
+       6723,
+       21209,
+       7626,
+       8975,
+       109,
+       9497,
+       1546,
+       8833,
+       11706,
+       9830,
+       225,
+       3509,
+       123,
+       50644
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 40.36,
+      "id": 8,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 36.76,
+      "temperature": 0.0,
+      "text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+      "tokens": [
+       50702,
+       34627,
+       8975,
+       109,
+       9497,
+       15368,
+       11389,
+       37960,
+       25040,
+       37946,
+       5708,
+       12022,
+       42350,
+       7422,
+       122,
+       7422,
+       94,
+       1546,
+       11706,
+       9830,
+       225,
+       15729,
+       1530,
+       248,
+       50882
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 45.08,
+      "id": 9,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 40.36,
+      "temperature": 0.0,
+      "text": "所以我觉得其实不用界定于这个老年人或者年轻人之间",
+      "tokens": [
+       50882,
+       7239,
+       45681,
+       41646,
+       24384,
+       21185,
+       12088,
+       37732,
+       15368,
+       10439,
+       5157,
+       4035,
+       31148,
+       5157,
+       17819,
+       119,
+       4035,
+       9574,
+       31685,
+       51118
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 46.28,
+      "id": 10,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 45.08,
+      "temperature": 0.0,
+      "text": "就是宽度大一点是吧",
+      "tokens": [
+       51118,
+       5620,
+       2415,
+       121,
+       13127,
+       3582,
+       49042,
+       1541,
+       6062,
+       51178
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 48.68,
+      "id": 11,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 46.28,
+      "temperature": 0.0,
+      "text": "对这样我觉得范围更广一些",
+      "tokens": [
+       51178,
+       8713,
+       21209,
+       45681,
+       27395,
+       225,
+       3919,
+       112,
+       19002,
+       3509,
+       123,
+       38515,
+       51298
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 50.72,
+      "id": 12,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 48.68,
+      "temperature": 0.0,
+      "text": "就什么样的人群都可以选择呢",
+      "tokens": [
+       51298,
+       3111,
+       10440,
+       14496,
+       29979,
+       7248,
+       97,
+       7182,
+       6723,
+       2215,
+       231,
+       6852,
+       102,
+       6240,
+       51400
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 51.879999999999995,
+      "id": 13,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 51.480000000000004,
+      "temperature": 0.0,
+      "text": "好",
+      "tokens": [
+       51438,
+       2131,
+       51458
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 54.8,
+      "id": 14,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 51.879999999999995,
+      "temperature": 0.0,
+      "text": "我觉得是要有争议性的啊",
+      "tokens": [
+       51458,
+       45681,
+       1541,
+       4275,
+       2412,
+       1369,
+       231,
+       7422,
+       106,
+       21686,
+       1546,
+       4905,
+       51604
+      ]
+     },
+     {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "end": 58.0,
+      "id": 15,
+      "no_speech_prob": 0.7650672197341919,
+      "seek": 3000,
+      "start": 54.8,
+      "temperature": 0.0,
+      "text": "我觉得咱们的设计外观还是很时尚",
+      "tokens": [
+       51604,
+       45681,
+       8975,
+       109,
+       9497,
+       1546,
+       7422,
+       122,
+       7422,
+       94,
+       12022,
+       42350,
+       45726,
+       4563,
+       15729,
+       1530,
+       248,
+       51764
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 64.2,
+      "id": 16,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 58.0,
+      "temperature": 0.0,
+      "text": "还是需要去设定一下比较适合的年龄段",
+      "tokens": [
+       50364,
+       45726,
+       35748,
+       6734,
+       7422,
+       122,
+       12088,
+       8861,
+       11706,
+       9830,
+       225,
+       2215,
+       224,
+       14245,
+       1546,
+       5157,
+       28907,
+       226,
+       28427,
+       50674
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 68.04,
+      "id": 17,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 64.2,
+      "temperature": 0.0,
+      "text": "有彩色的呀 有蓝色的黄色",
+      "tokens": [
+       50674,
+       2412,
+       7391,
+       102,
+       17673,
+       1546,
+       15348,
+       21461,
+       164,
+       26152,
+       17673,
+       1546,
+       6173,
+       226,
+       17673,
+       50866
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 69.68,
+      "id": 18,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 68.04,
+      "temperature": 0.0,
+      "text": "年老的人他不可能用这种",
+      "tokens": [
+       50866,
+       5157,
+       10439,
+       29979,
+       5000,
+       1960,
+       16657,
+       9254,
+       5562,
+       39810,
+       50948
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 71.24,
+      "id": 19,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 69.68,
+      "temperature": 0.0,
+      "text": "也可以说是有用的",
+      "tokens": [
+       50948,
+       47935,
+       8090,
+       1541,
+       2412,
+       9254,
+       1546,
+       51026
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 73.44,
+      "id": 20,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 71.24,
+      "temperature": 0.0,
+      "text": "对 而且你现在设计的产品",
+      "tokens": [
+       51026,
+       8713,
+       220,
+       22942,
+       2166,
+       25040,
+       7422,
+       122,
+       7422,
+       94,
+       1546,
+       1369,
+       100,
+       30246,
+       51136
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 76.52,
+      "id": 21,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 73.44,
+      "temperature": 0.0,
+      "text": "主要推出的是它有照相的功能",
+      "tokens": [
+       51136,
+       13557,
+       4275,
+       33597,
+       7781,
+       24620,
+       11284,
+       2412,
+       32150,
+       15106,
+       1546,
+       32311,
+       8225,
+       51290
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 79.76,
+      "id": 22,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 76.52,
+      "temperature": 0.0,
+      "text": "功能的话是很很很好的",
+      "tokens": [
+       51290,
+       32311,
+       8225,
+       44575,
+       1541,
+       4563,
+       4563,
+       4563,
+       20715,
+       51452
+      ]
+     },
+     {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "end": 82.92,
+      "id": 23,
+      "no_speech_prob": 0.47637489438056946,
+      "seek": 5800,
+      "start": 79.76,
+      "temperature": 0.0,
+      "text": "所以还是适合年轻的人群",
+      "tokens": [
+       51452,
+       7239,
+       45726,
+       2215,
+       224,
+       14245,
+       5157,
+       17819,
+       119,
+       29979,
+       7248,
+       97,
+       51610
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 89.52,
+      "id": 24,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 82.92,
+      "temperature": 0.0,
+      "text": "我感觉可以根据年龄和这种不同的人士做一下区分",
+      "tokens": [
+       50364,
+       1654,
+       9709,
+       24447,
+       6723,
+       31337,
+       26075,
+       106,
+       5157,
+       28907,
+       226,
+       12565,
+       5562,
+       39810,
+       47123,
+       29979,
+       30337,
+       10907,
+       8861,
+       9937,
+       118,
+       6627,
+       50694
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 97.6,
+      "id": 25,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 89.52,
+      "temperature": 0.0,
+      "text": "我感觉我们可以主要针对就是18到45岁的中青年人群吧",
+      "tokens": [
+       50694,
+       1654,
+       9709,
+       24447,
+       15003,
+       6723,
+       13557,
+       4275,
+       25153,
+       230,
+       8713,
+       5620,
+       6494,
+       4511,
+       8465,
+       23182,
+       223,
+       1546,
+       5975,
+       37462,
+       5157,
+       4035,
+       7248,
+       97,
+       6062,
+       51098
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 100.88,
+      "id": 26,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 97.6,
+      "temperature": 0.0,
+      "text": "我觉得我们确定这个手机在城市的特点来说",
+      "tokens": [
+       51098,
+       45681,
+       15003,
+       38114,
+       106,
+       12088,
+       15368,
+       11389,
+       37960,
+       3581,
+       45277,
+       27261,
+       1546,
+       17682,
+       12579,
+       6912,
+       8090,
+       51262
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 103.56,
+      "id": 27,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 100.88,
+      "temperature": 0.0,
+      "text": "可能就是说年段怕多大一些",
+      "tokens": [
+       51262,
+       16657,
+       5620,
+       8090,
+       5157,
+       28427,
+       21164,
+       6392,
+       3582,
+       38515,
+       51396
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 107.36,
+      "id": 28,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 103.56,
+      "temperature": 0.0,
+      "text": "但是我觉得吧 就是现在那个老年人也都很时尚",
+      "tokens": [
+       51396,
+       11189,
+       45681,
+       6062,
+       31526,
+       25040,
+       43083,
+       10439,
+       5157,
+       4035,
+       6404,
+       7182,
+       4563,
+       15729,
+       1530,
+       248,
+       51586
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 108.8,
+      "id": 29,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 107.36,
+      "temperature": 0.0,
+      "text": "现在老年人出去",
+      "tokens": [
+       51586,
+       25040,
+       10439,
+       5157,
+       4035,
+       48973,
+       51658
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 111.24000000000001,
+      "id": 30,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 108.8,
+      "temperature": 0.0,
+      "text": "然后他基本上那个把自己装装的",
+      "tokens": [
+       51658,
+       26636,
+       5000,
+       37946,
+       5708,
+       43083,
+       16075,
+       17645,
+       8083,
+       227,
+       8083,
+       227,
+       1546,
+       51780
+      ]
+     },
+     {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "end": 112.6,
+      "id": 31,
+      "no_speech_prob": 0.5472091436386108,
+      "seek": 8292,
+      "start": 111.24000000000001,
+      "temperature": 0.0,
+      "text": "然后都是大粉大红",
+      "tokens": [
+       51780,
+       26636,
+       22796,
+       3582,
+       32993,
+       3582,
+       16853,
+       95,
+       51848
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 116.67999999999999,
+      "id": 32,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 112.6,
+      "temperature": 0.0,
+      "text": "然后就很喜欢那个特别有年轻的年轻男就是年轻男",
+      "tokens": [
+       50364,
+       26636,
+       3111,
+       4563,
+       41606,
+       43083,
+       17682,
+       18453,
+       2412,
+       5157,
+       17819,
+       119,
+       1546,
+       5157,
+       17819,
+       119,
+       25243,
+       5620,
+       5157,
+       17819,
+       119,
+       25243,
+       50568
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 119.55999999999999,
+      "id": 33,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 116.67999999999999,
+      "temperature": 0.0,
+      "text": "但是现在的这个版本的话",
+      "tokens": [
+       50568,
+       11189,
+       25040,
+       1546,
+       15368,
+       42096,
+       8802,
+       44575,
+       50712
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 120.96,
+      "id": 34,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 119.55999999999999,
+      "temperature": 0.0,
+      "text": "它是不适合老年人的",
+      "tokens": [
+       50712,
+       11284,
+       1541,
+       1960,
+       2215,
+       224,
+       14245,
+       10439,
+       5157,
+       4035,
+       1546,
+       50782
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 122.03999999999999,
+      "id": 35,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 120.96,
+      "temperature": 0.0,
+      "text": "你有一些功能",
+      "tokens": [
+       50782,
+       2166,
+       32241,
+       13824,
+       32311,
+       8225,
+       50836
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 122.96,
+      "id": 36,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 122.03999999999999,
+      "temperature": 0.0,
+      "text": "像老年人的话",
+      "tokens": [
+       50836,
+       12760,
+       10439,
+       5157,
+       4035,
+       44575,
+       50882
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 125.16,
+      "id": 37,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 122.96,
+      "temperature": 0.0,
+      "text": "他需要很多的大字体",
+      "tokens": [
+       50882,
+       5000,
+       35748,
+       20778,
+       1546,
+       3582,
+       22381,
+       29485,
+       50992
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 128.44,
+      "id": 38,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 125.16,
+      "temperature": 0.0,
+      "text": "或者是一些网络上的东西",
+      "tokens": [
+       50992,
+       31148,
+       1541,
+       38515,
+       16469,
+       239,
+       10115,
+       250,
+       5708,
+       1546,
+       38409,
+       16220,
+       51156
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 129.76,
+      "id": 39,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 128.44,
+      "temperature": 0.0,
+      "text": "老年人更不适合",
+      "tokens": [
+       51156,
+       10439,
+       5157,
+       4035,
+       19002,
+       1960,
+       2215,
+       224,
+       14245,
+       51222
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 130.64,
+      "id": 40,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 129.76,
+      "temperature": 0.0,
+      "text": "他操作不了",
+      "tokens": [
+       51222,
+       5000,
+       13167,
+       235,
+       11914,
+       47225,
+       51266
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 130.88,
+      "id": 41,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 130.64,
+      "temperature": 0.0,
+      "text": "对",
+      "tokens": [
+       51266,
+       8713,
+       51278
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 133.84,
+      "id": 42,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 130.88,
+      "temperature": 0.0,
+      "text": "他的规格应该是不一样的",
+      "tokens": [
+       51278,
+       31309,
+       6758,
+       226,
+       30921,
+       44297,
+       44646,
+       1541,
+       1960,
+       2257,
+       14496,
+       1546,
+       51426
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 134.84,
+      "id": 43,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 133.84,
+      "temperature": 0.0,
+      "text": "对有些",
+      "tokens": [
+       51426,
+       8713,
+       2412,
+       13824,
+       51476
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 139.84,
+      "id": 44,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 134.84,
+      "temperature": 0.0,
+      "text": "手机里边的很多这个字的东西都是可以可以再去设的",
+      "tokens": [
+       51476,
+       11389,
+       37960,
+       15759,
+       40503,
+       1546,
+       20778,
+       15368,
+       22381,
+       1546,
+       38409,
+       16220,
+       22796,
+       6723,
+       6723,
+       8623,
+       6734,
+       7422,
+       122,
+       1546,
+       51726
+      ]
+     },
+     {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "end": 140.07999999999998,
+      "id": 45,
+      "no_speech_prob": 0.5429253578186035,
+      "seek": 11260,
+      "start": 139.84,
+      "temperature": 0.0,
+      "text": "对",
+      "tokens": [
+       51726,
+       8713,
+       51738
+      ]
+     },
+     {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "end": 147.52,
+      "id": 46,
+      "no_speech_prob": 0.7660625576972961,
+      "seek": 14008,
+      "start": 140.08,
+      "temperature": 0.0,
+      "text": "而且我觉得现在老年人也不是所有的老年人都是那种演化或者什么的情况",
+      "tokens": [
+       50364,
+       22942,
+       45681,
+       25040,
+       10439,
+       5157,
+       4035,
+       6404,
+       7296,
+       39300,
+       1546,
+       10439,
+       5157,
+       4035,
+       22796,
+       4184,
+       39810,
+       31382,
+       23756,
+       31148,
+       10440,
+       1546,
+       46514,
+       50736
+      ]
+     },
+     {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "end": 148.72000000000003,
+      "id": 47,
+      "no_speech_prob": 0.7660625576972961,
+      "seek": 14008,
+      "start": 147.52,
+      "temperature": 0.0,
+      "text": "所以我觉得吧",
+      "tokens": [
+       50736,
+       7239,
+       45681,
+       6062,
+       50796
+      ]
+     },
+     {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "end": 151.52,
+      "id": 48,
+      "no_speech_prob": 0.7660625576972961,
+      "seek": 14008,
+      "start": 148.72000000000003,
+      "temperature": 0.0,
+      "text": "就是不用把这个界限弄得那么分明",
+      "tokens": [
+       50796,
+       5620,
+       24384,
+       16075,
+       15368,
+       21185,
+       43446,
+       5702,
+       226,
+       5916,
+       35693,
+       6627,
+       11100,
+       50936
+      ]
+     },
+     {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "end": 152.96,
+      "id": 49,
+      "no_speech_prob": 0.7660625576972961,
+      "seek": 14008,
+      "start": 151.52,
+      "temperature": 0.0,
+      "text": "然后基本上能适应它",
+      "tokens": [
+       50936,
+       26636,
+       37946,
+       5708,
+       8225,
+       2215,
+       224,
+       44297,
+       11284,
+       51008
+      ]
+     },
+     {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "end": 156.4,
+      "id": 50,
+      "no_speech_prob": 0.7660625576972961,
+      "seek": 14008,
+      "start": 152.96,
+      "temperature": 0.0,
+      "text": "然后能去使用它的老年人都还可以",
+      "tokens": [
+       51008,
+       26636,
+       8225,
+       6734,
+       22982,
+       9254,
+       45224,
+       10439,
+       5157,
+       4035,
+       7182,
+       14852,
+       6723,
+       51180
+      ]
+     }
+    ]
+   },
+   "review": {
+    "category_counts": {
+     "suspected_hallucination": 9,
+     "timestamp": 1
+    },
+    "disclaimer": "Review flags are heuristics that request human review. A flag is not proof of an error or hallucination; an unflagged segment is not verified correct. Original text and timestamps are unchanged.",
+    "excluded_raw_segments": 0,
+    "needs_review": 5,
+    "possible_missed_speech": [],
+    "possible_missed_speech_ms": 0,
+    "reason_counts": {
+     "high_compression_ratio": 1,
+     "implausibly_fast_speech_rate": 1,
+     "likely_non_speech": 3,
+     "repeated_text_pattern": 1,
+     "text_over_detected_silence": 4
+    },
+    "segments": 51,
+    "thresholds": {
+     "high_compression_ratio": 2.4,
+     "high_no_speech_prob": 0.6,
+     "low_avg_logprob": -1.0,
+     "max_chars_per_second": 12.0,
+     "min_chars_per_second": 1.0,
+     "min_non_silent_fraction": 0.1,
+     "missed_speech_min_ms": 2000,
+     "prompt_echo_min_chars": 4,
+     "repeat_min_occurrences": 4,
+     "repeat_unit_max_chars": 8,
+     "slow_min_duration_ms": 4000
+    },
+    "unflagged": 46,
+    "version": 1
+   },
+   "segment_adjustments": {
+    "clipped_end": 0,
+    "dropped_empty": 0,
+    "dropped_outside_audio": 0,
+    "dropped_zero_length": 0
+   },
+   "segments": [
+    {
+     "confidence": {
+      "avg_logprob": -0.105824220445421,
+      "compression_ratio": 25.85,
+      "no_speech_prob": 0.5910133719444275
+     },
+     "end_ms": 10000,
+     "id": "seg-0000-190f47d732",
+     "original_text": "通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过",
+     "raw_index": 0,
+     "review": {
+      "reasons": [
+       {
+        "category": "timestamp",
+        "code": "implausibly_fast_speech_rate",
+        "detail": "More characters than plausible for the timed span",
+        "evidence": {
+         "chars_per_second": 14.8
+        },
+        "heuristic": true
+       },
+       {
+        "category": "suspected_hallucination",
+        "code": "repeated_text_pattern",
+        "detail": "Short unit repeated many times in a row",
+        "evidence": {
+         "pattern": "通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过通过"
+        },
+        "heuristic": true
+       },
+       {
+        "category": "suspected_hallucination",
+        "code": "high_compression_ratio",
+        "detail": "Highly repetitive token sequence",
+        "evidence": {
+         "compression_ratio": 25.85
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 0
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.49339078602037933,
+      "compression_ratio": 0.8854166666666666,
+      "no_speech_prob": 0.8284969925880432
+     },
+     "end_ms": 13000,
+     "id": "seg-0001-9fe8afeca0",
+     "original_text": "今天一家研討會",
+     "raw_index": 1,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 10000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.49339078602037933,
+      "compression_ratio": 0.8854166666666666,
+      "no_speech_prob": 0.8284969925880432
+     },
+     "end_ms": 16000,
+     "id": "seg-0002-e4219262fe",
+     "original_text": "首先咱們確認一下產品的目標",
+     "raw_index": 2,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 13000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.49339078602037933,
+      "compression_ratio": 0.8854166666666666,
+      "no_speech_prob": 0.8284969925880432
+     },
+     "end_ms": 19000,
+     "id": "seg-0003-1ce0ecb4b4",
+     "original_text": "人群 客戶群這一塊",
+     "raw_index": 3,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 16000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.680446445941925,
+      "compression_ratio": 0.9230769230769231,
+      "no_speech_prob": 0.6977986097335815
+     },
+     "end_ms": 25000,
+     "id": "seg-0004-cd185abaf2",
+     "original_text": "你也试一下",
+     "raw_index": 4,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 20000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.680446445941925,
+      "compression_ratio": 0.9230769230769231,
+      "no_speech_prob": 0.6977986097335815
+     },
+     "end_ms": 29480,
+     "id": "seg-0005-e5297db911",
+     "original_text": "我觉得咱这个这个标准群可以不用定的那么确定",
+     "raw_index": 5,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 25000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.680446445941925,
+      "compression_ratio": 0.9230769230769231,
+      "no_speech_prob": 0.6977986097335815
+     },
+     "end_ms": 29840,
+     "id": "seg-0006-8a8055afef",
+     "original_text": "然后",
+     "raw_index": 6,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 29480
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 35600,
+     "id": "seg-0007-62d9c41c23",
+     "original_text": "基本上就是让他什么样什么类的人群然后都可以这样子咱们的面比较广",
+     "raw_index": 7,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 30000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 40360,
+     "id": "seg-0008-d98b56b4f6",
+     "original_text": "因为咱们这个手机现在基本上外观设计的比较时尚",
+     "raw_index": 8,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 36760
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 45080,
+     "id": "seg-0009-a35d6cfa4a",
+     "original_text": "所以我觉得其实不用界定于这个老年人或者年轻人之间",
+     "raw_index": 9,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 40360
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 46280,
+     "id": "seg-0010-a36017c4ab",
+     "original_text": "就是宽度大一点是吧",
+     "raw_index": 10,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 45080
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 48680,
+     "id": "seg-0011-94c5cf2697",
+     "original_text": "对这样我觉得范围更广一些",
+     "raw_index": 11,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.0
+        },
+        "heuristic": true
+       },
+       {
+        "category": "suspected_hallucination",
+        "code": "likely_non_speech",
+        "detail": "High window no-speech probability with low log-probability or measured silence",
+        "evidence": {
+         "avg_logprob": -0.3294717673487311,
+         "no_speech_prob": 0.7650672197341919
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 46280
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 50720,
+     "id": "seg-0012-48437a2d5c",
+     "original_text": "就什么样的人群都可以选择呢",
+     "raw_index": 12,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 48680
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 51880,
+     "id": "seg-0013-8f92a21cd2",
+     "original_text": "好",
+     "raw_index": 13,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.0
+        },
+        "heuristic": true
+       },
+       {
+        "category": "suspected_hallucination",
+        "code": "likely_non_speech",
+        "detail": "High window no-speech probability with low log-probability or measured silence",
+        "evidence": {
+         "avg_logprob": -0.3294717673487311,
+         "no_speech_prob": 0.7650672197341919
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 51480
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 54800,
+     "id": "seg-0014-2a6bc8204a",
+     "original_text": "我觉得是要有争议性的啊",
+     "raw_index": 14,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 51880
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3294717673487311,
+      "compression_ratio": 1.5054545454545454,
+      "no_speech_prob": 0.7650672197341919
+     },
+     "end_ms": 58000,
+     "id": "seg-0015-a156d02950",
+     "original_text": "我觉得咱们的设计外观还是很时尚",
+     "raw_index": 15,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.0
+        },
+        "heuristic": true
+       },
+       {
+        "category": "suspected_hallucination",
+        "code": "likely_non_speech",
+        "detail": "High window no-speech probability with low log-probability or measured silence",
+        "evidence": {
+         "avg_logprob": -0.3294717673487311,
+         "no_speech_prob": 0.7650672197341919
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 54800
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 64200,
+     "id": "seg-0016-846fd46a0a",
+     "original_text": "还是需要去设定一下比较适合的年龄段",
+     "raw_index": 16,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 58000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 68040,
+     "id": "seg-0017-703acf71ee",
+     "original_text": "有彩色的呀 有蓝色的黄色",
+     "raw_index": 17,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 64200
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 69680,
+     "id": "seg-0018-eda74e8be6",
+     "original_text": "年老的人他不可能用这种",
+     "raw_index": 18,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 68040
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 71240,
+     "id": "seg-0019-7131f010ad",
+     "original_text": "也可以说是有用的",
+     "raw_index": 19,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 69680
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 73440,
+     "id": "seg-0020-63f81f1ba1",
+     "original_text": "对 而且你现在设计的产品",
+     "raw_index": 20,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 71240
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 76520,
+     "id": "seg-0021-9263ceb0b4",
+     "original_text": "主要推出的是它有照相的功能",
+     "raw_index": 21,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 73440
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 79760,
+     "id": "seg-0022-bf4b72a24d",
+     "original_text": "功能的话是很很很好的",
+     "raw_index": 22,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 76520
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3363119702820384,
+      "compression_ratio": 1.3113207547169812,
+      "no_speech_prob": 0.47637489438056946
+     },
+     "end_ms": 82920,
+     "id": "seg-0023-118d79317e",
+     "original_text": "所以还是适合年轻的人群",
+     "raw_index": 23,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 79760
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 89520,
+     "id": "seg-0024-0d6b303dc5",
+     "original_text": "我感觉可以根据年龄和这种不同的人士做一下区分",
+     "raw_index": 24,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 82920
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 97600,
+     "id": "seg-0025-60b92d7759",
+     "original_text": "我感觉我们可以主要针对就是18到45岁的中青年人群吧",
+     "raw_index": 25,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 89520
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 100880,
+     "id": "seg-0026-4459301178",
+     "original_text": "我觉得我们确定这个手机在城市的特点来说",
+     "raw_index": 26,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 97600
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 103560,
+     "id": "seg-0027-eaaa88ac0f",
+     "original_text": "可能就是说年段怕多大一些",
+     "raw_index": 27,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 100880
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 107360,
+     "id": "seg-0028-597bd06d17",
+     "original_text": "但是我觉得吧 就是现在那个老年人也都很时尚",
+     "raw_index": 28,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 103560
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 108800,
+     "id": "seg-0029-258bde7030",
+     "original_text": "现在老年人出去",
+     "raw_index": 29,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 107360
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 111240,
+     "id": "seg-0030-959d2a72aa",
+     "original_text": "然后他基本上那个把自己装装的",
+     "raw_index": 30,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 108800
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.38861768827663634,
+      "compression_ratio": 1.3659420289855073,
+      "no_speech_prob": 0.5472091436386108
+     },
+     "end_ms": 112600,
+     "id": "seg-0031-5f38f46986",
+     "original_text": "然后都是大粉大红",
+     "raw_index": 31,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 111240
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 116680,
+     "id": "seg-0032-81bde3b098",
+     "original_text": "然后就很喜欢那个特别有年轻的年轻男就是年轻男",
+     "raw_index": 32,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 112600
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 119560,
+     "id": "seg-0033-1936eef8ce",
+     "original_text": "但是现在的这个版本的话",
+     "raw_index": 33,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 116680
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 120960,
+     "id": "seg-0034-be2d39d40c",
+     "original_text": "它是不适合老年人的",
+     "raw_index": 34,
+     "review": {
+      "reasons": [
+       {
+        "category": "suspected_hallucination",
+        "code": "text_over_detected_silence",
+        "detail": "Text timed over audio the energy gate measured as silent",
+        "evidence": {
+         "non_silent_fraction": 0.05
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 119560
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 122040,
+     "id": "seg-0035-41e9993e9c",
+     "original_text": "你有一些功能",
+     "raw_index": 35,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 120960
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 122960,
+     "id": "seg-0036-f0ad5f19f9",
+     "original_text": "像老年人的话",
+     "raw_index": 36,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 122040
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 125160,
+     "id": "seg-0037-2c939f8fdb",
+     "original_text": "他需要很多的大字体",
+     "raw_index": 37,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 122960
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 128440,
+     "id": "seg-0038-bad18cb29d",
+     "original_text": "或者是一些网络上的东西",
+     "raw_index": 38,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 125160
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 129760,
+     "id": "seg-0039-b37030f99b",
+     "original_text": "老年人更不适合",
+     "raw_index": 39,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 128440
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 130640,
+     "id": "seg-0040-69823c3c80",
+     "original_text": "他操作不了",
+     "raw_index": 40,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 129760
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 130880,
+     "id": "seg-0041-8f938f8867",
+     "original_text": "对",
+     "raw_index": 41,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 130640
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 133840,
+     "id": "seg-0042-9d004ba98f",
+     "original_text": "他的规格应该是不一样的",
+     "raw_index": 42,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 130880
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 134840,
+     "id": "seg-0043-79700513a6",
+     "original_text": "对有些",
+     "raw_index": 43,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 133840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 139840,
+     "id": "seg-0044-0299e638ab",
+     "original_text": "手机里边的很多这个字的东西都是可以可以再去设的",
+     "raw_index": 44,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 134840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3721393479241265,
+      "compression_ratio": 1.46484375,
+      "no_speech_prob": 0.5429253578186035
+     },
+     "end_ms": 140080,
+     "id": "seg-0045-e749b1aedf",
+     "original_text": "对",
+     "raw_index": 45,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 139840
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "no_speech_prob": 0.7660625576972961
+     },
+     "end_ms": 147520,
+     "id": "seg-0046-bf22ea4b65",
+     "original_text": "而且我觉得现在老年人也不是所有的老年人都是那种演化或者什么的情况",
+     "raw_index": 46,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 140080
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "no_speech_prob": 0.7660625576972961
+     },
+     "end_ms": 148720,
+     "id": "seg-0047-6189c6ed89",
+     "original_text": "所以我觉得吧",
+     "raw_index": 47,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 147520
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "no_speech_prob": 0.7660625576972961
+     },
+     "end_ms": 151520,
+     "id": "seg-0048-28ce9774b8",
+     "original_text": "就是不用把这个界限弄得那么分明",
+     "raw_index": 48,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 148720
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "no_speech_prob": 0.7660625576972961
+     },
+     "end_ms": 152960,
+     "id": "seg-0049-7f2658d918",
+     "original_text": "然后基本上能适应它",
+     "raw_index": 49,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 151520
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.3777156156652114,
+      "compression_ratio": 1.297752808988764,
+      "no_speech_prob": 0.7660625576972961
+     },
+     "end_ms": 156400,
+     "id": "seg-0050-9fff241018",
+     "original_text": "然后能去使用它的老年人都还可以",
+     "raw_index": 50,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 152960
+    }
+   ],
+   "silence": {
+    "inconclusive": false,
+    "non_silent_ms": 122360,
+    "params": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    },
+    "regions_ms": [
+     [
+      0,
+      5350
+     ],
+     [
+      7040,
+      10210
+     ],
+     [
+      12110,
+      12910
+     ],
+     [
+      13160,
+      16420
+     ],
+     [
+      16850,
+      18220
+     ],
+     [
+      18620,
+      20620
+     ],
+     [
+      21050,
+      22630
+     ],
+     [
+      23510,
+      24460
+     ],
+     [
+      25220,
+      27790
+     ],
+     [
+      28100,
+      29260
+     ],
+     [
+      29450,
+      31060
+     ],
+     [
+      31280,
+      35260
+     ],
+     [
+      36500,
+      38380
+     ],
+     [
+      38570,
+      39520
+     ],
+     [
+      41990,
+      43390
+     ],
+     [
+      45230,
+      46090
+     ],
+     [
+      49100,
+      50170
+     ],
+     [
+      52070,
+      53620
+     ],
+     [
+      58130,
+      58780
+     ],
+     [
+      59750,
+      61480
+     ],
+     [
+      61700,
+      63370
+     ],
+     [
+      63560,
+      69070
+     ],
+     [
+      69650,
+      73600
+     ],
+     [
+      73700,
+      76270
+     ],
+     [
+      76520,
+      78130
+     ],
+     [
+      78800,
+      81820
+     ],
+     [
+      83600,
+      89500
+     ],
+     [
+      89780,
+      95830
+     ],
+     [
+      95960,
+      106840
+     ],
+     [
+      107180,
+      119440
+     ],
+     [
+      120890,
+      136450
+     ],
+     [
+      137360,
+      139030
+     ],
+     [
+      139190,
+      141160
+     ],
+     [
+      141410,
+      145030
+     ],
+     [
+      146390,
+      147040
+     ],
+     [
+      147500,
+      155080
+     ]
+    ],
+    "silent_ratio": 0.218347,
+    "threshold_dbfs": -44.661
+   },
+   "text": "通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过 通过今天一家研討會首先咱們確認一下產品的目標人群 客戶群這一塊你也试一下我觉得咱这个这个标准群可以不用定的那么确定然后基本上就是让他什么样什么类的人群然后都可以这样子咱们的面比较广因为咱们这个手机现在基本上外观设计的比较时尚所以我觉得其实不用界定于这个老年人或者年轻人之间就是宽度大一点是吧对这样我觉得范围更广一些就什么样的人群都可以选择呢好我觉得是要有争议性的啊我觉得咱们的设计外观还是很时尚还是需要去设定一下比较适合的年龄段有彩色的呀 有蓝色的黄色年老的人他不可能用这种也可以说是有用的对 而且你现在设计的产品主要推出的是它有照相的功能功能的话是很很很好的所以还是适合年轻的人群我感觉可以根据年龄和这种不同的人士做一下区分我感觉我们可以主要针对就是18到45岁的中青年人群吧我觉得我们确定这个手机在城市的特点来说可能就是说年段怕多大一些但是我觉得吧 就是现在那个老年人也都很时尚现在老年人出去然后他基本上那个把自己装装的然后都是大粉大红然后就很喜欢那个特别有年轻的年轻男就是年轻男但是现在的这个版本的话它是不适合老年人的你有一些功能像老年人的话他需要很多的大字体或者是一些网络上的东西老年人更不适合他操作不了对他的规格应该是不一样的对有些手机里边的很多这个字的东西都是可以可以再去设的对而且我觉得现在老年人也不是所有的老年人都是那种演化或者什么的情况所以我觉得吧就是不用把这个界限弄得那么分明然后基本上能适应它然后能去使用它的老年人都还可以",
+   "reused": false,
+   "elapsed_seconds": 18.683682832983322,
+   "score": {
+    "cer": 0.4782608695652174,
+    "edits": 396,
+    "reference_characters": 828,
+    "hypothesis_characters": 764,
+    "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+   },
+   "run": 1
+  }
+ ]
+}

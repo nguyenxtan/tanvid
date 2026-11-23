@@ -33,6 +33,9 @@ PROFILES = {
                            'description': 'Energy gate merging gaps < 3 s and padding 0.5 s: skips only long silences'},
     'temperature_fallback': {'options': dict(OPTIONS, temperature=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0]), 'gate': None,
                              'description': 'Whisper temperature fallback on compression/logprob failure, seed 0'},
+    'bounded_opening': {'options': dict(OPTIONS, clip_timestamps=[0, 10, 10, 20, 20, 30, 30]),
+                        'gate': None,
+                        'description': 'Decode the first 30 seconds in three contiguous 10-second intervals'},
     'silence_skip': {'options': dict(OPTIONS, word_timestamps=True, hallucination_silence_threshold=2.0), 'gate': None,
                      'description': 'MLX Whisper word timestamps + built-in hallucination_silence_threshold=2.0 s'},
 }
@@ -133,10 +136,17 @@ def build_review(raw_segments, identity, duration_ms, analysis, diagnostics=None
     return segments, excluded, review.summarize(segments, excluded, analysis)
 
 
-def decode_options(profile, path, analysis):
-    """Effective worker options; gated profiles decode only their gate's regions."""
+def decode_options(profile, path, analysis, duration_ms):
+    """Effective worker options for this audio duration and silence analysis."""
     options = dict(PROFILES[profile]['options'])
     gate = PROFILES[profile]['gate']
+    if profile == 'bounded_opening':
+        # MLX appends the end of the audio to an odd-length list. Avoid
+        # boundaries at EOF or within one MLX frame (10 ms) of it.
+        options['clip_timestamps'] = [0] + [
+            boundary for boundary in options['clip_timestamps'][1:]
+            if boundary * 1000 + 10 <= duration_ms
+        ]
     if gate is not None:
         gated = analysis if gate == silence.GATE else silence.analyze(path, gate)
         options['clip_timestamps'] = silence.clip_timestamps(gated)
@@ -220,7 +230,7 @@ class TranscriptionService:
             self.workspace.preflight(0)
             try:
                 analysis = json.loads(canonical(silence.analyze(Path(audio['path']))))
-                options = decode_options(profile, Path(audio['path']), analysis)
+                options = decode_options(profile, Path(audio['path']), analysis, duration_ms)
             except (OSError, ValueError, EOFError) as exc:
                 raise MediaError('invalid_audio', 'Unable to analyze speech audio: ' + str(exc)) from exc
             final = self.workspace.root / 'transcripts' / (key + '.json')

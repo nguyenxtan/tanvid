@@ -141,6 +141,7 @@ request `--preserve-original` to repair it. Its bytes remain counted toward quot
 ./scripts/media.sh transcribe path/to/authorized-video.mp4            # medium FP16, df005 profile
 ./scripts/media.sh transcribe path/to/authorized-video.mp4 --model small
 ./scripts/media.sh transcribe path/to/authorized-video.mp4 --profile energy_gate
+./scripts/media.sh transcribe path/to/authorized-video.mp4 --profile bounded_opening
 ```
 
 Use `MediaService.transcribe(path, model='medium', audio_track=0, force=False, profile='df005')`
@@ -216,3 +217,6 @@ transcript reference and a profile comparison harness:
 
 Results, flags and limitations: [DF-006](docs/DF-006_REVIEW.md);
 attribution: [COERLL](benchmarks/coerll/ATTRIBUTION.md).
+
+DF-007 adds the optional `bounded_opening` profile for clips with missing
+opening dialogue. See the [DF-007 benchmark and tradeoffs](docs/DF-007_OPENING.md).

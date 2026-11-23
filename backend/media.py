@@ -184,6 +184,8 @@ class MediaService:
 
 
 def main() -> int:
+    from backend.transcription import DEFAULT_PROFILE, PROFILES
+
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest='command', required=True)
     for name in ('probe', 'import'):
@@ -196,8 +198,8 @@ def main() -> int:
     transcription = commands.add_parser('transcribe')
     transcription.add_argument('source', type=Path)
     transcription.add_argument('--model', choices=('small', 'medium'), default='medium')
-    transcription.add_argument('--profile', choices=('df005', 'energy_gate', 'energy_gate_coarse', 'temperature_fallback', 'silence_skip'),
-                               default='df005', help='Decoding profile; see docs/DF-006_REVIEW.md')
+    transcription.add_argument('--profile', choices=PROFILES, default=DEFAULT_PROFILE,
+                               help='Decoding profile; see docs/DF-006_REVIEW.md and docs/DF-007_OPENING.md')
     transcription.add_argument('--audio-track', type=int, default=0)
     transcription.add_argument('--force', action='store_true', help='Run fresh inference instead of using a valid result')
     args = parser.parse_args()

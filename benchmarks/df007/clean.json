@@ -1,0 +1,2805 @@
+{
+ "name": "df007-final-clean",
+ "audio_sha256": "34cc06002b02dfd0fbafc646db98aa908872b08428ff3a23c05bbafbd77db40b",
+ "reference_sha256": "ec3bc453be34a12da77e9763da18ade11fd51467ce15d89074b528f8f43e2f81",
+ "sample_duration_seconds": 124.61,
+ "model": "medium",
+ "profiles": {
+  "df005": "DF-005 baseline: greedy temperature 0, no previous-text conditioning",
+  "bounded_opening": "Decode the first 30 seconds in three contiguous 10-second intervals"
+ },
+ "measurements": [
+  {
+   "duration_ms": 124610,
+   "duration_seconds": 124.61,
+   "excluded_raw_segments": [],
+   "identity": {
+    "audio_sha256": "34cc06002b02dfd0fbafc646db98aa908872b08428ff3a23c05bbafbd77db40b",
+    "decode_gate": null,
+    "mlx_version": "0.32.4",
+    "mlx_whisper_version": "0.4.3",
+    "model": {
+     "files": [
+      {
+       "name": "config.json",
+       "sha256": "3ff0b3f17a5a3a614327ffd835a3c8f6c78f39cbd39e84dbff4b0ae267c4d2e4",
+       "size_bytes": 268
+      },
+      {
+       "name": "weights.npz",
+       "sha256": "10b597c2bcb1bcc38b2d3d24cd4f0885f461a7cd70e8444d6ad5a763ece549ea",
+       "size_bytes": 1524924912
+      }
+     ],
+     "license": "MIT",
+     "repo": "mlx-community/whisper-medium-mlx",
+     "revision": "7fc08c4eac4c316526498f147dfdee6f6303f975"
+    },
+    "options": {
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "profile": "df005",
+    "review_version": 1,
+    "schema": 3,
+    "silence_gate": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    }
+   },
+   "language": "zh",
+   "metrics": {
+    "architecture": "arm64",
+    "device": "Device(gpu, 0)",
+    "inference_seconds": 8.561196333961561,
+    "mlx_peak_bytes": 2206399478,
+    "model_bytes": 1524925180,
+    "model_load_seconds": 0.30808808299480006,
+    "peak_rss_bytes": 2037121024,
+    "real_time_factor": 0.06870392692369441
+   },
+   "raw_inference": {
+    "decode_options": {
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "segments": [
+     {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "end": 3.5,
+      "id": 0,
+      "no_speech_prob": 0.7240768671035767,
+      "seek": 0,
+      "start": 0.0,
+      "temperature": 0.0,
+      "text": "小钟,爸爸回家了没有?",
+      "tokens": [
+       50364,
+       7322,
+       50064,
+       11,
+       49105,
+       8350,
+       5155,
+       2289,
+       17944,
+       30,
+       50539
+      ]
+     },
+     {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "end": 6.0,
+      "id": 1,
+      "no_speech_prob": 0.7240768671035767,
+      "seek": 0,
+      "start": 3.5,
+      "temperature": 0.0,
+      "text": "他已经回来了。",
+      "tokens": [
+       50539,
+       5000,
+       49161,
+       8350,
+       34912,
+       1543,
+       50664
+      ]
+     },
+     {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "end": 8.5,
+      "id": 2,
+      "no_speech_prob": 0.7240768671035767,
+      "seek": 0,
+      "start": 6.0,
+      "temperature": 0.0,
+      "text": "他在做什么?",
+      "tokens": [
+       50664,
+       5000,
+       3581,
+       10907,
+       10440,
+       30,
+       50789
+      ]
+     },
+     {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "end": 11.0,
+      "id": 3,
+      "no_speech_prob": 0.7240768671035767,
+      "seek": 0,
+      "start": 8.5,
+      "temperature": 0.0,
+      "text": "他在客厅看电视。",
+      "tokens": [
+       50789,
+       5000,
+       3581,
+       32316,
+       5014,
+       227,
+       4200,
+       42182,
+       40656,
+       1543,
+       50914
+      ]
+     },
+     {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "end": 13.0,
+      "id": 4,
+      "no_speech_prob": 0.7240768671035767,
+      "seek": 0,
+      "start": 11.0,
+      "temperature": 0.0,
+      "text": "我也有工作。",
+      "tokens": [
+       50914,
+       27761,
+       2412,
+       41315,
+       1543,
+       51014
+      ]
+     },
+     {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "end": 19.0,
+      "id": 5,
+      "no_speech_prob": 0.7240768671035767,
+      "seek": 0,
+      "start": 13.0,
+      "temperature": 0.0,
+      "text": "为什么回家以后他在看电视,可是我在做饭?",
+      "tokens": [
+       51014,
+       31006,
+       8350,
+       5155,
+       3588,
+       13547,
+       5000,
+       3581,
+       4200,
+       42182,
+       40656,
+       11,
+       23359,
+       40528,
+       10907,
+       41520,
+       255,
+       30,
+       51314
+      ]
+     },
+     {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "end": 25.0,
+      "id": 6,
+      "no_speech_prob": 0.7240768671035767,
+      "seek": 0,
+      "start": 19.0,
+      "temperature": 0.0,
+      "text": "爸爸,妈妈有一点不高兴。你快去帮她做饭。",
+      "tokens": [
+       51314,
+       49105,
+       11,
+       32462,
+       32462,
+       32241,
+       12579,
+       1960,
+       12979,
+       2347,
+       112,
+       1543,
+       2166,
+       10251,
+       6734,
+       4845,
+       106,
+       15555,
+       10907,
+       41520,
+       255,
+       1543,
+       51614
+      ]
+     },
+     {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "end": 32.0,
+      "id": 7,
+      "no_speech_prob": 0.7461095452308655,
+      "seek": 2500,
+      "start": 25.0,
+      "temperature": 0.0,
+      "text": "我好累,今天开了两个会,你可不可以去帮他?",
+      "tokens": [
+       50364,
+       1654,
+       2131,
+       43656,
+       11,
+       12074,
+       18937,
+       2289,
+       36257,
+       7549,
+       12949,
+       11,
+       2166,
+       4429,
+       1960,
+       6723,
+       6734,
+       4845,
+       106,
+       5000,
+       30,
+       50714
+      ]
+     },
+     {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "end": 37.0,
+      "id": 8,
+      "no_speech_prob": 0.7461095452308655,
+      "seek": 2500,
+      "start": 32.0,
+      "temperature": 0.0,
+      "text": "不行,我今天功课好多。",
+      "tokens": [
+       50714,
+       24151,
+       11,
+       1654,
+       12074,
+       32311,
+       5233,
+       122,
+       2131,
+       6392,
+       1543,
+       50964
+      ]
+     },
+     {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "end": 43.0,
+      "id": 9,
+      "no_speech_prob": 0.7461095452308655,
+      "seek": 2500,
+      "start": 37.0,
+      "temperature": 0.0,
+      "text": "那你现在为什么在听音乐,没有在做功课?",
+      "tokens": [
+       50964,
+       4184,
+       2166,
+       25040,
+       31006,
+       3581,
+       31022,
+       18034,
+       44365,
+       11,
+       17944,
+       3581,
+       10907,
+       32311,
+       5233,
+       122,
+       30,
+       51264
+      ]
+     },
+     {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "end": 48.0,
+      "id": 10,
+      "no_speech_prob": 0.7461095452308655,
+      "seek": 2500,
+      "start": 43.0,
+      "temperature": 0.0,
+      "text": "我没有在听音乐,我在听中文课的录音。",
+      "tokens": [
+       51264,
+       1654,
+       17944,
+       3581,
+       31022,
+       18034,
+       44365,
+       11,
+       40528,
+       31022,
+       5975,
+       17174,
+       5233,
+       122,
+       1546,
+       7391,
+       243,
+       18034,
+       1543,
+       51514
+      ]
+     },
+     {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "end": 53.0,
+      "id": 11,
+      "no_speech_prob": 0.7461095452308655,
+      "seek": 2500,
+      "start": 48.0,
+      "temperature": 0.0,
+      "text": "是吗?你可以一边上课,一边录音吗?",
+      "tokens": [
+       51514,
+       1541,
+       14769,
+       30,
+       42766,
+       2257,
+       40503,
+       5708,
+       5233,
+       122,
+       11,
+       2257,
+       40503,
+       7391,
+       243,
+       18034,
+       14769,
+       30,
+       51764
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 64.0,
+      "id": 12,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 53.0,
+      "temperature": 0.0,
+      "text": "对,中文语法好难,所以老师在教语法的时候,大家都一边听一边录音。",
+      "tokens": [
+       50364,
+       8713,
+       11,
+       5975,
+       17174,
+       5233,
+       255,
+       11148,
+       2131,
+       46531,
+       11,
+       7239,
+       10439,
+       29186,
+       3581,
+       21936,
+       5233,
+       255,
+       11148,
+       49873,
+       11,
+       46525,
+       2257,
+       40503,
+       31022,
+       2257,
+       40503,
+       7391,
+       243,
+       18034,
+       1543,
+       50914
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 67.0,
+      "id": 13,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 64.0,
+      "temperature": 0.0,
+      "text": "你的电脑可以录音吗?",
+      "tokens": [
+       50914,
+       18961,
+       42182,
+       27067,
+       239,
+       6723,
+       7391,
+       243,
+       18034,
+       14769,
+       30,
+       51064
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 71.0,
+      "id": 14,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 67.0,
+      "temperature": 0.0,
+      "text": "可以,可是录得不好。",
+      "tokens": [
+       51064,
+       6723,
+       11,
+       23359,
+       7391,
+       243,
+       5916,
+       15769,
+       1543,
+       51264
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 76.0,
+      "id": 15,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 71.0,
+      "temperature": 0.0,
+      "text": "下个月我给你买一个新电脑。",
+      "tokens": [
+       51264,
+       4438,
+       7549,
+       6939,
+       1654,
+       23197,
+       2166,
+       2930,
+       108,
+       20182,
+       12560,
+       42182,
+       27067,
+       239,
+       1543,
+       51514
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 83.0,
+      "id": 16,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 76.0,
+      "temperature": 0.0,
+      "text": "真的吗?太好了!爸爸,我们可不可以吃了饭就去看电脑?",
+      "tokens": [
+       50364,
+       8034,
+       14769,
+       30,
+       9455,
+       12621,
+       0,
+       49105,
+       11,
+       15003,
+       4429,
+       1960,
+       6723,
+       10123,
+       2289,
+       41520,
+       255,
+       3111,
+       6734,
+       4200,
+       42182,
+       27067,
+       239,
+       30,
+       50714
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 92.0,
+      "id": 17,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 83.0,
+      "temperature": 0.0,
+      "text": "好啊!可是我下个月才可以给你买,因为我那时候才有钱。",
+      "tokens": [
+       50714,
+       2131,
+       4905,
+       0,
+       23359,
+       1654,
+       4438,
+       7549,
+       6939,
+       18888,
+       6723,
+       23197,
+       2166,
+       2930,
+       108,
+       11,
+       34627,
+       1654,
+       4184,
+       29111,
+       18888,
+       2412,
+       39623,
+       1543,
+       51164
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 96.0,
+      "id": 18,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 92.0,
+      "temperature": 0.0,
+      "text": "好!我现在的电脑还可以。",
+      "tokens": [
+       51164,
+       2131,
+       0,
+       1654,
+       25040,
+       1546,
+       42182,
+       27067,
+       239,
+       14852,
+       6723,
+       1543,
+       51364
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 102.0,
+      "id": 19,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 96.0,
+      "temperature": 0.0,
+      "text": "去问你妈妈,吃了饭想不想跟我们一起去看电脑?",
+      "tokens": [
+       51364,
+       6734,
+       22064,
+       2166,
+       32462,
+       32462,
+       11,
+       10123,
+       2289,
+       41520,
+       255,
+       7093,
+       1960,
+       7093,
+       9678,
+       15003,
+       29567,
+       6734,
+       4200,
+       42182,
+       27067,
+       239,
+       30,
+       51664
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 108.0,
+      "id": 20,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 102.0,
+      "temperature": 0.0,
+      "text": "我们看了电脑以后,我请你们两个去吃冰淇淋。",
+      "tokens": [
+       50364,
+       15003,
+       4200,
+       2289,
+       42182,
+       27067,
+       239,
+       3588,
+       13547,
+       11,
+       1654,
+       27908,
+       29806,
+       36257,
+       7549,
+       6734,
+       10123,
+       5676,
+       108,
+       14176,
+       229,
+       14176,
+       233,
+       1543,
+       50664
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 112.0,
+      "id": 21,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 108.0,
+      "temperature": 0.0,
+      "text": "你们两个在说什么?来吃饭!",
+      "tokens": [
+       50664,
+       29806,
+       36257,
+       7549,
+       3581,
+       8090,
+       10440,
+       30,
+       6912,
+       10123,
+       41520,
+       255,
+       0,
+       50864
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 118.0,
+      "id": 22,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 112.0,
+      "temperature": 0.0,
+      "text": "好,我们去看妈妈今天给我们做了什么菜。",
+      "tokens": [
+       50864,
+       2131,
+       11,
+       15003,
+       6734,
+       4200,
+       32462,
+       32462,
+       12074,
+       23197,
+       15003,
+       10907,
+       2289,
+       10440,
+       33025,
+       1543,
+       51164
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 124.0,
+      "id": 23,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 118.0,
+      "temperature": 0.0,
+      "text": "吃饭的时候,你可以告诉我们学中文有没有意思。",
+      "tokens": [
+       51164,
+       10123,
+       41520,
+       255,
+       49873,
+       11,
+       42766,
+       44816,
+       15003,
+       29618,
+       5975,
+       17174,
+       2412,
+       17944,
+       16697,
+       1543,
+       51464
+      ]
+     }
+    ]
+   },
+   "review": {
+    "category_counts": {},
+    "disclaimer": "Review flags are heuristics that request human review. A flag is not proof of an error or hallucination; an unflagged segment is not verified correct. Original text and timestamps are unchanged.",
+    "excluded_raw_segments": 0,
+    "needs_review": 0,
+    "possible_missed_speech": [],
+    "possible_missed_speech_ms": 0,
+    "reason_counts": {},
+    "segments": 24,
+    "thresholds": {
+     "high_compression_ratio": 2.4,
+     "high_no_speech_prob": 0.6,
+     "low_avg_logprob": -1.0,
+     "max_chars_per_second": 12.0,
+     "min_chars_per_second": 1.0,
+     "min_non_silent_fraction": 0.1,
+     "missed_speech_min_ms": 2000,
+     "prompt_echo_min_chars": 4,
+     "repeat_min_occurrences": 4,
+     "repeat_unit_max_chars": 8,
+     "slow_min_duration_ms": 4000
+    },
+    "unflagged": 24,
+    "version": 1
+   },
+   "segment_adjustments": {
+    "clipped_end": 0,
+    "dropped_empty": 0,
+    "dropped_outside_audio": 0,
+    "dropped_zero_length": 0
+   },
+   "segments": [
+    {
+     "confidence": {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "no_speech_prob": 0.7240768671035767
+     },
+     "end_ms": 3500,
+     "id": "seg-0000-ca2abdbfef",
+     "original_text": "小钟,爸爸回家了没有?",
+     "raw_index": 0,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 0
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "no_speech_prob": 0.7240768671035767
+     },
+     "end_ms": 6000,
+     "id": "seg-0001-16edf28e4a",
+     "original_text": "他已经回来了。",
+     "raw_index": 1,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 3500
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "no_speech_prob": 0.7240768671035767
+     },
+     "end_ms": 8500,
+     "id": "seg-0002-4f52678dbf",
+     "original_text": "他在做什么?",
+     "raw_index": 2,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 6000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "no_speech_prob": 0.7240768671035767
+     },
+     "end_ms": 11000,
+     "id": "seg-0003-bee9d53b87",
+     "original_text": "他在客厅看电视。",
+     "raw_index": 3,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 8500
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "no_speech_prob": 0.7240768671035767
+     },
+     "end_ms": 13000,
+     "id": "seg-0004-5426de9dbb",
+     "original_text": "我也有工作。",
+     "raw_index": 4,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 11000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "no_speech_prob": 0.7240768671035767
+     },
+     "end_ms": 19000,
+     "id": "seg-0005-eb0bf3bd9c",
+     "original_text": "为什么回家以后他在看电视,可是我在做饭?",
+     "raw_index": 5,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 13000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.1402255657107331,
+      "compression_ratio": 1.2982456140350878,
+      "no_speech_prob": 0.7240768671035767
+     },
+     "end_ms": 25000,
+     "id": "seg-0006-cced973c47",
+     "original_text": "爸爸,妈妈有一点不高兴。你快去帮她做饭。",
+     "raw_index": 6,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 19000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "no_speech_prob": 0.7461095452308655
+     },
+     "end_ms": 32000,
+     "id": "seg-0007-48aca1096d",
+     "original_text": "我好累,今天开了两个会,你可不可以去帮他?",
+     "raw_index": 7,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 25000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "no_speech_prob": 0.7461095452308655
+     },
+     "end_ms": 37000,
+     "id": "seg-0008-6ebf66d506",
+     "original_text": "不行,我今天功课好多。",
+     "raw_index": 8,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 32000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "no_speech_prob": 0.7461095452308655
+     },
+     "end_ms": 43000,
+     "id": "seg-0009-02a21add13",
+     "original_text": "那你现在为什么在听音乐,没有在做功课?",
+     "raw_index": 9,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 37000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "no_speech_prob": 0.7461095452308655
+     },
+     "end_ms": 48000,
+     "id": "seg-0010-41864081c1",
+     "original_text": "我没有在听音乐,我在听中文课的录音。",
+     "raw_index": 10,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 43000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.0928446554368542,
+      "compression_ratio": 1.3222222222222222,
+      "no_speech_prob": 0.7461095452308655
+     },
+     "end_ms": 53000,
+     "id": "seg-0011-f48af34815",
+     "original_text": "是吗?你可以一边上课,一边录音吗?",
+     "raw_index": 11,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 48000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 64000,
+     "id": "seg-0012-0626d29adf",
+     "original_text": "对,中文语法好难,所以老师在教语法的时候,大家都一边听一边录音。",
+     "raw_index": 12,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 53000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 67000,
+     "id": "seg-0013-416a02a37d",
+     "original_text": "你的电脑可以录音吗?",
+     "raw_index": 13,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 64000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 71000,
+     "id": "seg-0014-bd0927fd71",
+     "original_text": "可以,可是录得不好。",
+     "raw_index": 14,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 67000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 76000,
+     "id": "seg-0015-2ee61ae235",
+     "original_text": "下个月我给你买一个新电脑。",
+     "raw_index": 15,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 71000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 83000,
+     "id": "seg-0016-96a0c5abd2",
+     "original_text": "真的吗?太好了!爸爸,我们可不可以吃了饭就去看电脑?",
+     "raw_index": 16,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 76000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 92000,
+     "id": "seg-0017-6957e085bb",
+     "original_text": "好啊!可是我下个月才可以给你买,因为我那时候才有钱。",
+     "raw_index": 17,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 83000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 96000,
+     "id": "seg-0018-4414f41ee9",
+     "original_text": "好!我现在的电脑还可以。",
+     "raw_index": 18,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 92000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 102000,
+     "id": "seg-0019-92214ad7d6",
+     "original_text": "去问你妈妈,吃了饭想不想跟我们一起去看电脑?",
+     "raw_index": 19,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 96000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 108000,
+     "id": "seg-0020-5222ef2836",
+     "original_text": "我们看了电脑以后,我请你们两个去吃冰淇淋。",
+     "raw_index": 20,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 102000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 112000,
+     "id": "seg-0021-a0a0fddfda",
+     "original_text": "你们两个在说什么?来吃饭!",
+     "raw_index": 21,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 108000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 118000,
+     "id": "seg-0022-64a58995d9",
+     "original_text": "好,我们去看妈妈今天给我们做了什么菜。",
+     "raw_index": 22,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 112000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 124000,
+     "id": "seg-0023-13f0657bfe",
+     "original_text": "吃饭的时候,你可以告诉我们学中文有没有意思。",
+     "raw_index": 23,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 118000
+    }
+   ],
+   "silence": {
+    "inconclusive": false,
+    "non_silent_ms": 111640,
+    "params": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    },
+    "regions_ms": [
+     [
+      350,
+      3310
+     ],
+     [
+      3620,
+      5560
+     ],
+     [
+      6410,
+      11050
+     ],
+     [
+      11270,
+      18430
+     ],
+     [
+      19070,
+      24460
+     ],
+     [
+      25370,
+      29170
+     ],
+     [
+      29270,
+      31720
+     ],
+     [
+      31820,
+      35680
+     ],
+     [
+      37100,
+      41950
+     ],
+     [
+      42410,
+      47860
+     ],
+     [
+      48560,
+      54550
+     ],
+     [
+      54800,
+      63940
+     ],
+     [
+      64340,
+      66970
+     ],
+     [
+      67280,
+      68770
+     ],
+     [
+      68870,
+      70660
+     ],
+     [
+      71510,
+      75190
+     ],
+     [
+      75710,
+      82660
+     ],
+     [
+      83480,
+      91480
+     ],
+     [
+      91610,
+      95320
+     ],
+     [
+      96920,
+      102400
+     ],
+     [
+      102590,
+      107770
+     ],
+     [
+      108380,
+      111430
+     ],
+     [
+      112280,
+      117790
+     ],
+     [
+      118070,
+      124610
+     ]
+    ],
+    "silent_ratio": 0.104085,
+    "threshold_dbfs": -31.207
+   },
+   "text": "小钟,爸爸回家了没有?他已经回来了。他在做什么?他在客厅看电视。我也有工作。为什么回家以后他在看电视,可是我在做饭?爸爸,妈妈有一点不高兴。你快去帮她做饭。我好累,今天开了两个会,你可不可以去帮他?不行,我今天功课好多。那你现在为什么在听音乐,没有在做功课?我没有在听音乐,我在听中文课的录音。是吗?你可以一边上课,一边录音吗?对,中文语法好难,所以老师在教语法的时候,大家都一边听一边录音。你的电脑可以录音吗?可以,可是录得不好。下个月我给你买一个新电脑。真的吗?太好了!爸爸,我们可不可以吃了饭就去看电脑?好啊!可是我下个月才可以给你买,因为我那时候才有钱。好!我现在的电脑还可以。去问你妈妈,吃了饭想不想跟我们一起去看电脑?我们看了电脑以后,我请你们两个去吃冰淇淋。你们两个在说什么?来吃饭!好,我们去看妈妈今天给我们做了什么菜。吃饭的时候,你可以告诉我们学中文有没有意思。",
+   "reused": false,
+   "elapsed_seconds": 10.528458625019994,
+   "score": {
+    "cer": 0.0058823529411764705,
+    "edits": 2,
+    "reference_characters": 340,
+    "hypothesis_characters": 340,
+    "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+   },
+   "run": 1
+  },
+  {
+   "duration_ms": 124610,
+   "duration_seconds": 124.61,
+   "excluded_raw_segments": [],
+   "identity": {
+    "audio_sha256": "34cc06002b02dfd0fbafc646db98aa908872b08428ff3a23c05bbafbd77db40b",
+    "decode_gate": null,
+    "mlx_version": "0.32.4",
+    "mlx_whisper_version": "0.4.3",
+    "model": {
+     "files": [
+      {
+       "name": "config.json",
+       "sha256": "3ff0b3f17a5a3a614327ffd835a3c8f6c78f39cbd39e84dbff4b0ae267c4d2e4",
+       "size_bytes": 268
+      },
+      {
+       "name": "weights.npz",
+       "sha256": "10b597c2bcb1bcc38b2d3d24cd4f0885f461a7cd70e8444d6ad5a763ece549ea",
+       "size_bytes": 1524924912
+      }
+     ],
+     "license": "MIT",
+     "repo": "mlx-community/whisper-medium-mlx",
+     "revision": "7fc08c4eac4c316526498f147dfdee6f6303f975"
+    },
+    "options": {
+     "clip_timestamps": [
+      0,
+      10,
+      10,
+      20,
+      20,
+      30,
+      30
+     ],
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "profile": "bounded_opening",
+    "review_version": 1,
+    "schema": 3,
+    "silence_gate": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    }
+   },
+   "language": "zh",
+   "metrics": {
+    "architecture": "arm64",
+    "device": "Device(gpu, 0)",
+    "inference_seconds": 9.636694374959916,
+    "mlx_peak_bytes": 2206399478,
+    "model_bytes": 1524925180,
+    "model_load_seconds": 0.29842858301708475,
+    "peak_rss_bytes": 2048802816,
+    "real_time_factor": 0.0773348396995419
+   },
+   "raw_inference": {
+    "decode_options": {
+     "clip_timestamps": [
+      0,
+      10,
+      10,
+      20,
+      20,
+      30,
+      30
+     ],
+     "condition_on_previous_text": false,
+     "fp16": true,
+     "initial_prompt": "以下是普通话简体中文转写。",
+     "language": "zh",
+     "task": "transcribe",
+     "temperature": 0.0,
+     "word_timestamps": false
+    },
+    "segments": [
+     {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "end": 3.4,
+      "id": 0,
+      "no_speech_prob": 0.2561432719230652,
+      "seek": 0,
+      "start": 0.0,
+      "temperature": 0.0,
+      "text": "小钟,爸爸回家了没有?",
+      "tokens": [
+       50364,
+       7322,
+       50064,
+       11,
+       49105,
+       8350,
+       5155,
+       2289,
+       17944,
+       30,
+       50534
+      ]
+     },
+     {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "end": 5.9,
+      "id": 1,
+      "no_speech_prob": 0.2561432719230652,
+      "seek": 0,
+      "start": 3.4,
+      "temperature": 0.0,
+      "text": "他已经回来了。",
+      "tokens": [
+       50534,
+       5000,
+       49161,
+       8350,
+       34912,
+       1543,
+       50659
+      ]
+     },
+     {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "end": 8.2,
+      "id": 2,
+      "no_speech_prob": 0.2561432719230652,
+      "seek": 0,
+      "start": 5.9,
+      "temperature": 0.0,
+      "text": "他在做什么?",
+      "tokens": [
+       50659,
+       5000,
+       3581,
+       10907,
+       10440,
+       30,
+       50774
+      ]
+     },
+     {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "end": 10.200000000000001,
+      "id": 3,
+      "no_speech_prob": 0.2561432719230652,
+      "seek": 0,
+      "start": 8.2,
+      "temperature": 0.0,
+      "text": "他在客厅里面工作。",
+      "tokens": [
+       50774,
+       5000,
+       3581,
+       32316,
+       5014,
+       227,
+       15759,
+       8833,
+       41315,
+       1543,
+       50874
+      ]
+     },
+     {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "end": 10.76,
+      "id": 4,
+      "no_speech_prob": 0.8885789513587952,
+      "seek": 1000,
+      "start": 10.0,
+      "temperature": 0.0,
+      "text": "看电视",
+      "tokens": [
+       50364,
+       4200,
+       42182,
+       40656,
+       50402
+      ]
+     },
+     {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "end": 12.82,
+      "id": 5,
+      "no_speech_prob": 0.8885789513587952,
+      "seek": 1000,
+      "start": 11.52,
+      "temperature": 0.0,
+      "text": "我也有工作",
+      "tokens": [
+       50440,
+       27761,
+       2412,
+       41315,
+       50505
+      ]
+     },
+     {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "end": 16.4,
+      "id": 6,
+      "no_speech_prob": 0.8885789513587952,
+      "seek": 1000,
+      "start": 13.08,
+      "temperature": 0.0,
+      "text": "为什么回家以后他在看电视",
+      "tokens": [
+       50518,
+       31006,
+       8350,
+       5155,
+       3588,
+       13547,
+       5000,
+       3581,
+       4200,
+       42182,
+       40656,
+       50684
+      ]
+     },
+     {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "end": 18.2,
+      "id": 7,
+      "no_speech_prob": 0.8885789513587952,
+      "seek": 1000,
+      "start": 16.66,
+      "temperature": 0.0,
+      "text": "可是我在做饭",
+      "tokens": [
+       50697,
+       23359,
+       40528,
+       10907,
+       41520,
+       255,
+       50774
+      ]
+     },
+     {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "end": 20.0,
+      "id": 8,
+      "no_speech_prob": 0.8885789513587952,
+      "seek": 1000,
+      "start": 19.48,
+      "temperature": 0.0,
+      "text": "爸爸",
+      "tokens": [
+       50838,
+       49105,
+       50864
+      ]
+     },
+     {
+      "avg_logprob": -0.25947995619340375,
+      "compression_ratio": 0.8166666666666667,
+      "end": 25.0,
+      "id": 9,
+      "no_speech_prob": 0.8270468711853027,
+      "seek": 2000,
+      "start": 20.0,
+      "temperature": 0.0,
+      "text": "妈妈有一点不高兴,你快去帮她做饭。",
+      "tokens": [
+       50364,
+       32462,
+       32462,
+       32241,
+       12579,
+       1960,
+       12979,
+       2347,
+       112,
+       11,
+       2166,
+       10251,
+       6734,
+       4845,
+       106,
+       15555,
+       10907,
+       41520,
+       255,
+       1543,
+       50614
+      ]
+     },
+     {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "end": 32.0,
+      "id": 10,
+      "no_speech_prob": 0.9404591917991638,
+      "seek": 3000,
+      "start": 30.0,
+      "temperature": 0.0,
+      "text": "不可以去帮他。",
+      "tokens": [
+       50364,
+       1960,
+       6723,
+       6734,
+       4845,
+       106,
+       5000,
+       1543,
+       50464
+      ]
+     },
+     {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "end": 36.0,
+      "id": 11,
+      "no_speech_prob": 0.9404591917991638,
+      "seek": 3000,
+      "start": 32.0,
+      "temperature": 0.0,
+      "text": "不行,我今天功课好多。",
+      "tokens": [
+       50464,
+       24151,
+       11,
+       1654,
+       12074,
+       32311,
+       5233,
+       122,
+       2131,
+       6392,
+       1543,
+       50664
+      ]
+     },
+     {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "end": 42.0,
+      "id": 12,
+      "no_speech_prob": 0.9404591917991638,
+      "seek": 3000,
+      "start": 36.0,
+      "temperature": 0.0,
+      "text": "那你现在为什么在听音乐,没有在做功课?",
+      "tokens": [
+       50664,
+       4184,
+       2166,
+       25040,
+       31006,
+       3581,
+       31022,
+       18034,
+       44365,
+       11,
+       17944,
+       3581,
+       10907,
+       32311,
+       5233,
+       122,
+       30,
+       50964
+      ]
+     },
+     {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "end": 48.0,
+      "id": 13,
+      "no_speech_prob": 0.9404591917991638,
+      "seek": 3000,
+      "start": 42.0,
+      "temperature": 0.0,
+      "text": "我没有在听音乐,我在听中文课的录音。",
+      "tokens": [
+       50964,
+       1654,
+       17944,
+       3581,
+       31022,
+       18034,
+       44365,
+       11,
+       40528,
+       31022,
+       5975,
+       17174,
+       5233,
+       122,
+       1546,
+       7391,
+       243,
+       18034,
+       1543,
+       51264
+      ]
+     },
+     {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "end": 53.0,
+      "id": 14,
+      "no_speech_prob": 0.9404591917991638,
+      "seek": 3000,
+      "start": 48.0,
+      "temperature": 0.0,
+      "text": "是吗?你可以一边上课一边录音吗?",
+      "tokens": [
+       51264,
+       1541,
+       14769,
+       30,
+       42766,
+       2257,
+       40503,
+       5708,
+       5233,
+       122,
+       2257,
+       40503,
+       7391,
+       243,
+       18034,
+       14769,
+       30,
+       51514
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 64.0,
+      "id": 15,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 53.0,
+      "temperature": 0.0,
+      "text": "对,中文语法好难,所以老师在教语法的时候,大家都一边听一边录音。",
+      "tokens": [
+       50364,
+       8713,
+       11,
+       5975,
+       17174,
+       5233,
+       255,
+       11148,
+       2131,
+       46531,
+       11,
+       7239,
+       10439,
+       29186,
+       3581,
+       21936,
+       5233,
+       255,
+       11148,
+       49873,
+       11,
+       46525,
+       2257,
+       40503,
+       31022,
+       2257,
+       40503,
+       7391,
+       243,
+       18034,
+       1543,
+       50914
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 67.0,
+      "id": 16,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 64.0,
+      "temperature": 0.0,
+      "text": "你的电脑可以录音吗?",
+      "tokens": [
+       50914,
+       18961,
+       42182,
+       27067,
+       239,
+       6723,
+       7391,
+       243,
+       18034,
+       14769,
+       30,
+       51064
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 71.0,
+      "id": 17,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 67.0,
+      "temperature": 0.0,
+      "text": "可以,可是录得不好。",
+      "tokens": [
+       51064,
+       6723,
+       11,
+       23359,
+       7391,
+       243,
+       5916,
+       15769,
+       1543,
+       51264
+      ]
+     },
+     {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "end": 76.0,
+      "id": 18,
+      "no_speech_prob": 0.8412954211235046,
+      "seek": 5300,
+      "start": 71.0,
+      "temperature": 0.0,
+      "text": "下个月我给你买一个新电脑。",
+      "tokens": [
+       51264,
+       4438,
+       7549,
+       6939,
+       1654,
+       23197,
+       2166,
+       2930,
+       108,
+       20182,
+       12560,
+       42182,
+       27067,
+       239,
+       1543,
+       51514
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 83.0,
+      "id": 19,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 76.0,
+      "temperature": 0.0,
+      "text": "真的吗?太好了!爸爸,我们可不可以吃了饭就去看电脑?",
+      "tokens": [
+       50364,
+       8034,
+       14769,
+       30,
+       9455,
+       12621,
+       0,
+       49105,
+       11,
+       15003,
+       4429,
+       1960,
+       6723,
+       10123,
+       2289,
+       41520,
+       255,
+       3111,
+       6734,
+       4200,
+       42182,
+       27067,
+       239,
+       30,
+       50714
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 92.0,
+      "id": 20,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 83.0,
+      "temperature": 0.0,
+      "text": "好啊!可是我下个月才可以给你买,因为我那时候才有钱。",
+      "tokens": [
+       50714,
+       2131,
+       4905,
+       0,
+       23359,
+       1654,
+       4438,
+       7549,
+       6939,
+       18888,
+       6723,
+       23197,
+       2166,
+       2930,
+       108,
+       11,
+       34627,
+       1654,
+       4184,
+       29111,
+       18888,
+       2412,
+       39623,
+       1543,
+       51164
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 96.0,
+      "id": 21,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 92.0,
+      "temperature": 0.0,
+      "text": "好!我现在的电脑还可以。",
+      "tokens": [
+       51164,
+       2131,
+       0,
+       1654,
+       25040,
+       1546,
+       42182,
+       27067,
+       239,
+       14852,
+       6723,
+       1543,
+       51364
+      ]
+     },
+     {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "end": 102.0,
+      "id": 22,
+      "no_speech_prob": 0.5372588634490967,
+      "seek": 7600,
+      "start": 96.0,
+      "temperature": 0.0,
+      "text": "去问你妈妈,吃了饭想不想跟我们一起去看电脑?",
+      "tokens": [
+       51364,
+       6734,
+       22064,
+       2166,
+       32462,
+       32462,
+       11,
+       10123,
+       2289,
+       41520,
+       255,
+       7093,
+       1960,
+       7093,
+       9678,
+       15003,
+       29567,
+       6734,
+       4200,
+       42182,
+       27067,
+       239,
+       30,
+       51664
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 108.0,
+      "id": 23,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 102.0,
+      "temperature": 0.0,
+      "text": "我们看了电脑以后,我请你们两个去吃冰淇淋。",
+      "tokens": [
+       50364,
+       15003,
+       4200,
+       2289,
+       42182,
+       27067,
+       239,
+       3588,
+       13547,
+       11,
+       1654,
+       27908,
+       29806,
+       36257,
+       7549,
+       6734,
+       10123,
+       5676,
+       108,
+       14176,
+       229,
+       14176,
+       233,
+       1543,
+       50664
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 112.0,
+      "id": 24,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 108.0,
+      "temperature": 0.0,
+      "text": "你们两个在说什么?来吃饭!",
+      "tokens": [
+       50664,
+       29806,
+       36257,
+       7549,
+       3581,
+       8090,
+       10440,
+       30,
+       6912,
+       10123,
+       41520,
+       255,
+       0,
+       50864
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 118.0,
+      "id": 25,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 112.0,
+      "temperature": 0.0,
+      "text": "好,我们去看妈妈今天给我们做了什么菜。",
+      "tokens": [
+       50864,
+       2131,
+       11,
+       15003,
+       6734,
+       4200,
+       32462,
+       32462,
+       12074,
+       23197,
+       15003,
+       10907,
+       2289,
+       10440,
+       33025,
+       1543,
+       51164
+      ]
+     },
+     {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "end": 124.0,
+      "id": 26,
+      "no_speech_prob": 0.7953322529792786,
+      "seek": 10200,
+      "start": 118.0,
+      "temperature": 0.0,
+      "text": "吃饭的时候,你可以告诉我们学中文有没有意思。",
+      "tokens": [
+       51164,
+       10123,
+       41520,
+       255,
+       49873,
+       11,
+       42766,
+       44816,
+       15003,
+       29618,
+       5975,
+       17174,
+       2412,
+       17944,
+       16697,
+       1543,
+       51464
+      ]
+     }
+    ]
+   },
+   "review": {
+    "category_counts": {
+     "timestamp": 1
+    },
+    "disclaimer": "Review flags are heuristics that request human review. A flag is not proof of an error or hallucination; an unflagged segment is not verified correct. Original text and timestamps are unchanged.",
+    "excluded_raw_segments": 0,
+    "needs_review": 1,
+    "possible_missed_speech": [
+     {
+      "detail": "Measured non-silent audio without any transcript segment",
+      "end_ms": 29170,
+      "heuristic": true,
+      "start_ms": 25370
+     }
+    ],
+    "possible_missed_speech_ms": 3800,
+    "reason_counts": {
+     "overlaps_previous_segment": 1
+    },
+    "segments": 27,
+    "thresholds": {
+     "high_compression_ratio": 2.4,
+     "high_no_speech_prob": 0.6,
+     "low_avg_logprob": -1.0,
+     "max_chars_per_second": 12.0,
+     "min_chars_per_second": 1.0,
+     "min_non_silent_fraction": 0.1,
+     "missed_speech_min_ms": 2000,
+     "prompt_echo_min_chars": 4,
+     "repeat_min_occurrences": 4,
+     "repeat_unit_max_chars": 8,
+     "slow_min_duration_ms": 4000
+    },
+    "unflagged": 26,
+    "version": 1
+   },
+   "segment_adjustments": {
+    "clipped_end": 0,
+    "dropped_empty": 0,
+    "dropped_outside_audio": 0,
+    "dropped_zero_length": 0
+   },
+   "segments": [
+    {
+     "confidence": {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "no_speech_prob": 0.2561432719230652
+     },
+     "end_ms": 3400,
+     "id": "seg-0000-8ecddd973e",
+     "original_text": "小钟,爸爸回家了没有?",
+     "raw_index": 0,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 0
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "no_speech_prob": 0.2561432719230652
+     },
+     "end_ms": 5900,
+     "id": "seg-0001-47e63f2345",
+     "original_text": "他已经回来了。",
+     "raw_index": 1,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 3400
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "no_speech_prob": 0.2561432719230652
+     },
+     "end_ms": 8200,
+     "id": "seg-0002-124d7d5697",
+     "original_text": "他在做什么?",
+     "raw_index": 2,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 5900
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.5532164702544341,
+      "compression_ratio": 0.9789473684210527,
+      "no_speech_prob": 0.2561432719230652
+     },
+     "end_ms": 10200,
+     "id": "seg-0003-ae877bb603",
+     "original_text": "他在客厅里面工作。",
+     "raw_index": 3,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 8200
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "no_speech_prob": 0.8885789513587952
+     },
+     "end_ms": 10760,
+     "id": "seg-0004-f5a2ee0613",
+     "original_text": "看电视",
+     "raw_index": 4,
+     "review": {
+      "reasons": [
+       {
+        "category": "timestamp",
+        "code": "overlaps_previous_segment",
+        "detail": "Segment starts before the previous segment ends",
+        "evidence": {
+         "previous_end_ms": 10200,
+         "previous_id": "seg-0003-ae877bb603"
+        },
+        "heuristic": true
+       }
+      ],
+      "status": "needs_review"
+     },
+     "start_ms": 10000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "no_speech_prob": 0.8885789513587952
+     },
+     "end_ms": 12820,
+     "id": "seg-0005-2b69225db6",
+     "original_text": "我也有工作",
+     "raw_index": 5,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 11520
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "no_speech_prob": 0.8885789513587952
+     },
+     "end_ms": 16400,
+     "id": "seg-0006-b6c2c0cb30",
+     "original_text": "为什么回家以后他在看电视",
+     "raw_index": 6,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 13080
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "no_speech_prob": 0.8885789513587952
+     },
+     "end_ms": 18200,
+     "id": "seg-0007-bac3037661",
+     "original_text": "可是我在做饭",
+     "raw_index": 7,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 16660
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.2572146329012784,
+      "compression_ratio": 0.9438202247191011,
+      "no_speech_prob": 0.8885789513587952
+     },
+     "end_ms": 20000,
+     "id": "seg-0008-f9f4d83aa8",
+     "original_text": "爸爸",
+     "raw_index": 8,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 19480
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.25947995619340375,
+      "compression_ratio": 0.8166666666666667,
+      "no_speech_prob": 0.8270468711853027
+     },
+     "end_ms": 25000,
+     "id": "seg-0009-2ec916229b",
+     "original_text": "妈妈有一点不高兴,你快去帮她做饭。",
+     "raw_index": 9,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 20000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "no_speech_prob": 0.9404591917991638
+     },
+     "end_ms": 32000,
+     "id": "seg-0010-24f69f56d8",
+     "original_text": "不可以去帮他。",
+     "raw_index": 10,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 30000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "no_speech_prob": 0.9404591917991638
+     },
+     "end_ms": 36000,
+     "id": "seg-0011-d2e3de87fc",
+     "original_text": "不行,我今天功课好多。",
+     "raw_index": 11,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 32000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "no_speech_prob": 0.9404591917991638
+     },
+     "end_ms": 42000,
+     "id": "seg-0012-70d4249f7f",
+     "original_text": "那你现在为什么在听音乐,没有在做功课?",
+     "raw_index": 12,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 36000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "no_speech_prob": 0.9404591917991638
+     },
+     "end_ms": 48000,
+     "id": "seg-0013-7c41c64495",
+     "original_text": "我没有在听音乐,我在听中文课的录音。",
+     "raw_index": 13,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 42000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.15261149104637436,
+      "compression_ratio": 1.2802547770700636,
+      "no_speech_prob": 0.9404591917991638
+     },
+     "end_ms": 53000,
+     "id": "seg-0014-8f6493c1eb",
+     "original_text": "是吗?你可以一边上课一边录音吗?",
+     "raw_index": 14,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 48000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 64000,
+     "id": "seg-0015-95077031c5",
+     "original_text": "对,中文语法好难,所以老师在教语法的时候,大家都一边听一边录音。",
+     "raw_index": 15,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 53000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 67000,
+     "id": "seg-0016-bdf44eedbf",
+     "original_text": "你的电脑可以录音吗?",
+     "raw_index": 16,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 64000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 71000,
+     "id": "seg-0017-c98f4c5eb7",
+     "original_text": "可以,可是录得不好。",
+     "raw_index": 17,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 67000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10129758384492663,
+      "compression_ratio": 1.178343949044586,
+      "no_speech_prob": 0.8412954211235046
+     },
+     "end_ms": 76000,
+     "id": "seg-0018-e6304cf14b",
+     "original_text": "下个月我给你买一个新电脑。",
+     "raw_index": 18,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 71000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 83000,
+     "id": "seg-0019-31e2b2b25a",
+     "original_text": "真的吗?太好了!爸爸,我们可不可以吃了饭就去看电脑?",
+     "raw_index": 19,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 76000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 92000,
+     "id": "seg-0020-96d24191b8",
+     "original_text": "好啊!可是我下个月才可以给你买,因为我那时候才有钱。",
+     "raw_index": 20,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 83000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 96000,
+     "id": "seg-0021-afd7bb88d9",
+     "original_text": "好!我现在的电脑还可以。",
+     "raw_index": 21,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 92000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.12361191095930807,
+      "compression_ratio": 1.2834224598930482,
+      "no_speech_prob": 0.5372588634490967
+     },
+     "end_ms": 102000,
+     "id": "seg-0022-aab7bc9c70",
+     "original_text": "去问你妈妈,吃了饭想不想跟我们一起去看电脑?",
+     "raw_index": 22,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 96000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 108000,
+     "id": "seg-0023-7fc6cd8a91",
+     "original_text": "我们看了电脑以后,我请你们两个去吃冰淇淋。",
+     "raw_index": 23,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 102000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 112000,
+     "id": "seg-0024-1cc467e768",
+     "original_text": "你们两个在说什么?来吃饭!",
+     "raw_index": 24,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 108000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 118000,
+     "id": "seg-0025-04aaf36899",
+     "original_text": "好,我们去看妈妈今天给我们做了什么菜。",
+     "raw_index": 25,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 112000
+    },
+    {
+     "confidence": {
+      "avg_logprob": -0.10946795747086809,
+      "compression_ratio": 1.2427745664739884,
+      "no_speech_prob": 0.7953322529792786
+     },
+     "end_ms": 124000,
+     "id": "seg-0026-f031ee591f",
+     "original_text": "吃饭的时候,你可以告诉我们学中文有没有意思。",
+     "raw_index": 26,
+     "review": {
+      "reasons": [],
+      "status": "unflagged"
+     },
+     "start_ms": 118000
+    }
+   ],
+   "silence": {
+    "inconclusive": false,
+    "non_silent_ms": 111640,
+    "params": {
+     "absolute_min_db": -60.0,
+     "floor_offset_db": 12.0,
+     "floor_percentile": 10,
+     "frame_ms": 30,
+     "merge_gap_ms": 600,
+     "method": "energy_gate",
+     "min_dynamic_range_db": 12.0,
+     "min_region_ms": 150,
+     "pad_ms": 250,
+     "version": 1
+    },
+    "regions_ms": [
+     [
+      350,
+      3310
+     ],
+     [
+      3620,
+      5560
+     ],
+     [
+      6410,
+      11050
+     ],
+     [
+      11270,
+      18430
+     ],
+     [
+      19070,
+      24460
+     ],
+     [
+      25370,
+      29170
+     ],
+     [
+      29270,
+      31720
+     ],
+     [
+      31820,
+      35680
+     ],
+     [
+      37100,
+      41950
+     ],
+     [
+      42410,
+      47860
+     ],
+     [
+      48560,
+      54550
+     ],
+     [
+      54800,
+      63940
+     ],
+     [
+      64340,
+      66970
+     ],
+     [
+      67280,
+      68770
+     ],
+     [
+      68870,
+      70660
+     ],
+     [
+      71510,
+      75190
+     ],
+     [
+      75710,
+      82660
+     ],
+     [
+      83480,
+      91480
+     ],
+     [
+      91610,
+      95320
+     ],
+     [
+      96920,
+      102400
+     ],
+     [
+      102590,
+      107770
+     ],
+     [
+      108380,
+      111430
+     ],
+     [
+      112280,
+      117790
+     ],
+     [
+      118070,
+      124610
+     ]
+    ],
+    "silent_ratio": 0.104085,
+    "threshold_dbfs": -31.207
+   },
+   "text": "小钟,爸爸回家了没有?他已经回来了。他在做什么?他在客厅里面工作。看电视我也有工作为什么回家以后他在看电视可是我在做饭爸爸妈妈有一点不高兴,你快去帮她做饭。不可以去帮他。不行,我今天功课好多。那你现在为什么在听音乐,没有在做功课?我没有在听音乐,我在听中文课的录音。是吗?你可以一边上课一边录音吗?对,中文语法好难,所以老师在教语法的时候,大家都一边听一边录音。你的电脑可以录音吗?可以,可是录得不好。下个月我给你买一个新电脑。真的吗?太好了!爸爸,我们可不可以吃了饭就去看电脑?好啊!可是我下个月才可以给你买,因为我那时候才有钱。好!我现在的电脑还可以。去问你妈妈,吃了饭想不想跟我们一起去看电脑?我们看了电脑以后,我请你们两个去吃冰淇淋。你们两个在说什么?来吃饭!好,我们去看妈妈今天给我们做了什么菜。吃饭的时候,你可以告诉我们学中文有没有意思。",
+   "reused": false,
+   "elapsed_seconds": 11.604442375013605,
+   "score": {
+    "cer": 0.052941176470588235,
+    "edits": 18,
+    "reference_characters": 340,
+    "hypothesis_characters": 332,
+    "normalization": "NFKC, lowercase, remove whitespace/punctuation/symbols; no script conversion"
+   },
+   "run": 1
+  }
+ ]
+}
